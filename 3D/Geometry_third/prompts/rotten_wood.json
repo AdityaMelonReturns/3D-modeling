@@ -1,0 +1,9 @@
+{
+  "rotten_wood__shot_04": {"box": [850, 0, 1920, 400], "neg_points": [[1200, 150]]},
+  "rotten_wood__shot_06": {"box": [800, 0, 1500, 600], "neg_points": [[1080, 300]]},
+  "rotten_wood__shot_08": {"box": [700, 0, 1100, 350], "neg_points": [[1050, 300]]},
+  "rotten_wood__shot_09": [550, 0, 1050, 500],
+  "rotten_wood__shot_10": [880, 0, 1100, 340],
+  "rotten_wood__shot_11": [0, 0, 1100, 400],
+  "rotten_wood__shot_15": [880, 0, 1100, 300]
+}

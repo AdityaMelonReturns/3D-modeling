@@ -1,0 +1,111 @@
+{
+  "gravity_agreement": 1.007632888228002,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3733784048635391,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.4017372136313599,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 62.66215951364609,
+      "detail": "Depth Pro predicted 40.2cm for a known 15cm ruler (62.7% off) -> applying 0.373x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.2519129404120118,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.5954438059222766,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 74.80870595879883,
+      "detail": "Depth Pro predicted 59.5cm for a known 15cm ruler (74.8% off) -> applying 0.252x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.5272035019059341,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.2845201131208791,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 47.279649809406585,
+      "detail": "Depth Pro predicted 28.5cm for a known 15cm ruler (47.3% off) -> applying 0.527x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.0848628203566722,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.7675585064173098,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 91.51371796433278,
+      "detail": "Depth Pro predicted 176.8cm for a known 15cm ruler (91.5% off) -> applying 0.085x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 3.0 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.5352201016371021,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.2802585320341821,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 46.477989836289794,
+      "detail": "Depth Pro predicted 28.0cm for a known 15cm ruler (46.5% off) -> applying 0.535x correction"
+    }
+  ],
+  "camera_centers": {
+    "rotten_wood__shot_04": [
+      0.07932439552037884,
+      -0.2068488188790525,
+      0.41730735558476173
+    ],
+    "rotten_wood__shot_06": [
+      0.3392737824571299,
+      -0.06678930299549757,
+      0.3887088655923672
+    ],
+    "rotten_wood__shot_08": [
+      0.030634656096752755,
+      -0.03220108297324526,
+      -0.1509671170399529
+    ],
+    "rotten_wood__shot_09": [
+      0.0058630876735338245,
+      -0.012168774495999771,
+      0.02950906583730903
+    ],
+    "rotten_wood__shot_10": [
+      0.0002581153306119359,
+      -8.671264551894757e-05,
+      -0.0003562839377629056
+    ],
+    "rotten_wood__shot_11": [
+      -0.004406025674085004,
+      -0.02427245111229183,
+      0.028249105004273953
+    ],
+    "rotten_wood__shot_15": [
+      0.02407026699296691,
+      -0.06287566935910105,
+      -0.15256692905530245
+    ]
+  },
+  "mean_conf_per_shot": {
+    "rotten_wood__shot_04": 1.0000008344650269,
+    "rotten_wood__shot_06": 1.0000003576278687,
+    "rotten_wood__shot_08": 1.1192692518234253,
+    "rotten_wood__shot_09": 1.255887508392334,
+    "rotten_wood__shot_10": 1.2283612489700317,
+    "rotten_wood__shot_11": 1.2149410247802734,
+    "rotten_wood__shot_15": 1.1000150442123413
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "width_mm",
+      420.7447016998945
+    ],
+    [
+      "severe",
+      "length_mm",
+      1152.8102426358303
+    ]
+  ],
+  "claude_vision": null,
+  "note": "ANTHROPIC_API_KEY not set - skipped vision confirmation, rule-based only"
+}

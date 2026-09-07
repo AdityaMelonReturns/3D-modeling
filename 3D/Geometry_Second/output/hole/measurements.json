@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 471.07921923076333,
+    "mean": 74.64948618744769,
+    "confidence": "medium"
+  },
+  "width_mm": 392.1804959373075,
+  "length_mm": 739.531270156937,
+  "area_mm2": 185240.18966191,
+  "volume_mm3": 13828084.97952694,
+  "inclination_deg": {
+    "value": 82.75940610484774,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 3840,
+  "defect_id": "hole",
+  "shots_used": 6,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

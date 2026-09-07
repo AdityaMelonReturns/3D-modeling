@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 979.4938277461857,
+    "mean": 236.6899599750168,
+    "confidence": "medium"
+  },
+  "width_mm": 1812.708998742286,
+  "length_mm": 5504.272811804813,
+  "area_mm2": 6407135.4027427,
+  "volume_mm3": 1516504622.0296826,
+  "inclination_deg": {
+    "value": 38.70016617306739,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 121483,
+  "defect_id": "rotten_wood",
+  "shots_used": 7,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

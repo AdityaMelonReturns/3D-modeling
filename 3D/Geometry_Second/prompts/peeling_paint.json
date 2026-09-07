@@ -1,0 +1,12 @@
+{
+  "peeling_paint__shot_01": [700, 50, 1450, 900],
+  "peeling_paint__shot_02": [850, 0, 1400, 900],
+  "peeling_paint__shot_03": {"box": [550, 150, 1450, 750], "neg_points": [[1000, 400]]},
+  "peeling_paint__shot_04": {"box": [500, 0, 1500, 750], "neg_points": [[1150, 480]]},
+  "peeling_paint__shot_06": {"box": [550, 100, 1350, 780], "neg_points": [[1100, 450]]},
+  "peeling_paint__shot_07": {"box": [700, 50, 1300, 700], "neg_points": [[1180, 400]]},
+  "peeling_paint__shot_08": {"box": [700, 0, 1550, 780], "neg_points": [[1300, 150]]},
+  "peeling_paint__shot_09": {"box": [900, 150, 1500, 996], "neg_points": [[1250, 500]]},
+  "peeling_paint__shot_10": {"box": [900, 200, 1450, 996], "neg_points": [[1300, 650]]},
+  "peeling_paint__shot_11": {"box": [900, 100, 1500, 996], "neg_points": [[1350, 500]]}
+}

@@ -1,0 +1,28 @@
+{
+  "depth_mm": {
+    "max": 784.0191565658296,
+    "mean": 161.2295141581595,
+    "confidence": "medium"
+  },
+  "width_mm": 251.3708734560969,
+  "length_mm": 1186.8448909207943,
+  "area_mm2": 213396.79633158437,
+  "volume_mm3": 34405861.79544906,
+  "inclination_deg": {
+    "value": 51.20461880394217,
+    "source_agreement": true,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 2462,
+  "defect_id": "hole",
+  "shots_used": 6,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "local_depth_crosscheck": {
+    "da3_median_m": 0.498740553855896,
+    "depth_pro_median_m": 1.095409870147705,
+    "disagreement_pct": 119.63521146993156,
+    "agrees": false
+  }
+}

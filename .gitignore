@@ -1,0 +1,9 @@
+# Large model files
+3D/Geometry_Second/checkpoints/depth_pro.pt
+3D/Geometry_Second/checkpoints/sam2/sam2.1_hiera_large.pt
+
+# Large CUDA dependency
+3D/Geometry/tools/colmap-cuda/bin/onnxruntime_providers_cuda.dll
+
+# ZIP archives
+*.zip

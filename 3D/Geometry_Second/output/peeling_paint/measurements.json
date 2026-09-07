@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 1160.3560391618964,
+    "mean": 175.30036219582578,
+    "confidence": "medium"
+  },
+  "width_mm": 865.7487283878902,
+  "length_mm": 2155.4758451217313,
+  "area_mm2": 1380308.9497273099,
+  "volume_mm3": 241968658.8293373,
+  "inclination_deg": {
+    "value": 15.896390386577155,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 52074,
+  "defect_id": "peeling_paint",
+  "shots_used": 10,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

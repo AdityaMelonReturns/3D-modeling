@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "capture_id": "wood1__shot_02",
+  "capture_mode": "defect",
+  "defect_id": "wood1",
+  "shot_index": 2,
+  "shots_in_set": 4,
+  "image_file": "wood1__shot_02.jpg",
+  "timestamp_iso": "2026-07-19T23:53:42.131Z",
+  "timestamp_epoch_ms": 1784505222131,
+  "device": {
+    "model": "iPhone 15 Pro",
+    "os": "iOS 26.2.1",
+    "app_version": "0.1.0"
+  },
+  "image": {
+    "width_px": 1920,
+    "height_px": 996,
+    "exif_orientation": 6
+  },
+  "intrinsics": {
+    "focal_length_mm": 2.2200000286102295,
+    "focal_length_35mm_equiv": 14,
+    "f_number": 2.200000047683716,
+    "exposure_time_s": 0.008264462809917356,
+    "iso": 64,
+    "source": "exif"
+  },
+  "orientation": {
+    "source": "devicemotion",
+    "pitch_deg": 34.815302133571116,
+    "roll_deg": 7.072596723400622,
+    "yaw_deg": 37.95777748752141,
+    "sampled_ms_before_shutter": 100
+  },
+  "heading": {
+    "source": "location",
+    "true_heading_deg": 245.21185302734375,
+    "magnetic_heading_deg": 230.3343963623047,
+    "accuracy_deg": 3
+  },
+  "location": {
+    "source": "gps",
+    "lat": 47.683466608361535,
+    "lon": -122.11620589837776,
+    "altitude_m": 91.99193258803503,
+    "horizontal_accuracy_m": 4.656558757166955,
+    "vertical_accuracy_m": 4.564633369445801
+  },
+  "barometric_relative_altitude_m": 0.0290679931640625,
+  "raw": {
+    "accelerometer_g": {
+      "x": 0.1099395751953125,
+      "y": -0.5527496337890625,
+      "z": -0.822723388671875
+    },
+    "magnetometer_uT": {
+      "x": 18.260295867919922,
+      "y": -36.885284423828125,
+      "z": -31.91259765625
+    }
+  },
+  "gaps": []
+}

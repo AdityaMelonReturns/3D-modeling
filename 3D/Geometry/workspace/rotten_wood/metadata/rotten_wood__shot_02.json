@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "capture_id": "rotten_wood__shot_02",
+  "capture_mode": "defect",
+  "defect_id": "rotten_wood",
+  "shot_index": 2,
+  "shots_in_set": 6,
+  "image_file": "rotten_wood__shot_02.jpg",
+  "timestamp_iso": "2026-07-20T00:17:25.034Z",
+  "timestamp_epoch_ms": 1784506645034,
+  "device": {
+    "model": "iPhone 15 Pro",
+    "os": "iOS 26.2.1",
+    "app_version": "0.1.0"
+  },
+  "image": {
+    "width_px": 1920,
+    "height_px": 996,
+    "exif_orientation": 6
+  },
+  "intrinsics": {
+    "focal_length_mm": 2.2200000286102295,
+    "focal_length_35mm_equiv": 14,
+    "f_number": 2.200000047683716,
+    "exposure_time_s": 0.011764705882352941,
+    "iso": 80,
+    "source": "exif"
+  },
+  "orientation": {
+    "source": "devicemotion",
+    "pitch_deg": 72.75992534403221,
+    "roll_deg": -10.008984420128499,
+    "yaw_deg": 86.4625974085697,
+    "sampled_ms_before_shutter": 39
+  },
+  "heading": {
+    "source": "location",
+    "true_heading_deg": 206.40773010253906,
+    "magnetic_heading_deg": 191.40773010253906,
+    "accuracy_deg": 3
+  },
+  "location": {
+    "source": "gps",
+    "lat": 47.683367634790685,
+    "lon": -122.11596782480902,
+    "altitude_m": 88.85469872494724,
+    "horizontal_accuracy_m": 15.052121092119721,
+    "vertical_accuracy_m": 11.982710838317871
+  },
+  "barometric_relative_altitude_m": 0.06341552734375,
+  "raw": {
+    "accelerometer_g": {
+      "x": -0.069305419921875,
+      "y": -0.9095916748046875,
+      "z": -0.363555908203125
+    },
+    "magnetometer_uT": {
+      "x": 1.9736824035644531,
+      "y": -52.835723876953125,
+      "z": 4.27496337890625
+    }
+  },
+  "gaps": []
+}

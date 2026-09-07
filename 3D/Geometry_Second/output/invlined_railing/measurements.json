@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 702.9242967575299,
+    "mean": 169.25831594573464,
+    "confidence": "medium"
+  },
+  "width_mm": 1197.480225680509,
+  "length_mm": 2421.311743245816,
+  "area_mm2": 1806691.8813844516,
+  "volume_mm3": 305797625.27596325,
+  "inclination_deg": {
+    "value": 58.12446512655465,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 58493,
+  "defect_id": "invlined_railing",
+  "shots_used": 7,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "capture_id": "invlined_railing__shot_07",
+  "capture_mode": "defect",
+  "defect_id": "invlined_railing",
+  "shot_index": 7,
+  "shots_in_set": 7,
+  "image_file": "invlined_railing__shot_07.jpg",
+  "timestamp_iso": "2026-07-20T00:14:43.253Z",
+  "timestamp_epoch_ms": 1784506483253,
+  "device": {
+    "model": "iPhone 15 Pro",
+    "os": "iOS 26.2.1",
+    "app_version": "0.1.0"
+  },
+  "image": {
+    "width_px": 1920,
+    "height_px": 996,
+    "exif_orientation": 6
+  },
+  "intrinsics": {
+    "focal_length_mm": 2.2200000286102295,
+    "focal_length_35mm_equiv": 14,
+    "f_number": 2.200000047683716,
+    "exposure_time_s": 0.010638297872340425,
+    "iso": 64,
+    "source": "exif"
+  },
+  "orientation": {
+    "source": "devicemotion",
+    "pitch_deg": 63.89072321179089,
+    "roll_deg": 18.169845320479947,
+    "yaw_deg": 288.70791542523443,
+    "sampled_ms_before_shutter": 69
+  },
+  "heading": {
+    "source": "location",
+    "true_heading_deg": 344.7693786621094,
+    "magnetic_heading_deg": 329.7693786621094,
+    "accuracy_deg": 3
+  },
+  "location": {
+    "source": "gps",
+    "lat": 47.683461221582995,
+    "lon": -122.1159966526683,
+    "altitude_m": 97.60691250767559,
+    "horizontal_accuracy_m": 8.19662014639568,
+    "vertical_accuracy_m": 4.2988579295369975
+  },
+  "barometric_relative_altitude_m": -0.0475616455078125,
+  "raw": {
+    "accelerometer_g": {
+      "x": 0.112396240234375,
+      "y": -0.8945770263671875,
+      "z": -0.4496917724609375
+    },
+    "magnetometer_uT": {
+      "x": 17.27155113220215,
+      "y": -36.16326904296875,
+      "z": -33.47869873046875
+    }
+  },
+  "gaps": []
+}

@@ -1,0 +1,28 @@
+{
+  "depth_mm": {
+    "max": 340.1228318553921,
+    "mean": 135.84343713057297,
+    "confidence": "medium"
+  },
+  "width_mm": 884.7896599909741,
+  "length_mm": 1329.1874821787392,
+  "area_mm2": 744887.6331669049,
+  "volume_mm3": 101188096.36544973,
+  "inclination_deg": {
+    "value": 38.61573744079678,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 32525,
+  "defect_id": "roof",
+  "shots_used": 6,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "local_depth_crosscheck": {
+    "da3_median_m": 1.0714008808135986,
+    "depth_pro_median_m": 2.1555373668670654,
+    "disagreement_pct": 101.1886872101689,
+    "agrees": false
+  }
+}

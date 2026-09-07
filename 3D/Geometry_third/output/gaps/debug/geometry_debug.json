@@ -1,0 +1,129 @@
+{
+  "gravity_agreement": 0.9785167356568183,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.03125191599889484,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 4.7997057206126,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 96.87480840011051,
+      "detail": "Depth Pro predicted 480.0cm for a known 15cm ruler (96.9% off) -> applying 0.031x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.035720011165383765,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 4.199326794874154,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 96.42799888346161,
+      "detail": "Depth Pro predicted 419.9cm for a known 15cm ruler (96.4% off) -> applying 0.036x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.03773523373289733,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 3.9750648177178496,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 96.22647662671027,
+      "detail": "Depth Pro predicted 397.5cm for a known 15cm ruler (96.2% off) -> applying 0.038x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.040064893273379934,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 3.74392610948657,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 95.99351067266201,
+      "detail": "Depth Pro predicted 374.4cm for a known 15cm ruler (96.0% off) -> applying 0.040x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.04166539868551386,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 3.6001095569055885,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 95.83346013144862,
+      "detail": "Depth Pro predicted 360.0cm for a known 15cm ruler (95.8% off) -> applying 0.042x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.05576887141535231,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 2.689672503551996,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 94.42311285846476,
+      "detail": "Depth Pro predicted 269.0cm for a known 15cm ruler (94.4% off) -> applying 0.056x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.11971854625907699,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.2529387023744207,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 88.0281453740923,
+      "detail": "Depth Pro predicted 125.3cm for a known 15cm ruler (88.0% off) -> applying 0.120x correction"
+    }
+  ],
+  "camera_centers": {
+    "gaps__shot_01": [
+      -0.2627646257403824,
+      -0.33940821680580535,
+      -0.2975087148508839
+    ],
+    "gaps__shot_02": [
+      -0.09225439317082085,
+      -0.13594795476897442,
+      -0.07499125298172249
+    ],
+    "gaps__shot_03": [
+      -0.0787748729426902,
+      0.03338298188387445,
+      -0.03205388227020499
+    ],
+    "gaps__shot_04": [
+      -0.05936669356715224,
+      -0.07077142952344184,
+      -0.07891844994808916
+    ],
+    "gaps__shot_05": [
+      0.10764574919555592,
+      0.05048592163483867,
+      0.040516998740205756
+    ],
+    "gaps__shot_06": [
+      0.15920264544740567,
+      0.055461505088976626,
+      0.053490872315384075
+    ],
+    "gaps__shot_07": [
+      0.00015636884148239943,
+      -3.5339965082025764e-05,
+      -0.00018381419523572822
+    ],
+    "gaps__shot_08": [
+      -0.5072545294815423,
+      0.2903338034368881,
+      -0.028933860735484984
+    ]
+  },
+  "mean_conf_per_shot": {
+    "gaps__shot_01": 1.0035480260849,
+    "gaps__shot_02": 1.0534158945083618,
+    "gaps__shot_03": 1.1565120220184326,
+    "gaps__shot_04": 1.0840263366699219,
+    "gaps__shot_05": 1.2897964715957642,
+    "gaps__shot_06": 1.122899055480957,
+    "gaps__shot_07": 1.704162836074829,
+    "gaps__shot_08": 1.0000123977661133
+  }
+}

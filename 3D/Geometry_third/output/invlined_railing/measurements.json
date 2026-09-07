@@ -1,0 +1,28 @@
+{
+  "depth_mm": {
+    "max": 990.1561633895212,
+    "mean": 145.01338242551185,
+    "confidence": "medium"
+  },
+  "width_mm": 864.8769983976828,
+  "length_mm": 1395.0489159415931,
+  "area_mm2": 928988.3103769836,
+  "volume_mm3": 134715737.1215276,
+  "inclination_deg": {
+    "value": 74.74594745333592,
+    "source_agreement": true,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 54559,
+  "defect_id": "invlined_railing",
+  "shots_used": 7,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "local_depth_crosscheck": {
+    "da3_median_m": 0.5065503716468811,
+    "depth_pro_median_m": 0.9382893443107605,
+    "disagreement_pct": 85.23120242913312,
+    "agrees": false
+  }
+}

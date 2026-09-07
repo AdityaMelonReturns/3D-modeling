@@ -1,0 +1,11 @@
+{
+  "ceiling__shot_01": [480, 180, 850, 560],
+  "ceiling__shot_02": [300, 180, 970, 650],
+  "ceiling__shot_03": [400, 260, 1000, 610],
+  "ceiling__shot_04": {"box": [300, 100, 1200, 800], "neg_points": [[950, 350]]},
+  "ceiling__shot_05": {"box": [540, 350, 1090, 800], "neg_points": [[990, 550]]},
+  "ceiling__shot_06": {"box": [350, 0, 1250, 700], "neg_points": [[1050, 300]]},
+  "ceiling__shot_07": {"box": [350, 0, 1300, 996], "neg_points": [[1050, 550]]},
+  "ceiling__shot_08": {"box": [200, 280, 1080, 900], "neg_points": [[690, 600]]},
+  "ceiling__shot_09": {"box": [600, 400, 1150, 920], "neg_points": [[920, 650]]}
+}

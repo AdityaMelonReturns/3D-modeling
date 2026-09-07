@@ -1,0 +1,116 @@
+{
+  "pose_confidence": "low",
+  "pair_matches": {
+    "(0, 1)": 0,
+    "(0, 2)": 0,
+    "(0, 3)": 0,
+    "(0, 4)": 0,
+    "(0, 5)": 0,
+    "(0, 6)": 0,
+    "(0, 7)": 0,
+    "(0, 8)": 1,
+    "(1, 2)": 0,
+    "(1, 3)": 1,
+    "(1, 4)": 0,
+    "(1, 5)": 0,
+    "(1, 6)": 1,
+    "(1, 7)": 0,
+    "(1, 8)": 0,
+    "(2, 3)": 0,
+    "(2, 4)": 0,
+    "(2, 5)": 0,
+    "(2, 6)": 0,
+    "(2, 7)": 0,
+    "(2, 8)": 0,
+    "(3, 4)": 1,
+    "(3, 5)": 0,
+    "(3, 6)": 2,
+    "(3, 7)": 0,
+    "(3, 8)": 0,
+    "(4, 5)": 0,
+    "(4, 6)": 1,
+    "(4, 7)": 0,
+    "(4, 8)": 0,
+    "(5, 6)": 0,
+    "(5, 7)": 0,
+    "(5, 8)": 0,
+    "(6, 7)": 0,
+    "(6, 8)": 0,
+    "(7, 8)": 0
+  },
+  "gravity_agreement": 0.9767458034432153,
+  "scale_infos": [
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.24071857814100833,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.6231342888380342,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 75.92814218589916,
+      "detail": "Depth Pro predicted 62.3cm for a known 15cm ruler (75.9% off) -> applying 0.241x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.2455033086552135,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.6109897289028434,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 75.44966913447865,
+      "detail": "Depth Pro predicted 61.1cm for a known 15cm ruler (75.4% off) -> applying 0.246x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.2625220540486059,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.5713805666484215,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 73.74779459513941,
+      "detail": "Depth Pro predicted 57.1cm for a known 15cm ruler (73.7% off) -> applying 0.263x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.10769697921260295,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.3927967255598441,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 89.23030207873971,
+      "detail": "Depth Pro predicted 139.3cm for a known 15cm ruler (89.2% off) -> applying 0.108x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.1505216253088122,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.996534549054051,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 84.94783746911878,
+      "detail": "Depth Pro predicted 99.7cm for a known 15cm ruler (84.9% off) -> applying 0.151x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.20289440384110283,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.7393008242724762,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 79.71055961588972,
+      "detail": "Depth Pro predicted 73.9cm for a known 15cm ruler (79.7% off) -> applying 0.203x correction"
+    }
+  ]
+}

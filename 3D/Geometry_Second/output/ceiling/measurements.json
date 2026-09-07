@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 1411.4076622050502,
+    "mean": 200.16616141139758,
+    "confidence": "medium"
+  },
+  "width_mm": 1071.9675354678598,
+  "length_mm": 2499.993039684794,
+  "area_mm2": 1893740.2520505888,
+  "volume_mm3": 379062716.9632189,
+  "inclination_deg": {
+    "value": 4.717029845831591,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 47961,
+  "defect_id": "ceiling",
+  "shots_used": 9,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

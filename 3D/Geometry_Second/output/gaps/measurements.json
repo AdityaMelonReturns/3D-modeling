@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 23.552269379963054,
+    "mean": 6.270884638064622,
+    "confidence": "low"
+  },
+  "width_mm": 420.7447016998945,
+  "length_mm": 1152.8102426358303,
+  "area_mm2": 315353.66529583663,
+  "volume_mm3": 1977546.4552610344,
+  "inclination_deg": {
+    "value": 74.95250734224204,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 176,
+  "defect_id": "gaps",
+  "shots_used": 8,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

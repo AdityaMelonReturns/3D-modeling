@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 2695.433214921861,
+    "mean": 673.2668954543768,
+    "confidence": "medium"
+  },
+  "width_mm": 672.342578760792,
+  "length_mm": 3185.690973788987,
+  "area_mm2": 1787796.0005795034,
+  "volume_mm3": 1203663863.0159132,
+  "inclination_deg": {
+    "value": 82.53004511825975,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 7983,
+  "defect_id": "wood1",
+  "shots_used": 6,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

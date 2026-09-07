@@ -1,0 +1,22 @@
+{
+  "depth_mm": {
+    "max": 745.4679160222648,
+    "mean": 173.3507213967048,
+    "confidence": "medium"
+  },
+  "width_mm": 764.711989637187,
+  "length_mm": 1540.2480303043324,
+  "area_mm2": 848226.9040337321,
+  "volume_mm3": 147040745.72234097,
+  "inclination_deg": {
+    "value": 33.64277232173424,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 31068,
+  "defect_id": "roof",
+  "shots_used": 6,
+  "pose_confidence": "low",
+  "scale_source": "card_verified"
+}

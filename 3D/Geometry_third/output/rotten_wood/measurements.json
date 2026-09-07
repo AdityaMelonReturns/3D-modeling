@@ -1,0 +1,28 @@
+{
+  "depth_mm": {
+    "max": 1701.012512819628,
+    "mean": 746.4173779854925,
+    "confidence": "medium"
+  },
+  "width_mm": 1070.5103540112486,
+  "length_mm": 1893.4379613075603,
+  "area_mm2": 1449431.8117983893,
+  "volume_mm3": 1081881092.5313156,
+  "inclination_deg": {
+    "value": 77.65628986614252,
+    "source_agreement": true,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 92811,
+  "defect_id": "rotten_wood",
+  "shots_used": 7,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "local_depth_crosscheck": {
+    "da3_median_m": 2.0894598960876465,
+    "depth_pro_median_m": 3.31180477142334,
+    "disagreement_pct": 58.500518608873065,
+    "agrees": false
+  }
+}
