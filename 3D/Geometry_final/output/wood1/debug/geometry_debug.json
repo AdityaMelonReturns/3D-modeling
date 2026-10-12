@@ -1,0 +1,268 @@
+{
+  "gravity_agreement": 1.0245779244829198,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 1.0253143190020975,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.1462966011690832,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 2.5314319002097463,
+      "detail": "Depth Pro predicted 14.6cm for a known 15cm ruler (2.5% off) -> applying 1.025x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.6006122407674271,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.24974515971958675,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 39.93877592325729,
+      "detail": "Depth Pro predicted 25.0cm for a known 15cm ruler (39.9% off) -> applying 0.601x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.16254975775264344,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.922794362008581,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 83.74502422473566,
+      "detail": "Depth Pro predicted 92.3cm for a known 15cm ruler (83.7% off) -> applying 0.163x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3089432578616089,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.48552605108861924,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 69.10567421383911,
+      "detail": "Depth Pro predicted 48.6cm for a known 15cm ruler (69.1% off) -> applying 0.309x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.11791729349467568,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.2720780434701289,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 88.20827065053243,
+      "detail": "Depth Pro predicted 127.2cm for a known 15cm ruler (88.2% off) -> applying 0.118x correction"
+    }
+  ],
+  "camera_centers": {
+    "wood1__shot_02": [
+      0.1033324746323172,
+      0.39456718803337587,
+      -0.28436120038407986
+    ],
+    "wood1__shot_03": [
+      0.08598061923973066,
+      0.3185990469762352,
+      -0.24851245627426088
+    ],
+    "wood1__shot_04": [
+      0.15127674831317028,
+      0.04948875269188724,
+      -0.11739573427840005
+    ],
+    "wood1__shot_05": [
+      0.00015143373817489144,
+      -6.554740698186275e-05,
+      -0.00027920215810943244
+    ],
+    "wood1__shot_06": [
+      -0.02533900741949023,
+      0.07392426378121367,
+      -0.022388933509961885
+    ]
+  },
+  "mean_conf_per_shot": {
+    "wood1__shot_02": 1.3613921403884888,
+    "wood1__shot_03": 1.4951859712600708,
+    "wood1__shot_04": 1.8426575660705566,
+    "wood1__shot_05": 2.1518375873565674,
+    "wood1__shot_06": 1.8145719766616821
+  },
+  "v1_quality_gate": {
+    "wood1__shot_01": {
+      "usable": false,
+      "box_2d": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "defect_type_guess": "other",
+      "reason": "No clear defect such as hole, crack, peeling paint, or rot is visible in the image.",
+      "box_rel_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "box": [
+        0,
+        0,
+        1919,
+        995
+      ],
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 1000, 1000], \"defect_type_guess\": \"other\", \"reason\": \"No clear defect such as hole, crack, peeling paint, or rot is visible in the image.\"}",
+      "source": "qwen"
+    },
+    "wood1__shot_02": {
+      "usable": true,
+      "box_2d": [
+        478,
+        473,
+        549,
+        649
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A visible crack is present in the red-painted wooden surface.",
+      "box_rel_1000": [
+        478,
+        473,
+        549,
+        649
+      ],
+      "box": [
+        918,
+        471,
+        1054,
+        646
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [478, 473, 549, 649], \"defect_type_guess\": \"crack\", \"reason\": \"A visible crack is present in the red-painted wooden surface.\"}",
+      "source": "qwen"
+    },
+    "wood1__shot_03": {
+      "usable": true,
+      "box_2d": [
+        434,
+        535,
+        524,
+        660
+      ],
+      "defect_type_guess": "rot",
+      "reason": "A visible area of decayed wood is present on the deck railing.",
+      "box_rel_1000": [
+        434,
+        535,
+        524,
+        660
+      ],
+      "box": [
+        833,
+        533,
+        1006,
+        657
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [434, 535, 524, 660], \"defect_type_guess\": \"rot\", \"reason\": \"A visible area of decayed wood is present on the deck railing.\"}",
+      "source": "qwen"
+    },
+    "wood1__shot_04": {
+      "usable": true,
+      "box_2d": [
+        465,
+        593,
+        574,
+        648
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows clear signs of rot with dark, decaying material and crumbling texture.",
+      "box_rel_1000": [
+        465,
+        593,
+        574,
+        648
+      ],
+      "box": [
+        893,
+        591,
+        1102,
+        645
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [465, 593, 574, 648], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows clear signs of rot with dark, decaying material and crumbling texture.\"}",
+      "source": "qwen"
+    },
+    "wood1__shot_05": {
+      "usable": true,
+      "box_2d": [
+        433,
+        462,
+        663,
+        955
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A clear crack is visible in the red wooden surface, with peeling paint and exposed wood.",
+      "box_rel_1000": [
+        433,
+        462,
+        663,
+        955
+      ],
+      "box": [
+        831,
+        460,
+        1273,
+        951
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [433, 462, 663, 955], \"defect_type_guess\": \"crack\", \"reason\": \"A clear crack is visible in the red wooden surface, with peeling paint and exposed wood.\"}",
+      "source": "qwen"
+    },
+    "wood1__shot_06": {
+      "usable": true,
+      "box_2d": [
+        416,
+        392,
+        528,
+        667
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows significant decay with dark, crumbling material indicating rot.",
+      "box_rel_1000": [
+        416,
+        392,
+        528,
+        667
+      ],
+      "box": [
+        799,
+        390,
+        1014,
+        664
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [416, 392, 528, 667], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows significant decay with dark, crumbling material indicating rot.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "wood1__shot_02": {
+      "matches": false,
+      "confidence": 0.3,
+      "reason": "The red region covers a painted surface with minor wear, not a structural defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.3, \"reason\": \"The red region covers a painted surface with minor wear, not a structural defect like a hole or decay.\"}"
+    },
+    "wood1__shot_03": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region covers a non-defective area of the wood surface.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region covers a non-defective area of the wood surface.\"}"
+    },
+    "wood1__shot_04": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red region precisely outlines a visible area of decayed wood with missing material.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red region precisely outlines a visible area of decayed wood with missing material.\"}"
+    },
+    "wood1__shot_05": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely highlights a large, dark, deteriorated area consistent with rotten wood.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely highlights a large, dark, deteriorated area consistent with rotten wood.\"}"
+    },
+    "wood1__shot_06": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region appears to mark a paint stain or discoloration, not a structural defect like rot or missing material.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region appears to mark a paint stain or discoloration, not a structural defect like rot or missing material.\"}"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "gravity_agreement": 1.0375816291435467,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.45494377653614076,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3297110714252929,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 54.50562234638592,
+      "detail": "Depth Pro predicted 33.0cm for a known 15cm ruler (54.5% off) -> applying 0.455x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.39375660554276587,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3809459902094481,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 60.62433944572341,
+      "detail": "Depth Pro predicted 38.1cm for a known 15cm ruler (60.6% off) -> applying 0.394x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.45076307575764685,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3327690489019727,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 54.92369242423531,
+      "detail": "Depth Pro predicted 33.3cm for a known 15cm ruler (54.9% off) -> applying 0.451x correction"
+    }
+  ],
+  "camera_centers": {
+    "roof__shot_03": [
+      0.007217346571267713,
+      0.28252145375237764,
+      -0.3284081178250972
+    ],
+    "roof__shot_04": [
+      -0.15291028086009917,
+      -0.04774908682949383,
+      -0.04331345169705228
+    ],
+    "roof__shot_05": [
+      -0.00019563221141888137,
+      2.1738001733245872e-05,
+      -0.00013722665856858457
+    ]
+  },
+  "mean_conf_per_shot": {
+    "roof__shot_03": 3.3089418411254883,
+    "roof__shot_04": 3.7374162673950195,
+    "roof__shot_05": 4.947218418121338
+  },
+  "v1_quality_gate": {
+    "roof__shot_01": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"No visible defect matching the expected criteria.\"}",
+      "source": "qwen"
+    },
+    "roof__shot_02": {
+      "usable": false,
+      "box_2d": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "defect_type_guess": "other",
+      "reason": "The photo shows a ruler and shadow, not a crack or gap.",
+      "box_rel_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "box": [
+        0,
+        0,
+        1919,
+        995
+      ],
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 1000, 1000], \"defect_type_guess\": \"other\", \"reason\": \"The photo shows a ruler and shadow, not a crack or gap.\"}",
+      "source": "qwen"
+    },
+    "roof__shot_03": {
+      "usable": true,
+      "box_2d": [
+        587,
+        123,
+        763,
+        323
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A clear linear gap is visible between roof shingles.",
+      "box_rel_1000": [
+        587,
+        123,
+        763,
+        323
+      ],
+      "box": [
+        1127,
+        123,
+        1465,
+        322
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [587, 123, 763, 323], \"defect_type_guess\": \"crack\", \"reason\": \"A clear linear gap is visible between roof shingles.\"}",
+      "source": "qwen"
+    },
+    "roof__shot_04": {
+      "usable": true,
+      "box_2d": [
+        372,
+        159,
+        602,
+        282
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A clear linear crack is visible in the roof surface.",
+      "box_rel_1000": [
+        372,
+        159,
+        602,
+        282
+      ],
+      "box": [
+        714,
+        158,
+        1156,
+        281
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [372, 159, 602, 282], \"defect_type_guess\": \"crack\", \"reason\": \"A clear linear crack is visible in the roof surface.\"}",
+      "source": "qwen"
+    },
+    "roof__shot_05": {
+      "usable": true,
+      "box_2d": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "defect_type_guess": "crack",
+      "reason": "The image shows distinct lines and gaps in the asphalt surface, indicating cracks.",
+      "box_rel_1000": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "box": [
+        0,
+        0,
+        1919,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [0, 0, 1000, 1000], \"defect_type_guess\": \"crack\", \"reason\": \"The image shows distinct lines and gaps in the asphalt surface, indicating cracks.\"}",
+      "source": "qwen"
+    },
+    "roof__shot_06": {
+      "usable": false,
+      "box_2d": [
+        0,
+        652,
+        52,
+        877
+      ],
+      "defect_type_guess": "other",
+      "reason": "The defect is not a crack or gap but a peeling paint edge.",
+      "box_rel_1000": [
+        0,
+        652,
+        52,
+        877
+      ],
+      "box": [
+        0,
+        649,
+        100,
+        873
+      ],
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 652, 52, 877], \"defect_type_guess\": \"other\", \"reason\": \"The defect is not a crack or gap but a peeling paint edge.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "roof__shot_03": {
+      "matches": false,
+      "confidence": 0.3,
+      "reason": "The red overlay does not tightly follow the crack's edge.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.3, \"reason\": \"The red overlay does not tightly follow the crack's edge.\"}"
+    },
+    "roof__shot_04": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red line does not tightly follow a crack or gap but appears to be a scribble or marker line.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red line does not tightly follow a crack or gap but appears to be a scribble or marker line.\"}"
+    },
+    "roof__shot_05": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region covers a shadow and background, not a crack or gap.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region covers a shadow and background, not a crack or gap.\"}"
+    }
+  }
+}

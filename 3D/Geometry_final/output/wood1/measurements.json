@@ -1,0 +1,27 @@
+{
+  "depth_mm": {
+    "max": 543.1855423378627,
+    "mean": 151.27569936301518,
+    "confidence": "medium"
+  },
+  "width_mm": 283.35480932447365,
+  "length_mm": 1327.376460744444,
+  "area_mm2": 224417.71027187692,
+  "volume_mm3": 33948946.0708247,
+  "inclination_deg": {
+    "value": 75.02200307631682,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 3306,
+  "defect_id": "wood1",
+  "shots_used": 5,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "wood1__shot_02",
+    "wood1__shot_03",
+    "wood1__shot_06"
+  ]
+}

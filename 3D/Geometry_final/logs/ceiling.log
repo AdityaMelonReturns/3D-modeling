@@ -1,0 +1,184 @@
+=== [A] Loading defect set: ceiling ===
+9 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:01<18:32,  1.56s/it]Loading weights:   0%|          | 3/713 [00:01<05:29,  2.15it/s]Loading weights:   1%|▏         | 9/713 [00:01<01:29,  7.87it/s]Loading weights:   2%|▏         | 14/713 [00:01<00:54, 12.81it/s]Loading weights:   3%|▎         | 18/713 [00:02<00:55, 12.52it/s]Loading weights:   3%|▎         | 21/713 [00:02<00:48, 14.15it/s]Loading weights:   4%|▎         | 25/713 [00:02<00:41, 16.42it/s]Loading weights:   4%|▍         | 28/713 [00:02<00:40, 16.92it/s]Loading weights:   5%|▌         | 36/713 [00:02<00:27, 24.91it/s]Loading weights:   5%|▌         | 39/713 [00:03<00:30, 21.97it/s]Loading weights:   6%|▋         | 46/713 [00:03<00:24, 26.78it/s]Loading weights:   7%|▋         | 49/713 [00:03<00:28, 23.54it/s]Loading weights:   8%|▊         | 56/713 [00:03<00:20, 32.06it/s]Loading weights:   8%|▊         | 60/713 [00:03<00:25, 25.19it/s]Loading weights:   9%|▉         | 64/713 [00:03<00:23, 27.61it/s]Loading weights:  10%|▉         | 68/713 [00:04<00:22, 28.14it/s]Loading weights:  10%|█         | 72/713 [00:04<00:24, 26.36it/s]Loading weights:  11%|█         | 75/713 [00:04<00:27, 23.38it/s]Loading weights:  11%|█▏        | 81/713 [00:04<00:23, 26.76it/s]Loading weights:  12%|█▏        | 86/713 [00:04<00:22, 27.66it/s]Loading weights:  13%|█▎        | 92/713 [00:04<00:20, 29.60it/s]Loading weights:  14%|█▎        | 97/713 [00:05<00:19, 31.85it/s]Loading weights:  14%|█▍        | 102/713 [00:05<00:17, 34.09it/s]Loading weights:  15%|█▍        | 106/713 [00:05<00:19, 30.74it/s]Loading weights:  16%|█▌        | 113/713 [00:05<00:20, 29.46it/s]Loading weights:  17%|█▋        | 119/713 [00:05<00:17, 33.11it/s]Loading weights:  17%|█▋        | 124/713 [00:05<00:16, 34.71it/s]Loading weights:  18%|█▊        | 128/713 [00:06<00:18, 30.82it/s]Loading weights:  19%|█▊        | 132/713 [00:06<00:18, 31.59it/s]Loading weights:  19%|█▉        | 136/713 [00:06<00:21, 26.61it/s]Loading weights:  19%|█▉        | 139/713 [00:06<00:23, 24.94it/s]Loading weights:  20%|██        | 144/713 [00:06<00:18, 30.09it/s]Loading weights:  21%|██        | 148/713 [00:06<00:23, 23.98it/s]Loading weights:  22%|██▏       | 157/713 [00:07<00:17, 32.53it/s]Loading weights:  23%|██▎       | 161/713 [00:07<00:18, 29.84it/s]Loading weights:  24%|██▎       | 168/713 [00:07<00:16, 33.02it/s]Loading weights:  24%|██▍       | 172/713 [00:07<00:17, 30.41it/s]Loading weights:  25%|██▌       | 179/713 [00:07<00:15, 33.65it/s]Loading weights:  26%|██▌       | 183/713 [00:07<00:17, 30.75it/s]Loading weights:  27%|██▋       | 190/713 [00:08<00:15, 33.89it/s]Loading weights:  27%|██▋       | 194/713 [00:08<00:16, 31.16it/s]Loading weights:  28%|██▊       | 201/713 [00:08<00:14, 34.29it/s]Loading weights:  29%|██▉       | 205/713 [00:08<00:16, 30.98it/s]Loading weights:  30%|██▉       | 212/713 [00:08<00:14, 34.51it/s]Loading weights:  30%|███       | 216/713 [00:08<00:15, 31.20it/s]Loading weights:  31%|███       | 220/713 [00:09<00:16, 29.22it/s]Loading weights:  31%|███▏      | 223/713 [00:09<00:17, 28.50it/s]Loading weights:  32%|███▏      | 226/713 [00:09<00:19, 24.77it/s]Loading weights:  33%|███▎      | 234/713 [00:09<00:16, 29.92it/s]Loading weights:  33%|███▎      | 237/713 [00:09<00:18, 26.17it/s]Loading weights:  34%|███▍      | 243/713 [00:09<00:14, 32.68it/s]Loading weights:  35%|███▍      | 247/713 [00:10<00:19, 24.39it/s]Loading weights:  36%|███▌      | 256/713 [00:10<00:14, 32.36it/s]Loading weights:  36%|███▋      | 260/713 [00:10<00:16, 28.22it/s]Loading weights:  37%|███▋      | 267/713 [00:10<00:14, 31.43it/s]Loading weights:  38%|███▊      | 271/713 [00:10<00:15, 29.16it/s]Loading weights:  39%|███▉      | 277/713 [00:11<00:14, 30.61it/s]Loading weights:  39%|███▉      | 281/713 [00:11<00:15, 28.64it/s]Loading weights:  41%|████      | 289/713 [00:11<00:14, 29.72it/s]Loading weights:  41%|████▏     | 295/713 [00:11<00:12, 33.11it/s]Loading weights:  42%|████▏     | 300/713 [00:11<00:12, 33.96it/s]Loading weights:  43%|████▎     | 304/713 [00:11<00:14, 27.97it/s]Loading weights:  44%|████▎     | 311/713 [00:12<00:15, 25.80it/s]Loading weights:  44%|████▍     | 316/713 [00:12<00:13, 29.27it/s]Loading weights:  45%|████▍     | 320/713 [00:12<00:18, 20.76it/s]Loading weights:  45%|████▌     | 323/713 [00:12<00:19, 19.83it/s]Loading weights:  46%|████▌     | 326/713 [00:13<00:18, 20.59it/s]Loading weights:  46%|████▋     | 330/713 [00:13<00:16, 23.70it/s]Loading weights:  47%|████▋     | 333/713 [00:13<00:16, 22.79it/s]Loading weights:  47%|████▋     | 336/713 [00:13<00:28, 13.41it/s]Loading weights:  48%|████▊     | 344/713 [00:14<00:18, 20.44it/s]Loading weights:  49%|████▊     | 347/713 [00:14<00:18, 19.37it/s]Loading weights:  49%|████▉     | 351/713 [00:14<00:17, 21.01it/s]Loading weights:  50%|████▉     | 356/713 [00:14<00:15, 23.09it/s]Loading weights:  51%|█████     | 361/713 [00:14<00:13, 26.56it/s]Loading weights:  51%|█████▏    | 366/713 [00:14<00:11, 29.50it/s]Loading weights:  52%|█████▏    | 370/713 [00:14<00:12, 27.74it/s]Loading weights:  53%|█████▎    | 377/713 [00:15<00:10, 31.24it/s]Loading weights:  53%|█████▎    | 381/713 [00:15<00:11, 27.81it/s]Loading weights:  54%|█████▍    | 386/713 [00:15<00:10, 31.98it/s]Loading weights:  55%|█████▍    | 390/713 [00:15<00:13, 23.99it/s]Loading weights:  56%|█████▋    | 402/713 [00:15<00:07, 41.08it/s]Loading weights:  60%|█████▉    | 427/713 [00:15<00:03, 81.15it/s]Loading weights:  63%|██████▎   | 449/713 [00:16<00:02, 111.75it/s]Loading weights:  66%|██████▋   | 474/713 [00:16<00:01, 142.95it/s]Loading weights:  70%|███████   | 500/713 [00:16<00:01, 166.90it/s]Loading weights:  74%|███████▍  | 526/713 [00:16<00:01, 186.07it/s]Loading weights:  77%|███████▋  | 548/713 [00:16<00:00, 189.85it/s]Loading weights:  81%|████████  | 579/713 [00:16<00:00, 221.42it/s]Loading weights:  85%|████████▍ | 604/713 [00:16<00:00, 227.88it/s]Loading weights:  88%|████████▊ | 630/713 [00:16<00:00, 234.04it/s]Loading weights:  92%|█████████▏| 656/713 [00:16<00:00, 240.78it/s]Loading weights:  96%|█████████▌| 682/713 [00:16<00:00, 244.18it/s]Loading weights:  99%|█████████▉| 707/713 [00:17<00:00, 101.19it/s]Loading weights: 100%|██████████| 713/713 [00:17<00:00, 40.47it/s] 
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+ceiling__shot_01: Qwen box [516, 234, 768, 555] (guess: hole) - The image clearly shows a large hole in the wall with exposed material.
+ceiling__shot_02: Qwen box [384, 356, 929, 647] (guess: hole) - The wall shows a clear, large hole with missing plaster and exposed inner material.
+ceiling__shot_03: Qwen box [403, 375, 998, 598] (guess: hole) - The image clearly shows a hole in the wall with missing material.
+ceiling__shot_04: Qwen box [344, 256, 1121, 776] (guess: hole) - The image clearly shows a hole in the wall with visible damage and missing material.
+ceiling__shot_05: Qwen box [545, 355, 1119, 780] (guess: hole) - The image clearly shows a hole in the wall with exposed inner material.
+ceiling__shot_06: Qwen box [493, 137, 1148, 661] (guess: hole) - The image clearly shows a hole in the wall with missing material.
+ceiling__shot_07: Qwen box [543, 332, 1025, 687] (guess: hole) - The image clearly shows a hole in the wall with missing plaster and exposed inner material.
+ceiling__shot_08: Qwen box [267, 544, 877, 711] (guess: hole) - A clear hole is visible in the wall with exposed material underneath.
+ceiling__shot_09: Qwen box [624, 530, 960, 706] (guess: hole) - A clear hole in the wall is visible with missing plaster and exposed interior material.
+9/9 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.09929895401000977 seconds. Shape:  torch.Size([9, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.27453160285949707 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.00048089027404785156 seconds[0m
+[geometry_da3] inferred 9 views jointly
+  ceiling__shot_01: depth range 0.35-2.07 m, mean conf 1.40
+  ceiling__shot_02: depth range 0.15-1.62 m, mean conf 1.60
+  ceiling__shot_03: depth range 0.27-1.59 m, mean conf 1.64
+  ceiling__shot_04: depth range 0.21-1.38 m, mean conf 1.64
+  ceiling__shot_05: depth range 0.12-1.47 m, mean conf 1.58
+  ceiling__shot_06: depth range 0.25-1.50 m, mean conf 1.54
+  ceiling__shot_07: depth range 0.16-1.56 m, mean conf 1.91
+  ceiling__shot_08: depth range 0.24-1.65 m, mean conf 1.49
+  ceiling__shot_09: depth range 0.30-1.88 m, mean conf 1.53
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  ceiling__shot_01 <-> ceiling__shot_02: 0.450
+  ceiling__shot_01 <-> ceiling__shot_03: 0.568
+  ceiling__shot_01 <-> ceiling__shot_04: 0.658
+  ceiling__shot_01 <-> ceiling__shot_05: 0.522
+  ceiling__shot_01 <-> ceiling__shot_06: 0.616
+  ceiling__shot_01 <-> ceiling__shot_07: 0.431
+  ceiling__shot_01 <-> ceiling__shot_08: 0.542
+  ceiling__shot_01 <-> ceiling__shot_09: 0.219
+  ceiling__shot_02 <-> ceiling__shot_03: 0.147
+  ceiling__shot_02 <-> ceiling__shot_04: 0.235
+  ceiling__shot_02 <-> ceiling__shot_05: 0.118
+  ceiling__shot_02 <-> ceiling__shot_06: 0.221
+  ceiling__shot_02 <-> ceiling__shot_07: 0.057
+  ceiling__shot_02 <-> ceiling__shot_08: 0.156
+  ceiling__shot_02 <-> ceiling__shot_09: 0.320
+  ceiling__shot_03 <-> ceiling__shot_04: 0.224
+  ceiling__shot_03 <-> ceiling__shot_05: 0.197
+  ceiling__shot_03 <-> ceiling__shot_06: 0.264
+  ceiling__shot_03 <-> ceiling__shot_07: 0.200
+  ceiling__shot_03 <-> ceiling__shot_08: 0.058
+  ceiling__shot_03 <-> ceiling__shot_09: 0.406
+  ceiling__shot_04 <-> ceiling__shot_05: 0.141
+  ceiling__shot_04 <-> ceiling__shot_06: 0.096
+  ceiling__shot_04 <-> ceiling__shot_07: 0.237
+  ceiling__shot_04 <-> ceiling__shot_08: 0.280
+  ceiling__shot_04 <-> ceiling__shot_09: 0.553
+  ceiling__shot_05 <-> ceiling__shot_06: 0.108
+  ceiling__shot_05 <-> ceiling__shot_07: 0.100
+  ceiling__shot_05 <-> ceiling__shot_08: 0.234
+  ceiling__shot_05 <-> ceiling__shot_09: 0.425
+  ceiling__shot_06 <-> ceiling__shot_07: 0.202
+  ceiling__shot_06 <-> ceiling__shot_08: 0.312
+  ceiling__shot_06 <-> ceiling__shot_09: 0.528
+  ceiling__shot_07 <-> ceiling__shot_08: 0.212
+  ceiling__shot_07 <-> ceiling__shot_09: 0.326
+  ceiling__shot_08 <-> ceiling__shot_09: 0.366
+gravity-vector cross-shot agreement: 0.977
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+ceiling__shot_01: no ruler detected
+ceiling__shot_02: no ruler detected
+ceiling__shot_03: no ruler detected
+ceiling__shot_04: Depth Pro predicted 38.7cm for a known 15cm ruler (61.2% off) -> applying 0.388x correction
+ceiling__shot_05: Depth Pro predicted 32.4cm for a known 15cm ruler (53.7% off) -> applying 0.463x correction
+ceiling__shot_06: Depth Pro predicted 35.2cm for a known 15cm ruler (57.4% off) -> applying 0.426x correction
+ceiling__shot_07: Depth Pro predicted 37.0cm for a known 15cm ruler (59.4% off) -> applying 0.406x correction
+ceiling__shot_08: Depth Pro predicted 39.2cm for a known 15cm ruler (61.7% off) -> applying 0.383x correction
+ceiling__shot_09: Depth Pro predicted 27.7cm for a known 15cm ruler (45.9% off) -> applying 0.541x correction
+
+=== [E] Segmentation (SAM2) ===
+ceiling__shot_01: SAM2 score=0.826, 15839px core / 21404px dilated
+ceiling__shot_02: SAM2 score=0.905, 32353px core / 46025px dilated
+ceiling__shot_03: SAM2 score=0.822, 29897px core / 43937px dilated
+ceiling__shot_04: SAM2 score=0.898, 56332px core / 90532px dilated
+ceiling__shot_05: SAM2 score=0.819, 36150px core / 53651px dilated
+ceiling__shot_06: SAM2 score=0.854, 63492px core / 88465px dilated
+ceiling__shot_07: SAM2 score=0.850, 30475px core / 41560px dilated
+ceiling__shot_08: SAM2 score=0.850, 16415px core / 30786px dilated
+ceiling__shot_09: SAM2 score=0.851, 11835px core / 16475px dilated
+
+=== [V2] Qwen mask verification ===
+ceiling__shot_01: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a defect; it appears to mark a non-defective area or an unrelated object.
+ceiling__shot_02: [OK] confidence=0.95 - The red overlay precisely outlines the missing wall material, indicating a defect consistent with the description.
+ceiling__shot_03: [OK] confidence=0.95 - The red overlay accurately outlines the missing plaster around the defect.
+ceiling__shot_04: [OK] confidence=0.95 - The red overlay accurately outlines the missing plaster area.
+ceiling__shot_05: [OK] confidence=0.95 - The red overlay accurately outlines the missing plaster area.
+ceiling__shot_06: [OK] confidence=0.95 - The red overlay accurately outlines the damaged area where plaster is missing.
+ceiling__shot_07: [OK] confidence=0.95 - The red overlay accurately outlines the missing plaster area.
+ceiling__shot_08: [OK] confidence=0.95 - The red overlay accurately outlines the damaged area where material is missing from the wall.
+ceiling__shot_09: [OK] confidence=0.95 - The red overlay precisely outlines the missing plaster area, matching the defect.
+
+=== [F] Back-projection + fusion ===
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+fused defect points: 9698, surrounding points: 8353
+
+=== [G] Reference plane fit ===
+plane normal=[ 0.91307381 -0.06789974 -0.40210179], inlier_ratio=0.32
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 305.3045529466099,
+    "mean": 75.09855529138359,
+    "confidence": "medium"
+  },
+  "width_mm": 317.68366898122014,
+  "length_mm": 882.6205971564891,
+  "area_mm2": 213460.89867678285,
+  "volume_mm3": 16030605.101826807,
+  "inclination_deg": {
+    "value": 66.5568531227659,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 9698,
+  "defect_id": "ceiling",
+  "shots_used": 9,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "ceiling__shot_01"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/ceiling/defect_pointcloud.ply (18051 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      305.3045529466099
+    ],
+    [
+      "severe",
+      "area_mm2",
+      213460.89867678285
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "ceiling",
+    "severity": "severe",
+    "description": "A large, jagged hole in the ceiling with exposed interior structure and damaged drywall.",
+    "measurement_plausible": false,
+    "notes": "The measured area and volume are implausibly large for a ceiling defect of this nature; the width and length measurements appear inconsistent with the visual scale of the hole, suggesting potential errors in depth or geometry estimation."
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/ceiling/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/ceiling/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/ceiling

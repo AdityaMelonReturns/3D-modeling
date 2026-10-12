@@ -1,0 +1,193 @@
+{
+  "gravity_agreement": 1.0347323947464615,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.26269361749230674,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.5710074018238868,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 73.73063825076933,
+      "detail": "Depth Pro predicted 57.1cm for a known 15cm ruler (73.7% off) -> applying 0.263x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3365897868669785,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.44564632039557556,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 66.34102131330215,
+      "detail": "Depth Pro predicted 44.6cm for a known 15cm ruler (66.3% off) -> applying 0.337x correction"
+    }
+  ],
+  "camera_centers": {
+    "hole__shot_01": [
+      0.21436756164160764,
+      0.40212835598308216,
+      -1.0374988846922377
+    ],
+    "hole__shot_02": [
+      0.03848348036788929,
+      0.20370087249369462,
+      -0.2694216808279021
+    ],
+    "hole__shot_03": [
+      0.05087614752086256,
+      -0.02724724028502884,
+      0.12479988521529944
+    ],
+    "hole__shot_04": [
+      -0.07396921788718458,
+      -0.21220125898552822,
+      0.03519640356419229
+    ],
+    "hole__shot_05": [
+      -1.287320712197063e-05,
+      -5.274358933894032e-05,
+      -0.0001448709453092657
+    ],
+    "hole__shot_06": [
+      0.21756337835452624,
+      -0.028797214193500675,
+      -0.4817649095719342
+    ]
+  },
+  "mean_conf_per_shot": {
+    "hole__shot_01": 1.4982229471206665,
+    "hole__shot_02": 2.6612322330474854,
+    "hole__shot_03": 4.443532943725586,
+    "hole__shot_04": 2.600623369216919,
+    "hole__shot_05": 4.259206771850586,
+    "hole__shot_06": 2.2731165885925293
+  },
+  "v1_quality_gate": {
+    "hole__shot_01": {
+      "usable": true,
+      "box": [
+        900,
+        420,
+        1080,
+        650
+      ],
+      "source": "manual",
+      "neg_points": null
+    },
+    "hole__shot_02": {
+      "usable": true,
+      "box": [
+        720,
+        400,
+        870,
+        540
+      ],
+      "source": "manual",
+      "neg_points": null
+    },
+    "hole__shot_03": {
+      "usable": true,
+      "box": [
+        870,
+        430,
+        1050,
+        650
+      ],
+      "source": "manual",
+      "neg_points": null
+    },
+    "hole__shot_04": {
+      "usable": true,
+      "box": [
+        860,
+        370,
+        1010,
+        500
+      ],
+      "source": "manual",
+      "neg_points": null
+    },
+    "hole__shot_05": {
+      "usable": true,
+      "box": [
+        870,
+        430,
+        1050,
+        650
+      ],
+      "source": "manual",
+      "neg_points": null
+    },
+    "hole__shot_06": {
+      "usable": true,
+      "box": [
+        860,
+        380,
+        1020,
+        540
+      ],
+      "source": "manual",
+      "neg_points": null
+    }
+  },
+  "v2_mask_verification": {
+    "hole__shot_01": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not accurately delineate a hole or missing material; it appears to mark a paint smear or stain.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not accurately delineate a hole or missing material; it appears to mark a paint smear or stain.\"}"
+    },
+    "hole__shot_02": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red region appears to mark a non-defect object or texture rather than a structural defect.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red region appears to mark a non-defect object or texture rather than a structural defect.\"}"
+    },
+    "hole__shot_03": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights the hole in the wall.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights the hole in the wall.\"}"
+    },
+    "hole__shot_04": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely outlines the hole in the wall, indicating a missing material defect.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely outlines the hole in the wall, indicating a missing material defect.\"}"
+    },
+    "hole__shot_05": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights a hole in the wall, consistent with a missing material defect.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights a hole in the wall, consistent with a missing material defect.\"}"
+    },
+    "hole__shot_06": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay does not accurately delineate a hole or missing material; it appears to mark a small, irregular paint smudge or imperfection.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay does not accurately delineate a hole or missing material; it appears to mark a small, irregular paint smudge or imperfection.\"}"
+    }
+  }
+}

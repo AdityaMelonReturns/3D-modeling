@@ -1,0 +1,418 @@
+{
+  "gravity_agreement": 0.9767458034432153,
+  "scale_infos": [
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.38769280725329164,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3869042633592126,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 61.23071927467083,
+      "detail": "Depth Pro predicted 38.7cm for a known 15cm ruler (61.2% off) -> applying 0.388x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4634765266306188,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3236409858563277,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 53.65234733693812,
+      "detail": "Depth Pro predicted 32.4cm for a known 15cm ruler (53.7% off) -> applying 0.463x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.42622597469026746,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.35192599444227424,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 57.37740253097326,
+      "detail": "Depth Pro predicted 35.2cm for a known 15cm ruler (57.4% off) -> applying 0.426x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4057571592067549,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3696792443372934,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 59.42428407932451,
+      "detail": "Depth Pro predicted 37.0cm for a known 15cm ruler (59.4% off) -> applying 0.406x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3830528206836907,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.391590903135168,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 61.694717931630926,
+      "detail": "Depth Pro predicted 39.2cm for a known 15cm ruler (61.7% off) -> applying 0.383x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.540826167474455,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.2773534437145832,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 45.9173832525545,
+      "detail": "Depth Pro predicted 27.7cm for a known 15cm ruler (45.9% off) -> applying 0.541x correction"
+    }
+  ],
+  "camera_centers": {
+    "ceiling__shot_01": [
+      -0.07431009577316545,
+      -0.056695127064590886,
+      -0.42056051311788145
+    ],
+    "ceiling__shot_02": [
+      0.0014113660902552345,
+      0.05626604333156988,
+      0.007975042787951437
+    ],
+    "ceiling__shot_03": [
+      -0.006419812721407209,
+      0.17626837264549766,
+      0.09286932587868409
+    ],
+    "ceiling__shot_04": [
+      -0.03832000932669717,
+      0.004269225518678452,
+      0.23327526296570172
+    ],
+    "ceiling__shot_05": [
+      -0.01569090344980486,
+      -0.020082198010526242,
+      0.09664523807728295
+    ],
+    "ceiling__shot_06": [
+      0.005499498986814455,
+      -0.06919566075585304,
+      0.18996687307370663
+    ],
+    "ceiling__shot_07": [
+      0.00029021362241008077,
+      -0.00014831498915494695,
+      -0.0002718549445916425
+    ],
+    "ceiling__shot_08": [
+      0.00941746644614011,
+      0.20698245962064082,
+      0.04577269772535546
+    ],
+    "ceiling__shot_09": [
+      0.012857887683413338,
+      0.1091904357973785,
+      -0.30694822911660924
+    ]
+  },
+  "mean_conf_per_shot": {
+    "ceiling__shot_01": 1.3975002765655518,
+    "ceiling__shot_02": 1.5988712310791016,
+    "ceiling__shot_03": 1.643416404724121,
+    "ceiling__shot_04": 1.6374222040176392,
+    "ceiling__shot_05": 1.5773274898529053,
+    "ceiling__shot_06": 1.5429887771606445,
+    "ceiling__shot_07": 1.9141823053359985,
+    "ceiling__shot_08": 1.4857784509658813,
+    "ceiling__shot_09": 1.5282655954360962
+  },
+  "v1_quality_gate": {
+    "ceiling__shot_01": {
+      "usable": true,
+      "box_2d": [
+        269,
+        235,
+        400,
+        557
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a large hole in the wall with exposed material.",
+      "box_rel_1000": [
+        269,
+        235,
+        400,
+        557
+      ],
+      "box": [
+        516,
+        234,
+        768,
+        555
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [269, 235, 400, 557], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a large hole in the wall with exposed material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_02": {
+      "usable": true,
+      "box_2d": [
+        200,
+        357,
+        484,
+        650
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The wall shows a clear, large hole with missing plaster and exposed inner material.",
+      "box_rel_1000": [
+        200,
+        357,
+        484,
+        650
+      ],
+      "box": [
+        384,
+        356,
+        929,
+        647
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [200, 357, 484, 650], \"defect_type_guess\": \"hole\", \"reason\": \"The wall shows a clear, large hole with missing plaster and exposed inner material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_03": {
+      "usable": true,
+      "box_2d": [
+        210,
+        377,
+        520,
+        600
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a hole in the wall with missing material.",
+      "box_rel_1000": [
+        210,
+        377,
+        520,
+        600
+      ],
+      "box": [
+        403,
+        375,
+        998,
+        598
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [210, 377, 520, 600], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a hole in the wall with missing material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_04": {
+      "usable": true,
+      "box_2d": [
+        179,
+        257,
+        584,
+        779
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a hole in the wall with visible damage and missing material.",
+      "box_rel_1000": [
+        179,
+        257,
+        584,
+        779
+      ],
+      "box": [
+        344,
+        256,
+        1121,
+        776
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [179, 257, 584, 779], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a hole in the wall with visible damage and missing material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_05": {
+      "usable": true,
+      "box_2d": [
+        284,
+        356,
+        583,
+        783
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a hole in the wall with exposed inner material.",
+      "box_rel_1000": [
+        284,
+        356,
+        583,
+        783
+      ],
+      "box": [
+        545,
+        355,
+        1119,
+        780
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [284, 356, 583, 783], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a hole in the wall with exposed inner material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_06": {
+      "usable": true,
+      "box_2d": [
+        257,
+        138,
+        598,
+        664
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a hole in the wall with missing material.",
+      "box_rel_1000": [
+        257,
+        138,
+        598,
+        664
+      ],
+      "box": [
+        493,
+        137,
+        1148,
+        661
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [257, 138, 598, 664], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a hole in the wall with missing material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_07": {
+      "usable": true,
+      "box_2d": [
+        283,
+        333,
+        534,
+        690
+      ],
+      "defect_type_guess": "hole",
+      "reason": "The image clearly shows a hole in the wall with missing plaster and exposed inner material.",
+      "box_rel_1000": [
+        283,
+        333,
+        534,
+        690
+      ],
+      "box": [
+        543,
+        332,
+        1025,
+        687
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [283, 333, 534, 690], \"defect_type_guess\": \"hole\", \"reason\": \"The image clearly shows a hole in the wall with missing plaster and exposed inner material.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_08": {
+      "usable": true,
+      "box_2d": [
+        139,
+        546,
+        457,
+        714
+      ],
+      "defect_type_guess": "hole",
+      "reason": "A clear hole is visible in the wall with exposed material underneath.",
+      "box_rel_1000": [
+        139,
+        546,
+        457,
+        714
+      ],
+      "box": [
+        267,
+        544,
+        877,
+        711
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [139, 546, 457, 714], \"defect_type_guess\": \"hole\", \"reason\": \"A clear hole is visible in the wall with exposed material underneath.\"}",
+      "source": "qwen"
+    },
+    "ceiling__shot_09": {
+      "usable": true,
+      "box_2d": [
+        325,
+        532,
+        500,
+        709
+      ],
+      "defect_type_guess": "hole",
+      "reason": "A clear hole in the wall is visible with missing plaster and exposed interior material.",
+      "box_rel_1000": [
+        325,
+        532,
+        500,
+        709
+      ],
+      "box": [
+        624,
+        530,
+        960,
+        706
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [325, 532, 500, 709], \"defect_type_guess\": \"hole\", \"reason\": \"A clear hole in the wall is visible with missing plaster and exposed interior material.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "ceiling__shot_01": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a defect; it appears to mark a non-defective area or an unrelated object.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a defect; it appears to mark a non-defective area or an unrelated object.\"}"
+    },
+    "ceiling__shot_02": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely outlines the missing wall material, indicating a defect consistent with the description.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely outlines the missing wall material, indicating a defect consistent with the description.\"}"
+    },
+    "ceiling__shot_03": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the missing plaster around the defect.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the missing plaster around the defect.\"}"
+    },
+    "ceiling__shot_04": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the missing plaster area.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the missing plaster area.\"}"
+    },
+    "ceiling__shot_05": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the missing plaster area.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the missing plaster area.\"}"
+    },
+    "ceiling__shot_06": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the damaged area where plaster is missing.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the damaged area where plaster is missing.\"}"
+    },
+    "ceiling__shot_07": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the missing plaster area.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the missing plaster area.\"}"
+    },
+    "ceiling__shot_08": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately outlines the damaged area where material is missing from the wall.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately outlines the damaged area where material is missing from the wall.\"}"
+    },
+    "ceiling__shot_09": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely outlines the missing plaster area, matching the defect.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely outlines the missing plaster area, matching the defect.\"}"
+    }
+  }
+}

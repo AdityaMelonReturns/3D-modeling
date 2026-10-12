@@ -1,0 +1,120 @@
+=== [A] Loading defect set: roof ===
+6 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   8%|▊         | 59/713 [00:00<00:01, 578.89it/s]Loading weights:  20%|█▉        | 140/713 [00:00<00:00, 713.74it/s]Loading weights:  31%|███       | 218/713 [00:00<00:00, 743.31it/s]Loading weights:  42%|████▏     | 302/713 [00:00<00:00, 773.56it/s]Loading weights:  55%|█████▍    | 389/713 [00:00<00:00, 798.85it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1219.92it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+roof__shot_01: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+roof__shot_02: SKIPPED - The photo shows a ruler and shadow, not a crack or gap.
+roof__shot_03: Qwen box [1127, 123, 1465, 322] (guess: crack) - A clear linear gap is visible between roof shingles.
+roof__shot_04: Qwen box [714, 158, 1156, 281] (guess: crack) - A clear linear crack is visible in the roof surface.
+roof__shot_05: Qwen box [0, 0, 1919, 995] (guess: crack) - The image shows distinct lines and gaps in the asphalt surface, indicating cracks.
+roof__shot_06: SKIPPED - The defect is not a crack or gap but a peeling paint edge.
+3/6 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.04823446273803711 seconds. Shape:  torch.Size([3, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.10933876037597656 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.00029659271240234375 seconds[0m
+[geometry_da3] inferred 3 views jointly
+  roof__shot_03: depth range 0.91-2.22 m, mean conf 3.31
+  roof__shot_04: depth range 0.20-1.34 m, mean conf 3.74
+  roof__shot_05: depth range 0.17-1.40 m, mean conf 4.95
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  roof__shot_03 <-> roof__shot_04: 0.465
+  roof__shot_03 <-> roof__shot_05: 0.433
+  roof__shot_04 <-> roof__shot_05: 0.166
+gravity-vector cross-shot agreement: 1.038
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+roof__shot_03: Depth Pro predicted 33.0cm for a known 15cm ruler (54.5% off) -> applying 0.455x correction
+roof__shot_04: Depth Pro predicted 38.1cm for a known 15cm ruler (60.6% off) -> applying 0.394x correction
+roof__shot_05: Depth Pro predicted 33.3cm for a known 15cm ruler (54.9% off) -> applying 0.451x correction
+
+=== [E] Segmentation (SAM2) ===
+roof__shot_03: SAM2 score=0.628, 5142px core / 9636px dilated
+roof__shot_04: SAM2 score=0.761, 7055px core / 12781px dilated
+roof__shot_05: SAM2 score=0.989, 1684623px core / 1765669px dilated
+
+=== [V2] Qwen mask verification ===
+roof__shot_03: [FLAGGED] confidence=0.3 - The red overlay does not tightly follow the crack's edge.
+roof__shot_04: [FLAGGED] confidence=0.2 - The red line does not tightly follow a crack or gap but appears to be a scribble or marker line.
+roof__shot_05: [FLAGGED] confidence=0.2 - The red region covers a shadow and background, not a crack or gap.
+
+=== [F] Back-projection + fusion ===
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+fused defect points: 9859, surrounding points: 2486
+
+=== [G] Reference plane fit ===
+plane normal=[ 0.80340989  0.44676051 -0.39362113], inlier_ratio=0.37
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 531.5953557932589,
+    "mean": 256.87022677328537,
+    "confidence": "medium"
+  },
+  "width_mm": 220.35414929311986,
+  "length_mm": 554.3055255273839,
+  "area_mm2": 71325.1380642517,
+  "volume_mm3": 18321304.38920022,
+  "inclination_deg": {
+    "value": 69.41022730896591,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 9859,
+  "defect_id": "roof",
+  "shots_used": 3,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "roof__shot_03",
+    "roof__shot_04",
+    "roof__shot_05"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/roof/defect_pointcloud.ply (12345 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "width_mm",
+      220.35414929311986
+    ],
+    [
+      "severe",
+      "length_mm",
+      554.3055255273839
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "roof",
+    "severity": "moderate",
+    "description": "The roof has a noticeable irregularity with a measured depth of 531mm and an inclination of 69.4 degrees, indicating a significant structural issue.",
+    "measurement_plausible": false,
+    "notes": "The measured depth of 531mm is implausible given the visible scale of the ruler (approx. 200mm) and the shadow cast; the volume and area estimates are likely inflated due to 3D reconstruction artifacts."
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/roof/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/roof/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/roof

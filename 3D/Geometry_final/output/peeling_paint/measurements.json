@@ -1,0 +1,30 @@
+{
+  "depth_mm": {
+    "max": 617.5859485640533,
+    "mean": 83.9252108381716,
+    "confidence": "medium"
+  },
+  "width_mm": 801.4783832455407,
+  "length_mm": 1910.8700777683732,
+  "area_mm2": 1038995.78618087,
+  "volume_mm3": 87197940.41520137,
+  "inclination_deg": {
+    "value": 83.10792672027131,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 38824,
+  "defect_id": "peeling_paint",
+  "shots_used": 11,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "peeling_paint__shot_01",
+    "peeling_paint__shot_02",
+    "peeling_paint__shot_03",
+    "peeling_paint__shot_04",
+    "peeling_paint__shot_05",
+    "peeling_paint__shot_07"
+  ]
+}

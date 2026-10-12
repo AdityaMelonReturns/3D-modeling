@@ -1,0 +1,513 @@
+{
+  "gravity_agreement": 1.0117570435722067,
+  "scale_infos": [
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 2.8 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 1.6398268366586484,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.09147307303839697,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 63.98268366586484,
+      "detail": "Depth Pro predicted 9.1cm for a known 15cm ruler (64.0% off) -> applying 1.640x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 1.5002069863189724,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.09998620281595406,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 50.02069863189724,
+      "detail": "Depth Pro predicted 10.0cm for a known 15cm ruler (50.0% off) -> applying 1.500x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.9080353724835609,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.1651918025943594,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 9.196462751643908,
+      "detail": "Depth Pro predicted 16.5cm for a known 15cm ruler (9.2% off) -> applying 0.908x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "no ruler detected"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4975895022300438,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3014533050390853,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 50.24104977699562,
+      "detail": "Depth Pro predicted 30.1cm for a known 15cm ruler (50.2% off) -> applying 0.498x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.7744414206296715,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.1936879872438127,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 22.555857937032854,
+      "detail": "Depth Pro predicted 19.4cm for a known 15cm ruler (22.6% off) -> applying 0.774x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4521309438683635,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.33176229593272877,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 54.78690561316365,
+      "detail": "Depth Pro predicted 33.2cm for a known 15cm ruler (54.8% off) -> applying 0.452x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.6664475056979399,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.22507399115090373,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 33.355249430206015,
+      "detail": "Depth Pro predicted 22.5cm for a known 15cm ruler (33.4% off) -> applying 0.666x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.6390133218995767,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.2347368902327408,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 36.09866781004233,
+      "detail": "Depth Pro predicted 23.5cm for a known 15cm ruler (36.1% off) -> applying 0.639x correction"
+    }
+  ],
+  "camera_centers": {
+    "peeling_paint__shot_01": [
+      0.0003792494851809549,
+      -5.815737120747129e-05,
+      -0.00031185334857876883
+    ],
+    "peeling_paint__shot_02": [
+      -0.21952942602060244,
+      -0.22909790875837066,
+      0.2659502635742381
+    ],
+    "peeling_paint__shot_03": [
+      -0.15812948083547518,
+      -0.052422849014805095,
+      0.26497854728387926
+    ],
+    "peeling_paint__shot_04": [
+      -0.2866811601627055,
+      -0.15438859230205748,
+      0.32578626307973946
+    ],
+    "peeling_paint__shot_05": [
+      0.10014992744794249,
+      -0.03174357648852566,
+      -0.02021749533559003
+    ],
+    "peeling_paint__shot_06": [
+      0.2972048603324322,
+      -0.05294353437920618,
+      0.014763311061884443
+    ],
+    "peeling_paint__shot_07": [
+      0.4154562082750122,
+      -0.006765575250672534,
+      0.021430035529306446
+    ],
+    "peeling_paint__shot_08": [
+      0.44163587961681405,
+      -0.04427060583678477,
+      -0.04396775826566468
+    ],
+    "peeling_paint__shot_09": [
+      0.5001103593686542,
+      -0.20074064399791514,
+      -0.023586583878735468
+    ],
+    "peeling_paint__shot_10": [
+      0.47764543350685074,
+      -0.20549497137054118,
+      0.051606269837222385
+    ],
+    "peeling_paint__shot_11": [
+      0.3761018068153239,
+      -0.13363880862524247,
+      0.030716120660741808
+    ]
+  },
+  "mean_conf_per_shot": {
+    "peeling_paint__shot_01": 1.2339532375335693,
+    "peeling_paint__shot_02": 1.0188835859298706,
+    "peeling_paint__shot_03": 1.1593254804611206,
+    "peeling_paint__shot_04": 1.0135198831558228,
+    "peeling_paint__shot_05": 1.0000003576278687,
+    "peeling_paint__shot_06": 1.0000022649765015,
+    "peeling_paint__shot_07": 1.0000005960464478,
+    "peeling_paint__shot_08": 1.0000005960464478,
+    "peeling_paint__shot_09": 1.0000009536743164,
+    "peeling_paint__shot_10": 1.0000019073486328,
+    "peeling_paint__shot_11": 1.000000238418579
+  },
+  "v1_quality_gate": {
+    "peeling_paint__shot_01": {
+      "usable": true,
+      "box_2d": [
+        227,
+        388,
+        975,
+        752
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The image shows significant peeling paint on the wooden railing, indicating surface damage.",
+      "box_rel_1000": [
+        227,
+        388,
+        975,
+        752
+      ],
+      "box": [
+        436,
+        386,
+        1872,
+        749
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [227, 388, 975, 752], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The image shows significant peeling paint on the wooden railing, indicating surface damage.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_02": {
+      "usable": true,
+      "box_2d": [
+        472,
+        0,
+        552,
+        999
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The vertical surface shows clear peeling paint revealing underlying material.",
+      "box_rel_1000": [
+        472,
+        0,
+        552,
+        999
+      ],
+      "box": [
+        906,
+        0,
+        1060,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [472, 0, 552, 999], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The vertical surface shows clear peeling paint revealing underlying material.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_03": {
+      "usable": true,
+      "box_2d": [
+        370,
+        0,
+        948,
+        999
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The paint is visibly peeling and flaking off the wooden surface.",
+      "box_rel_1000": [
+        370,
+        0,
+        948,
+        999
+      ],
+      "box": [
+        710,
+        0,
+        1820,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [370, 0, 948, 999], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The paint is visibly peeling and flaking off the wooden surface.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_04": {
+      "usable": true,
+      "box_2d": [
+        260,
+        0,
+        843,
+        1000
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The paint is visibly peeling and flaking off the surface.",
+      "box_rel_1000": [
+        260,
+        0,
+        843,
+        1000
+      ],
+      "box": [
+        499,
+        0,
+        1619,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [260, 0, 843, 1000], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The paint is visibly peeling and flaking off the surface.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_05": {
+      "usable": true,
+      "box_2d": [
+        474,
+        284,
+        527,
+        534
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The paint is visibly peeling and flaking off the siding, indicating deterioration.",
+      "box_rel_1000": [
+        474,
+        284,
+        527,
+        534
+      ],
+      "box": [
+        910,
+        283,
+        1012,
+        532
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [474, 284, 527, 534], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The paint is visibly peeling and flaking off the siding, indicating deterioration.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_06": {
+      "usable": true,
+      "box_2d": [
+        435,
+        425,
+        512,
+        733
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A visible crack in the siding is clearly shown in the image.",
+      "box_rel_1000": [
+        435,
+        425,
+        512,
+        733
+      ],
+      "box": [
+        835,
+        423,
+        983,
+        730
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [435, 425, 512, 733], \"defect_type_guess\": \"crack\", \"reason\": \"A visible crack in the siding is clearly shown in the image.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_07": {
+      "usable": true,
+      "box_2d": [
+        443,
+        234,
+        520,
+        631
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A clear crack is visible in the siding, indicating structural wear or damage.",
+      "box_rel_1000": [
+        443,
+        234,
+        520,
+        631
+      ],
+      "box": [
+        851,
+        233,
+        998,
+        628
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [443, 234, 520, 631], \"defect_type_guess\": \"crack\", \"reason\": \"A clear crack is visible in the siding, indicating structural wear or damage.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_08": {
+      "usable": true,
+      "box_2d": [
+        465,
+        10,
+        563,
+        734
+      ],
+      "defect_type_guess": "crack",
+      "reason": "The image shows a clear vertical crack in the siding with peeling paint and exposed wood.",
+      "box_rel_1000": [
+        465,
+        10,
+        563,
+        734
+      ],
+      "box": [
+        893,
+        10,
+        1081,
+        731
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [465, 10, 563, 734], \"defect_type_guess\": \"crack\", \"reason\": \"The image shows a clear vertical crack in the siding with peeling paint and exposed wood.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_09": {
+      "usable": true,
+      "box_2d": [
+        483,
+        34,
+        624,
+        998
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The paint is visibly peeling and flaking away from the siding, revealing underlying material.",
+      "box_rel_1000": [
+        483,
+        34,
+        624,
+        998
+      ],
+      "box": [
+        927,
+        34,
+        1198,
+        994
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [483, 34, 624, 998], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The paint is visibly peeling and flaking away from the siding, revealing underlying material.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_10": {
+      "usable": true,
+      "box_2d": [
+        496,
+        238,
+        690,
+        996
+      ],
+      "defect_type_guess": "crack",
+      "reason": "The image clearly shows a long, deep crack running along the siding, with paint peeling away and wood exposed.",
+      "box_rel_1000": [
+        496,
+        238,
+        690,
+        996
+      ],
+      "box": [
+        952,
+        237,
+        1325,
+        992
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [496, 238, 690, 996], \"defect_type_guess\": \"crack\", \"reason\": \"The image clearly shows a long, deep crack running along the siding, with paint peeling away and wood exposed.\"}",
+      "source": "qwen"
+    },
+    "peeling_paint__shot_11": {
+      "usable": true,
+      "box_2d": [
+        545,
+        175,
+        633,
+        600
+      ],
+      "defect_type_guess": "peeling_paint",
+      "reason": "The paint is visibly peeling and flaking away from the surface, indicating deterioration.",
+      "box_rel_1000": [
+        545,
+        175,
+        633,
+        600
+      ],
+      "box": [
+        1046,
+        174,
+        1215,
+        598
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [545, 175, 633, 600], \"defect_type_guess\": \"peeling_paint\", \"reason\": \"The paint is visibly peeling and flaking away from the surface, indicating deterioration.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "peeling_paint__shot_01": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a painted surface with chipped paint, not a structural defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a painted surface with chipped paint, not a structural defect like a hole or decay.\"}"
+    },
+    "peeling_paint__shot_02": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a visible defect like a hole or decay; it appears to mark a painted surface with chipping or wear.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a visible defect like a hole or decay; it appears to mark a painted surface with chipping or wear.\"}"
+    },
+    "peeling_paint__shot_03": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.\"}"
+    },
+    "peeling_paint__shot_04": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.\"}"
+    },
+    "peeling_paint__shot_05": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region appears to mark a painted surface rather than a structural defect.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region appears to mark a painted surface rather than a structural defect.\"}"
+    },
+    "peeling_paint__shot_06": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely outlines the damaged area where wood is missing or decayed.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely outlines the damaged area where wood is missing or decayed.\"}"
+    },
+    "peeling_paint__shot_07": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a hole or decayed material; it appears to cover a small, irregular mark that may be paint or a scratch.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a hole or decayed material; it appears to cover a small, irregular mark that may be paint or a scratch.\"}"
+    },
+    "peeling_paint__shot_08": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights the area of missing material and peeling paint, indicating decay or damage.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights the area of missing material and peeling paint, indicating decay or damage.\"}"
+    },
+    "peeling_paint__shot_09": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights the damaged, missing material area.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights the damaged, missing material area.\"}"
+    },
+    "peeling_paint__shot_10": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights a visible area of missing or decayed material on the siding.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights a visible area of missing or decayed material on the siding.\"}"
+    },
+    "peeling_paint__shot_11": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights a missing section of material consistent with decay or damage.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights a missing section of material consistent with decay or damage.\"}"
+    }
+  }
+}

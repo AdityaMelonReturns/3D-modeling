@@ -1,0 +1,143 @@
+=== [A] Loading defect set: wood1 ===
+6 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   7%|▋         | 49/713 [00:00<00:01, 483.72it/s]Loading weights:  17%|█▋        | 124/713 [00:00<00:00, 632.23it/s]Loading weights:  27%|██▋       | 191/713 [00:00<00:00, 647.32it/s]Loading weights:  36%|███▌      | 257/713 [00:00<00:00, 651.93it/s]Loading weights:  45%|████▌     | 324/713 [00:00<00:00, 654.14it/s]Loading weights:  57%|█████▋    | 404/713 [00:00<00:00, 703.35it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1045.00it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+wood1__shot_01: SKIPPED - No clear defect such as hole, crack, peeling paint, or rot is visible in the image.
+wood1__shot_02: Qwen box [918, 471, 1054, 646] (guess: crack) - A visible crack is present in the red-painted wooden surface.
+wood1__shot_03: Qwen box [833, 533, 1006, 657] (guess: rot) - A visible area of decayed wood is present on the deck railing.
+wood1__shot_04: Qwen box [893, 591, 1102, 645] (guess: rot) - The wood shows clear signs of rot with dark, decaying material and crumbling texture.
+wood1__shot_05: Qwen box [831, 460, 1273, 951] (guess: crack) - A clear crack is visible in the red wooden surface, with peeling paint and exposed wood.
+wood1__shot_06: Qwen box [799, 390, 1014, 664] (guess: rot) - The wood shows significant decay with dark, crumbling material indicating rot.
+5/6 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.04977822303771973 seconds. Shape:  torch.Size([5, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.11522936820983887 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.00036525726318359375 seconds[0m
+[geometry_da3] inferred 5 views jointly
+  wood1__shot_02: depth range 0.43-2.23 m, mean conf 1.36
+  wood1__shot_03: depth range 0.49-2.12 m, mean conf 1.50
+  wood1__shot_04: depth range 0.50-2.46 m, mean conf 1.84
+  wood1__shot_05: depth range 0.46-1.71 m, mean conf 2.15
+  wood1__shot_06: depth range 0.46-1.81 m, mean conf 1.81
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  wood1__shot_02 <-> wood1__shot_03: 0.086
+  wood1__shot_02 <-> wood1__shot_04: 0.386
+  wood1__shot_02 <-> wood1__shot_05: 0.497
+  wood1__shot_02 <-> wood1__shot_06: 0.434
+  wood1__shot_03 <-> wood1__shot_04: 0.306
+  wood1__shot_03 <-> wood1__shot_05: 0.413
+  wood1__shot_03 <-> wood1__shot_06: 0.351
+  wood1__shot_04 <-> wood1__shot_05: 0.198
+  wood1__shot_04 <-> wood1__shot_06: 0.202
+  wood1__shot_05 <-> wood1__shot_06: 0.081
+gravity-vector cross-shot agreement: 1.025
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+wood1__shot_02: Depth Pro predicted 14.6cm for a known 15cm ruler (2.5% off) -> applying 1.025x correction
+wood1__shot_03: Depth Pro predicted 25.0cm for a known 15cm ruler (39.9% off) -> applying 0.601x correction
+wood1__shot_04: Depth Pro predicted 92.3cm for a known 15cm ruler (83.7% off) -> applying 0.163x correction
+wood1__shot_05: Depth Pro predicted 48.6cm for a known 15cm ruler (69.1% off) -> applying 0.309x correction
+wood1__shot_06: Depth Pro predicted 127.2cm for a known 15cm ruler (88.2% off) -> applying 0.118x correction
+
+=== [E] Segmentation (SAM2) ===
+wood1__shot_02: SAM2 score=0.851, 15004px core / 19127px dilated
+wood1__shot_03: SAM2 score=0.902, 5349px core / 6374px dilated
+wood1__shot_04: SAM2 score=0.940, 7191px core / 8581px dilated
+wood1__shot_05: SAM2 score=0.980, 32401px core / 41891px dilated
+wood1__shot_06: SAM2 score=0.941, 16211px core / 19530px dilated
+
+=== [V2] Qwen mask verification ===
+wood1__shot_02: [FLAGGED] confidence=0.3 - The red region covers a painted surface with minor wear, not a structural defect like a hole or decay.
+wood1__shot_03: [FLAGGED] confidence=0.2 - The red region covers a non-defective area of the wood surface.
+wood1__shot_04: [OK] confidence=0.95 - The red region precisely outlines a visible area of decayed wood with missing material.
+wood1__shot_05: [OK] confidence=0.95 - The red overlay precisely highlights a large, dark, deteriorated area consistent with rotten wood.
+wood1__shot_06: [FLAGGED] confidence=0.2 - The red region appears to mark a paint stain or discoloration, not a structural defect like rot or missing material.
+
+=== [F] Back-projection + fusion ===
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+fused defect points: 3306, surrounding points: 2651
+
+=== [G] Reference plane fit ===
+plane normal=[ 0.83963929  0.46758119 -0.2763579 ], inlier_ratio=0.30
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 543.1855423378627,
+    "mean": 151.27569936301518,
+    "confidence": "medium"
+  },
+  "width_mm": 283.35480932447365,
+  "length_mm": 1327.376460744444,
+  "area_mm2": 224417.71027187692,
+  "volume_mm3": 33948946.0708247,
+  "inclination_deg": {
+    "value": 75.02200307631682,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 3306,
+  "defect_id": "wood1",
+  "shots_used": 5,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "wood1__shot_02",
+    "wood1__shot_03",
+    "wood1__shot_06"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/wood1/defect_pointcloud.ply (5957 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      543.1855423378627
+    ],
+    [
+      "severe",
+      "area_mm2",
+      224417.71027187692
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "wood1",
+    "severity": "moderate",
+    "description": "A long, cracked red wooden surface with peeling paint and visible wood grain damage.",
+    "measurement_plausible": true,
+    "notes": ""
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/wood1/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/wood1/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/wood1

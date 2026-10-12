@@ -1,0 +1,13 @@
+=== [A] Loading defect set: roof ===
+6 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   7%|▋         | 53/713 [00:00<00:01, 523.84it/s]Loading weights:  18%|█▊        | 130/713 [00:00<00:00, 667.85it/s]Loading weights:  30%|██▉       | 211/713 [00:00<00:00, 723.24it/s]Loading weights:  41%|████▏     | 295/713 [00:00<00:00, 765.61it/s]Loading weights:  53%|█████▎    | 378/713 [00:00<00:00, 782.36it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1187.86it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+roof__shot_01: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+roof__shot_02: SKIPPED - The image shows a ruler and shadow, not a defect like hole, crack, or rot.
+roof__shot_03: SKIPPED - No visible hole, crack, peeling paint, or rot is present; the image shows a ruler and shadow on a roof.
+roof__shot_04: SKIPPED - No visible defect matching expected criteria
+roof__shot_05: SKIPPED - The image shows a ruler and shadow, not a defect like a hole or rot.
+roof__shot_06: SKIPPED - The defect is not clearly identifiable as a hole, crack, peeling paint, rot, or similar damage; it appears to be a small damaged area with white material, but context is insufficient to confirm it as a typical house defect.
+ERROR: no usable shots (Qwen marked all unusable, and no manual prompts). Check /workspace/geofinal_all/code/prompts/roof.json or the photos themselves.

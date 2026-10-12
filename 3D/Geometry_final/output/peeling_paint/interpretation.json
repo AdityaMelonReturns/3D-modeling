@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      617.5859485640533
+    ],
+    [
+      "severe",
+      "area_mm2",
+      1038995.78618087
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "peeling_paint",
+    "severity": "moderate",
+    "description": "The paint is peeling off the wooden surface in a large area, revealing the underlying material.",
+    "measurement_plausible": true,
+    "notes": ""
+  }
+}

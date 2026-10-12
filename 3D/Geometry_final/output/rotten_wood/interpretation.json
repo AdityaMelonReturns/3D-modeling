@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      851.7138790281986
+    ],
+    [
+      "severe",
+      "area_mm2",
+      1171210.8351361137
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "rotten_wood",
+    "severity": "severe",
+    "description": "The wooden fence section is significantly damaged with large, rotting areas that appear structurally compromised.",
+    "measurement_plausible": false,
+    "notes": "The depth measurement of 851.7 mm is implausible for a fence defect in this context; it likely exceeds the actual physical depth of the rot. The scale from the ruler appears to be used for calibration, but the depth value is inconsistent with typical fence wood thickness and defect scale."
+  }
+}

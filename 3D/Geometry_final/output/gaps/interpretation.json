@@ -1,0 +1,11 @@
+{
+  "rule_based_severity": "low",
+  "rule_based_flags": [],
+  "qwen_vision": {
+    "defect_type": "gaps",
+    "severity": "low",
+    "description": "Small gaps are visible between the siding panels of the house's exterior wall.",
+    "measurement_plausible": false,
+    "notes": "Measurement data is unreliable due to low confidence and insufficient point count; visual inspection shows minor gaps."
+  }
+}

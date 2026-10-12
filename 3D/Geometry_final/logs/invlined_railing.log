@@ -1,0 +1,144 @@
+=== [A] Loading defect set: invlined_railing ===
+7 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   7%|▋         | 53/713 [00:00<00:01, 525.83it/s]Loading weights:  18%|█▊        | 125/713 [00:00<00:00, 627.05it/s]Loading weights:  27%|██▋       | 192/713 [00:00<00:00, 642.72it/s]Loading weights:  36%|███▌      | 258/713 [00:00<00:00, 649.35it/s]Loading weights:  46%|████▋     | 330/713 [00:00<00:00, 671.90it/s]Loading weights:  59%|█████▉    | 423/713 [00:00<00:00, 757.87it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1044.18it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+invlined_railing__shot_01: Qwen box [812, 252, 1684, 757] (guess: inclination) - The wooden railing is visibly tilted or leaning outward.
+invlined_railing__shot_02: Qwen box [626, 239, 1494, 675] (guess: inclination) - The wooden structure shows clear signs of tilting or leaning.
+invlined_railing__shot_03: Qwen box [678, 408, 1707, 636] (guess: inclination) - The railing post is visibly tilted or leaning.
+invlined_railing__shot_04: Qwen box [755, 298, 1780, 872] (guess: inclination) - The railing appears visibly tilted or leaning.
+invlined_railing__shot_05: Qwen box [687, 212, 1549, 993] (guess: inclination) - The railing shows clear tilting or leaning.
+invlined_railing__shot_06: Qwen box [547, 492, 1379, 995] (guess: inclination) - The wooden structure appears tilted or leaning.
+invlined_railing__shot_07: Qwen box [624, 272, 1480, 659] (guess: inclination) - The wooden railing appears visibly tilted or leaning.
+7/7 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.05565071105957031 seconds. Shape:  torch.Size([7, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.12255620956420898 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.0005116462707519531 seconds[0m
+[geometry_da3] inferred 7 views jointly
+  invlined_railing__shot_01: depth range 0.43-3.64 m, mean conf 2.28
+  invlined_railing__shot_02: depth range 0.32-3.85 m, mean conf 3.19
+  invlined_railing__shot_03: depth range 0.21-4.91 m, mean conf 2.79
+  invlined_railing__shot_04: depth range 0.29-3.26 m, mean conf 2.54
+  invlined_railing__shot_05: depth range 0.28-3.65 m, mean conf 2.86
+  invlined_railing__shot_06: depth range 0.31-5.14 m, mean conf 2.99
+  invlined_railing__shot_07: depth range 0.35-3.26 m, mean conf 2.83
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  invlined_railing__shot_01 <-> invlined_railing__shot_02: 0.427
+  invlined_railing__shot_01 <-> invlined_railing__shot_03: 0.282
+  invlined_railing__shot_01 <-> invlined_railing__shot_04: 0.148
+  invlined_railing__shot_01 <-> invlined_railing__shot_05: 0.551
+  invlined_railing__shot_01 <-> invlined_railing__shot_06: 0.221
+  invlined_railing__shot_01 <-> invlined_railing__shot_07: 0.100
+  invlined_railing__shot_02 <-> invlined_railing__shot_03: 0.189
+  invlined_railing__shot_02 <-> invlined_railing__shot_04: 0.339
+  invlined_railing__shot_02 <-> invlined_railing__shot_05: 0.145
+  invlined_railing__shot_02 <-> invlined_railing__shot_06: 0.251
+  invlined_railing__shot_02 <-> invlined_railing__shot_07: 0.379
+  invlined_railing__shot_03 <-> invlined_railing__shot_04: 0.163
+  invlined_railing__shot_03 <-> invlined_railing__shot_05: 0.286
+  invlined_railing__shot_03 <-> invlined_railing__shot_06: 0.133
+  invlined_railing__shot_03 <-> invlined_railing__shot_07: 0.211
+  invlined_railing__shot_04 <-> invlined_railing__shot_05: 0.442
+  invlined_railing__shot_04 <-> invlined_railing__shot_06: 0.168
+  invlined_railing__shot_04 <-> invlined_railing__shot_07: 0.077
+  invlined_railing__shot_05 <-> invlined_railing__shot_06: 0.379
+  invlined_railing__shot_05 <-> invlined_railing__shot_07: 0.494
+  invlined_railing__shot_06 <-> invlined_railing__shot_07: 0.161
+gravity-vector cross-shot agreement: 1.000
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+invlined_railing__shot_01: ruler aspect ratio 2.7 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)
+invlined_railing__shot_02: Depth Pro predicted 12.2cm for a known 15cm ruler (23.3% off) -> applying 1.233x correction
+invlined_railing__shot_03: Depth Pro predicted 42.3cm for a known 15cm ruler (64.5% off) -> applying 0.355x correction
+invlined_railing__shot_04: Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction
+invlined_railing__shot_05: Depth Pro predicted 43.3cm for a known 15cm ruler (65.4% off) -> applying 0.346x correction
+invlined_railing__shot_06: Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction
+invlined_railing__shot_07: Depth Pro predicted 30.3cm for a known 15cm ruler (50.5% off) -> applying 0.495x correction
+
+=== [E] Segmentation (SAM2) ===
+invlined_railing__shot_01: SAM2 score=0.954, 191501px core / 241843px dilated
+invlined_railing__shot_02: SAM2 score=0.981, 146437px core / 174425px dilated
+invlined_railing__shot_03: SAM2 score=0.989, 111416px core / 145246px dilated
+invlined_railing__shot_04: SAM2 score=0.952, 249541px core / 320493px dilated
+invlined_railing__shot_05: SAM2 score=0.961, 238649px core / 313224px dilated
+invlined_railing__shot_06: SAM2 score=0.861, 322133px core / 390624px dilated
+invlined_railing__shot_07: SAM2 score=0.926, 175928px core / 221072px dilated
+
+=== [V2] Qwen mask verification ===
+invlined_railing__shot_01: [OK] confidence=0.95 - The red overlay accurately highlights the tilted railing structure.
+invlined_railing__shot_02: [FLAGGED] confidence=0.2 - The red region covers a structure that is not leaning or tilted; it appears upright and properly aligned.
+invlined_railing__shot_03: [FLAGGED] confidence=0.2 - The red overlay covers a structural beam that is not visibly leaning or tilted.
+invlined_railing__shot_04: [FLAGGED] confidence=0.2 - The red region covers a railing that is not visibly leaning or tilted.
+invlined_railing__shot_05: [OK] confidence=0.95 - The red overlay accurately highlights the tilted railing structure.
+invlined_railing__shot_06: [FLAGGED] confidence=0.3 - The red region covers a structural element that is not visibly leaning or tilted.
+invlined_railing__shot_07: [FLAGGED] confidence=0.2 - The red region highlights a railing, but it is not visibly leaning or tilted; it appears structurally upright.
+
+=== [F] Back-projection + fusion ===
+fused defect points: 77049, surrounding points: 50890
+
+=== [G] Reference plane fit ===
+plane normal=[ 0.23697924  0.88635303 -0.3977677 ], inlier_ratio=0.13
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 922.5358525100875,
+    "mean": 140.11356474860645,
+    "confidence": "medium"
+  },
+  "width_mm": 817.3432070995443,
+  "length_mm": 1548.8149123162743,
+  "area_mm2": 971144.3579278196,
+  "volume_mm3": 136070497.8747634,
+  "inclination_deg": {
+    "value": 66.49293786499177,
+    "source_agreement": true,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 77049,
+  "defect_id": "invlined_railing",
+  "shots_used": 7,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "invlined_railing__shot_02",
+    "invlined_railing__shot_03",
+    "invlined_railing__shot_04",
+    "invlined_railing__shot_06",
+    "invlined_railing__shot_07"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/invlined_railing/defect_pointcloud.ply (127939 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "deg",
+      66.49293786499177
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "invlined_railing",
+    "severity": "moderate",
+    "description": "The railing is visibly tilted and misaligned, indicating a structural defect.",
+    "measurement_plausible": false,
+    "notes": "The measured inclination of 66.5 degrees is implausible for a railing; it appears to be more of a horizontal or near-horizontal tilt, suggesting potential measurement error or misalignment in the 3D reconstruction."
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/invlined_railing/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/invlined_railing/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/invlined_railing

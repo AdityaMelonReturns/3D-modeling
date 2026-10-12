@@ -1,0 +1,323 @@
+=== [A] Loading defect set: rotten_wood ===
+20 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   8%|▊         | 60/713 [00:00<00:01, 582.79it/s]Loading weights:  20%|██        | 143/713 [00:00<00:00, 726.23it/s]Loading weights:  31%|███▏      | 223/713 [00:00<00:00, 753.54it/s]Loading weights:  43%|████▎     | 306/713 [00:00<00:00, 782.73it/s]Loading weights:  55%|█████▍    | 389/713 [00:00<00:00, 794.99it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1222.03it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+rotten_wood__shot_01: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+rotten_wood__shot_02: Qwen box [912, 0, 1215, 861] (guess: rot) - The wood shows clear signs of decay and rot with visible damage and discoloration.
+rotten_wood__shot_03: Qwen box [845, 100, 1210, 995] (guess: rot) - The wood shows clear signs of decay and rot along the bottom edge.
+rotten_wood__shot_04: Qwen box [858, 294, 1068, 994] (guess: rot) - The wooden planks show clear signs of decay and rot, with dark, crumbling edges and discoloration.
+rotten_wood__shot_05: Qwen box [847, 0, 1340, 995] (guess: rot) - The wood shows clear signs of decay and rot.
+rotten_wood__shot_06: Qwen box [851, 0, 1066, 995] (guess: rot) - The wood shows clear signs of rot with dark, crumbling edges.
+rotten_wood__shot_07: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+rotten_wood__shot_08: Qwen box [783, 11, 1916, 994] (guess: rot) - The wooden structure shows signs of decay and rot, with visible damage and discoloration.
+rotten_wood__shot_09: Qwen box [756, 0, 1603, 995] (guess: rot) - The wooden surface shows signs of decay and rot, indicated by the dark, crumbling edges and texture.
+rotten_wood__shot_10: Qwen box [781, 0, 1597, 765] (guess: rot) - The wooden structure shows clear signs of decay and rot.
+rotten_wood__shot_11: Qwen box [678, 0, 1919, 995] (guess: rot) - The wooden structure shows clear signs of rot and decay.
+rotten_wood__shot_12: Qwen box [962, 372, 1260, 438] (guess: rot) - Visible wood decay and discoloration indicate rot.
+rotten_wood__shot_13: Qwen box [854, 0, 1916, 994] (guess: rot) - The wooden structure shows clear signs of decay and rot.
+rotten_wood__shot_14: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+rotten_wood__shot_15: Qwen box [716, 0, 1918, 995] (guess: rot) - The wooden fence shows signs of rot and decay, with visible damage and discoloration.
+rotten_wood__shot_16: Qwen box [503, 0, 1450, 995] (guess: rot) - The wood shows signs of decay and rot, indicated by its weathered and broken appearance.
+rotten_wood__shot_17: Qwen box [733, 0, 1609, 995] (guess: rot) - The wooden structure shows clear signs of rot and decay, with visible gaps and deteriorated wood.
+rotten_wood__shot_18: Qwen box [680, 0, 1513, 995] (guess: rot) - The wooden fence shows clear signs of rot with warped and discolored planks.
+rotten_wood__shot_19: SKIPPED - degenerate box from Qwen: [0, 0, 0, 0]
+rotten_wood__shot_20: Qwen box [666, 0, 1549, 995] (guess: rot) - The wooden fence shows clear signs of rot and decay, with warped planks and visible damage.
+16/20 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.0894317626953125 seconds. Shape:  torch.Size([16, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.16857051849365234 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.0007266998291015625 seconds[0m
+[geometry_da3] inferred 16 views jointly
+  rotten_wood__shot_02: depth range 0.15-1.95 m, mean conf 1.00
+  rotten_wood__shot_03: depth range 0.13-1.98 m, mean conf 1.00
+  rotten_wood__shot_04: depth range 0.12-2.06 m, mean conf 1.00
+  rotten_wood__shot_05: depth range 0.13-2.02 m, mean conf 1.00
+  rotten_wood__shot_06: depth range 0.23-2.01 m, mean conf 1.00
+  rotten_wood__shot_08: depth range 0.17-2.37 m, mean conf 1.25
+  rotten_wood__shot_09: depth range 0.11-2.11 m, mean conf 1.22
+  rotten_wood__shot_10: depth range 0.13-2.30 m, mean conf 1.19
+  rotten_wood__shot_11: depth range 0.15-2.20 m, mean conf 1.20
+  rotten_wood__shot_12: depth range 0.12-1.87 m, mean conf 1.29
+  rotten_wood__shot_13: depth range 0.15-2.28 m, mean conf 1.20
+  rotten_wood__shot_15: depth range 0.17-2.12 m, mean conf 1.26
+  rotten_wood__shot_16: depth range 0.18-1.80 m, mean conf 1.30
+  rotten_wood__shot_17: depth range 0.16-2.01 m, mean conf 1.29
+  rotten_wood__shot_18: depth range 0.18-2.14 m, mean conf 1.21
+  rotten_wood__shot_20: depth range 0.12-2.26 m, mean conf 1.27
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  rotten_wood__shot_02 <-> rotten_wood__shot_03: 0.064
+  rotten_wood__shot_02 <-> rotten_wood__shot_04: 0.059
+  rotten_wood__shot_02 <-> rotten_wood__shot_05: 0.078
+  rotten_wood__shot_02 <-> rotten_wood__shot_06: 0.089
+  rotten_wood__shot_02 <-> rotten_wood__shot_08: 0.375
+  rotten_wood__shot_02 <-> rotten_wood__shot_09: 0.214
+  rotten_wood__shot_02 <-> rotten_wood__shot_10: 0.232
+  rotten_wood__shot_02 <-> rotten_wood__shot_11: 0.215
+  rotten_wood__shot_02 <-> rotten_wood__shot_12: 0.276
+  rotten_wood__shot_02 <-> rotten_wood__shot_13: 0.258
+  rotten_wood__shot_02 <-> rotten_wood__shot_15: 0.372
+  rotten_wood__shot_02 <-> rotten_wood__shot_16: 0.369
+  rotten_wood__shot_02 <-> rotten_wood__shot_17: 0.346
+  rotten_wood__shot_02 <-> rotten_wood__shot_18: 0.357
+  rotten_wood__shot_02 <-> rotten_wood__shot_20: 0.369
+  rotten_wood__shot_03 <-> rotten_wood__shot_04: 0.103
+  rotten_wood__shot_03 <-> rotten_wood__shot_05: 0.100
+  rotten_wood__shot_03 <-> rotten_wood__shot_06: 0.130
+  rotten_wood__shot_03 <-> rotten_wood__shot_08: 0.415
+  rotten_wood__shot_03 <-> rotten_wood__shot_09: 0.253
+  rotten_wood__shot_03 <-> rotten_wood__shot_10: 0.267
+  rotten_wood__shot_03 <-> rotten_wood__shot_11: 0.256
+  rotten_wood__shot_03 <-> rotten_wood__shot_12: 0.299
+  rotten_wood__shot_03 <-> rotten_wood__shot_13: 0.290
+  rotten_wood__shot_03 <-> rotten_wood__shot_15: 0.415
+  rotten_wood__shot_03 <-> rotten_wood__shot_16: 0.413
+  rotten_wood__shot_03 <-> rotten_wood__shot_17: 0.391
+  rotten_wood__shot_03 <-> rotten_wood__shot_18: 0.405
+  rotten_wood__shot_03 <-> rotten_wood__shot_20: 0.400
+  rotten_wood__shot_04 <-> rotten_wood__shot_05: 0.108
+  rotten_wood__shot_04 <-> rotten_wood__shot_06: 0.118
+  rotten_wood__shot_04 <-> rotten_wood__shot_08: 0.365
+  rotten_wood__shot_04 <-> rotten_wood__shot_09: 0.183
+  rotten_wood__shot_04 <-> rotten_wood__shot_10: 0.199
+  rotten_wood__shot_04 <-> rotten_wood__shot_11: 0.181
+  rotten_wood__shot_04 <-> rotten_wood__shot_12: 0.244
+  rotten_wood__shot_04 <-> rotten_wood__shot_13: 0.227
+  rotten_wood__shot_04 <-> rotten_wood__shot_15: 0.362
+  rotten_wood__shot_04 <-> rotten_wood__shot_16: 0.358
+  rotten_wood__shot_04 <-> rotten_wood__shot_17: 0.334
+  rotten_wood__shot_04 <-> rotten_wood__shot_18: 0.335
+  rotten_wood__shot_04 <-> rotten_wood__shot_20: 0.351
+  rotten_wood__shot_05 <-> rotten_wood__shot_06: 0.045
+  rotten_wood__shot_05 <-> rotten_wood__shot_08: 0.317
+  rotten_wood__shot_05 <-> rotten_wood__shot_09: 0.180
+  rotten_wood__shot_05 <-> rotten_wood__shot_10: 0.197
+  rotten_wood__shot_05 <-> rotten_wood__shot_11: 0.186
+  rotten_wood__shot_05 <-> rotten_wood__shot_12: 0.238
+  rotten_wood__shot_05 <-> rotten_wood__shot_13: 0.218
+  rotten_wood__shot_05 <-> rotten_wood__shot_15: 0.318
+  rotten_wood__shot_05 <-> rotten_wood__shot_16: 0.317
+  rotten_wood__shot_05 <-> rotten_wood__shot_17: 0.294
+  rotten_wood__shot_05 <-> rotten_wood__shot_18: 0.315
+  rotten_wood__shot_05 <-> rotten_wood__shot_20: 0.311
+  rotten_wood__shot_06 <-> rotten_wood__shot_08: 0.299
+  rotten_wood__shot_06 <-> rotten_wood__shot_09: 0.179
+  rotten_wood__shot_06 <-> rotten_wood__shot_10: 0.199
+  rotten_wood__shot_06 <-> rotten_wood__shot_11: 0.183
+  rotten_wood__shot_06 <-> rotten_wood__shot_12: 0.249
+  rotten_wood__shot_06 <-> rotten_wood__shot_13: 0.222
+  rotten_wood__shot_06 <-> rotten_wood__shot_15: 0.297
+  rotten_wood__shot_06 <-> rotten_wood__shot_16: 0.295
+  rotten_wood__shot_06 <-> rotten_wood__shot_17: 0.273
+  rotten_wood__shot_06 <-> rotten_wood__shot_18: 0.295
+  rotten_wood__shot_06 <-> rotten_wood__shot_20: 0.307
+  rotten_wood__shot_08 <-> rotten_wood__shot_09: 0.208
+  rotten_wood__shot_08 <-> rotten_wood__shot_10: 0.210
+  rotten_wood__shot_08 <-> rotten_wood__shot_11: 0.214
+  rotten_wood__shot_08 <-> rotten_wood__shot_12: 0.233
+  rotten_wood__shot_08 <-> rotten_wood__shot_13: 0.197
+  rotten_wood__shot_08 <-> rotten_wood__shot_15: 0.021
+  rotten_wood__shot_08 <-> rotten_wood__shot_16: 0.030
+  rotten_wood__shot_08 <-> rotten_wood__shot_17: 0.045
+  rotten_wood__shot_08 <-> rotten_wood__shot_18: 0.095
+  rotten_wood__shot_08 <-> rotten_wood__shot_20: 0.105
+  rotten_wood__shot_09 <-> rotten_wood__shot_10: 0.024
+  rotten_wood__shot_09 <-> rotten_wood__shot_11: 0.016
+  rotten_wood__shot_09 <-> rotten_wood__shot_12: 0.091
+  rotten_wood__shot_09 <-> rotten_wood__shot_13: 0.050
+  rotten_wood__shot_09 <-> rotten_wood__shot_15: 0.208
+  rotten_wood__shot_09 <-> rotten_wood__shot_16: 0.204
+  rotten_wood__shot_09 <-> rotten_wood__shot_17: 0.184
+  rotten_wood__shot_09 <-> rotten_wood__shot_18: 0.174
+  rotten_wood__shot_09 <-> rotten_wood__shot_20: 0.175
+  rotten_wood__shot_10 <-> rotten_wood__shot_11: 0.031
+  rotten_wood__shot_10 <-> rotten_wood__shot_12: 0.068
+  rotten_wood__shot_10 <-> rotten_wood__shot_13: 0.029
+  rotten_wood__shot_10 <-> rotten_wood__shot_15: 0.211
+  rotten_wood__shot_10 <-> rotten_wood__shot_16: 0.208
+  rotten_wood__shot_10 <-> rotten_wood__shot_17: 0.189
+  rotten_wood__shot_10 <-> rotten_wood__shot_18: 0.177
+  rotten_wood__shot_10 <-> rotten_wood__shot_20: 0.165
+  rotten_wood__shot_11 <-> rotten_wood__shot_12: 0.099
+  rotten_wood__shot_11 <-> rotten_wood__shot_13: 0.058
+  rotten_wood__shot_11 <-> rotten_wood__shot_15: 0.212
+  rotten_wood__shot_11 <-> rotten_wood__shot_16: 0.208
+  rotten_wood__shot_11 <-> rotten_wood__shot_17: 0.187
+  rotten_wood__shot_11 <-> rotten_wood__shot_18: 0.173
+  rotten_wood__shot_11 <-> rotten_wood__shot_20: 0.184
+  rotten_wood__shot_12 <-> rotten_wood__shot_13: 0.051
+  rotten_wood__shot_12 <-> rotten_wood__shot_15: 0.239
+  rotten_wood__shot_12 <-> rotten_wood__shot_16: 0.238
+  rotten_wood__shot_12 <-> rotten_wood__shot_17: 0.224
+  rotten_wood__shot_12 <-> rotten_wood__shot_18: 0.211
+  rotten_wood__shot_12 <-> rotten_wood__shot_20: 0.158
+  rotten_wood__shot_13 <-> rotten_wood__shot_15: 0.200
+  rotten_wood__shot_13 <-> rotten_wood__shot_16: 0.198
+  rotten_wood__shot_13 <-> rotten_wood__shot_17: 0.181
+  rotten_wood__shot_13 <-> rotten_wood__shot_18: 0.169
+  rotten_wood__shot_13 <-> rotten_wood__shot_20: 0.141
+  rotten_wood__shot_15 <-> rotten_wood__shot_16: 0.011
+  rotten_wood__shot_15 <-> rotten_wood__shot_17: 0.031
+  rotten_wood__shot_15 <-> rotten_wood__shot_18: 0.082
+  rotten_wood__shot_15 <-> rotten_wood__shot_20: 0.119
+  rotten_wood__shot_16 <-> rotten_wood__shot_17: 0.024
+  rotten_wood__shot_16 <-> rotten_wood__shot_18: 0.073
+  rotten_wood__shot_16 <-> rotten_wood__shot_20: 0.123
+  rotten_wood__shot_17 <-> rotten_wood__shot_18: 0.065
+  rotten_wood__shot_17 <-> rotten_wood__shot_20: 0.124
+  rotten_wood__shot_18 <-> rotten_wood__shot_20: 0.133
+gravity-vector cross-shot agreement: 1.003
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+rotten_wood__shot_02: Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction
+rotten_wood__shot_03: Depth Pro predicted 151.4cm for a known 15cm ruler (90.1% off) -> applying 0.099x correction
+rotten_wood__shot_04: Depth Pro predicted 36.6cm for a known 15cm ruler (59.0% off) -> applying 0.410x correction
+rotten_wood__shot_05: ruler aspect ratio 3.0 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)
+rotten_wood__shot_06: Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction
+rotten_wood__shot_08: Depth Pro predicted 39.7cm for a known 15cm ruler (62.2% off) -> applying 0.378x correction
+rotten_wood__shot_09: Depth Pro predicted 33.1cm for a known 15cm ruler (54.7% off) -> applying 0.453x correction
+rotten_wood__shot_10: Depth Pro predicted 116.3cm for a known 15cm ruler (87.1% off) -> applying 0.129x correction
+rotten_wood__shot_11: ruler aspect ratio 3.0 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)
+rotten_wood__shot_12: Depth Pro predicted 44.6cm for a known 15cm ruler (66.3% off) -> applying 0.337x correction
+rotten_wood__shot_13: ruler aspect ratio 2.8 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)
+rotten_wood__shot_15: Depth Pro predicted 33.1cm for a known 15cm ruler (54.7% off) -> applying 0.453x correction
+rotten_wood__shot_16: Depth Pro predicted 27.1cm for a known 15cm ruler (44.7% off) -> applying 0.553x correction
+rotten_wood__shot_17: Depth Pro predicted 32.3cm for a known 15cm ruler (53.6% off) -> applying 0.464x correction
+rotten_wood__shot_18: Depth Pro predicted 38.2cm for a known 15cm ruler (60.7% off) -> applying 0.393x correction
+rotten_wood__shot_20: Depth Pro predicted 35.6cm for a known 15cm ruler (57.9% off) -> applying 0.421x correction
+
+=== [E] Segmentation (SAM2) ===
+rotten_wood__shot_02: SAM2 score=0.925, 186178px core / 215719px dilated
+rotten_wood__shot_03: SAM2 score=0.873, 67620px core / 97147px dilated
+rotten_wood__shot_04: SAM2 score=0.976, 75188px core / 92682px dilated
+rotten_wood__shot_05: SAM2 score=0.873, 241851px core / 287754px dilated
+rotten_wood__shot_06: SAM2 score=0.957, 138831px core / 173425px dilated
+rotten_wood__shot_08: SAM2 score=0.958, 607966px core / 735758px dilated
+rotten_wood__shot_09: SAM2 score=0.886, 490353px core / 585949px dilated
+rotten_wood__shot_10: SAM2 score=0.844, 207415px core / 273700px dilated
+rotten_wood__shot_11: SAM2 score=0.979, 708704px core / 794287px dilated
+rotten_wood__shot_12: SAM2 score=0.853, 11129px core / 14105px dilated
+rotten_wood__shot_13: SAM2 score=0.978, 616319px core / 700588px dilated
+rotten_wood__shot_15: SAM2 score=0.968, 684001px core / 779614px dilated
+rotten_wood__shot_16: SAM2 score=0.955, 618475px core / 708697px dilated
+rotten_wood__shot_17: SAM2 score=0.921, 638210px core / 740124px dilated
+rotten_wood__shot_18: SAM2 score=0.884, 506970px core / 627393px dilated
+rotten_wood__shot_20: SAM2 score=0.906, 492823px core / 584733px dilated
+
+=== [V2] Qwen mask verification ===
+rotten_wood__shot_02: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a visible defect like a hole or decayed material; it appears to cover a painted surface.
+rotten_wood__shot_03: [OK] confidence=0.95 - The red overlay accurately highlights a section of decayed wood with visible rot and missing material.
+rotten_wood__shot_04: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a visible defect like a hole or decay; it appears to cover a non-defective area of the railing.
+rotten_wood__shot_05: [FLAGGED] confidence=0.2 - The red overlay covers a non-defective area of the structure.
+rotten_wood__shot_06: [FLAGGED] confidence=0.1 - The red overlay does not accurately delineate a defect; it appears to mark a painted surface rather than a structural issue.
+rotten_wood__shot_08: [FLAGGED] confidence=0.2 - The red region covers a painted surface without indicating a visible defect like a hole or decay.
+rotten_wood__shot_09: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a visible defect like a hole or decay; it covers painted wood without clear evidence of damage.
+rotten_wood__shot_10: [FLAGGED] confidence=0.3 - The red overlay includes non-defective areas and does not tightly match the actual defect.
+rotten_wood__shot_11: [FLAGGED] confidence=0.1 - The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.
+rotten_wood__shot_12: [FLAGGED] confidence=0.2 - The red region marks a painted area, not a structural defect like a hole or decay.
+rotten_wood__shot_13: [FLAGGED] confidence=0.1 - The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.
+rotten_wood__shot_15: [FLAGGED] confidence=0.2 - The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.
+rotten_wood__shot_16: [FLAGGED] confidence=0.1 - The red overlay covers a large area of painted wood without indicating any actual defect like a hole or decay.
+rotten_wood__shot_17: [FLAGGED] confidence=0.1 - The red overlay covers a painted surface without indicating any actual defect.
+rotten_wood__shot_18: [FLAGGED] confidence=0.2 - The red overlay covers a painted surface, not a structural defect like rot or missing material.
+rotten_wood__shot_20: [FLAGGED] confidence=0.2 - The red overlay covers a painted surface without clearly indicating a structural defect.
+
+=== [F] Back-projection + fusion ===
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual std::tuple<std::shared_ptr<const open3d::geometry::PointCloud>, std::shared_ptr<const open3d::geometry::PointCloud> > open3d::pipelines::registration::TransformationEstimationForColoredICP::InitializePointCloudsForTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, double) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:221: ColoredICP requires target pointcloud to have normals.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual std::tuple<std::shared_ptr<const open3d::geometry::PointCloud>, std::shared_ptr<const open3d::geometry::PointCloud> > open3d::pipelines::registration::TransformationEstimationForColoredICP::InitializePointCloudsForTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, double) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:221: ColoredICP requires target pointcloud to have normals.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+fused defect points: 72822, surrounding points: 105938
+
+=== [G] Reference plane fit ===
+plane normal=[-0.69694868  0.71645616  0.03087245], inlier_ratio=0.10
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 851.7138790281986,
+    "mean": 131.76166383787424,
+    "confidence": "medium"
+  },
+  "width_mm": 936.7007134806921,
+  "length_mm": 1704.1459829059118,
+  "area_mm2": 1171210.8351361137,
+  "volume_mm3": 154320688.34248057,
+  "inclination_deg": {
+    "value": 87.93525412335968,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 72822,
+  "defect_id": "rotten_wood",
+  "shots_used": 16,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "rotten_wood__shot_02",
+    "rotten_wood__shot_04",
+    "rotten_wood__shot_05",
+    "rotten_wood__shot_06",
+    "rotten_wood__shot_08",
+    "rotten_wood__shot_09",
+    "rotten_wood__shot_10",
+    "rotten_wood__shot_11",
+    "rotten_wood__shot_12",
+    "rotten_wood__shot_13",
+    "rotten_wood__shot_15",
+    "rotten_wood__shot_16",
+    "rotten_wood__shot_17",
+    "rotten_wood__shot_18",
+    "rotten_wood__shot_20"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/rotten_wood/defect_pointcloud.ply (178760 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      851.7138790281986
+    ],
+    [
+      "severe",
+      "area_mm2",
+      1171210.8351361137
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "rotten_wood",
+    "severity": "severe",
+    "description": "The wooden fence section is significantly damaged with large, rotting areas that appear structurally compromised.",
+    "measurement_plausible": false,
+    "notes": "The depth measurement of 851.7 mm is implausible for a fence defect in this context; it likely exceeds the actual physical depth of the rot. The scale from the ruler appears to be used for calibration, but the depth value is inconsistent with typical fence wood thickness and defect scale."
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/rotten_wood/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/rotten_wood/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/rotten_wood

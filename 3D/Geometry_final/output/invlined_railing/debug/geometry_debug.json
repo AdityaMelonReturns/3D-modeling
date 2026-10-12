@@ -1,0 +1,332 @@
+{
+  "gravity_agreement": 1.0001436091823732,
+  "scale_infos": [
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 2.7 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 1.2332672130046693,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.12162814223735637,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 23.326721300466936,
+      "detail": "Depth Pro predicted 12.2cm for a known 15cm ruler (23.3% off) -> applying 1.233x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.35455902494038183,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.42306073022742013,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 64.54409750596182,
+      "detail": "Depth Pro predicted 42.3cm for a known 15cm ruler (64.5% off) -> applying 0.355x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.34631208339166225,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.4331353342654153,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 65.36879166083378,
+      "detail": "Depth Pro predicted 43.3cm for a known 15cm ruler (65.4% off) -> applying 0.346x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.49465014999960977,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3032446265307275,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 50.53498500003902,
+      "detail": "Depth Pro predicted 30.3cm for a known 15cm ruler (50.5% off) -> applying 0.495x correction"
+    }
+  ],
+  "camera_centers": {
+    "invlined_railing__shot_01": [
+      -0.007520390938252852,
+      -0.4266388119663953,
+      0.01076387586750327
+    ],
+    "invlined_railing__shot_02": [
+      -0.00018757417253903441,
+      -7.5092540954011974e-06,
+      -6.500444913557711e-05
+    ],
+    "invlined_railing__shot_03": [
+      0.02181002071935345,
+      -0.16009157586942635,
+      0.097370797114678
+    ],
+    "invlined_railing__shot_04": [
+      -0.006545956113769014,
+      -0.3200416615533874,
+      0.11275939052601491
+    ],
+    "invlined_railing__shot_05": [
+      -0.03189493875369198,
+      0.11967953736464326,
+      0.07471220134417242
+    ],
+    "invlined_railing__shot_06": [
+      0.09591234358936951,
+      -0.23182760257439794,
+      0.013564177775591435
+    ],
+    "invlined_railing__shot_07": [
+      0.0406052579340469,
+      -0.3691510476309996,
+      0.07690108489058556
+    ]
+  },
+  "mean_conf_per_shot": {
+    "invlined_railing__shot_01": 2.284562110900879,
+    "invlined_railing__shot_02": 3.186732053756714,
+    "invlined_railing__shot_03": 2.7875332832336426,
+    "invlined_railing__shot_04": 2.537059783935547,
+    "invlined_railing__shot_05": 2.8604061603546143,
+    "invlined_railing__shot_06": 2.9877331256866455,
+    "invlined_railing__shot_07": 2.828479528427124
+  },
+  "v1_quality_gate": {
+    "invlined_railing__shot_01": {
+      "usable": true,
+      "box_2d": [
+        423,
+        253,
+        877,
+        760
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The wooden railing is visibly tilted or leaning outward.",
+      "box_rel_1000": [
+        423,
+        253,
+        877,
+        760
+      ],
+      "box": [
+        812,
+        252,
+        1684,
+        757
+      ],
+      "raw_response": "{\n  \"usable\": true,\n  \"box_2d\": [423, 253, 877, 760],\n  \"defect_type_guess\": \"inclination\",\n  \"reason\": \"The wooden railing is visibly tilted or leaning outward.\"\n}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_02": {
+      "usable": true,
+      "box_2d": [
+        326,
+        240,
+        778,
+        678
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The wooden structure shows clear signs of tilting or leaning.",
+      "box_rel_1000": [
+        326,
+        240,
+        778,
+        678
+      ],
+      "box": [
+        626,
+        239,
+        1494,
+        675
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [326, 240, 778, 678], \"defect_type_guess\": \"inclination\", \"reason\": \"The wooden structure shows clear signs of tilting or leaning.\"}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_03": {
+      "usable": true,
+      "box_2d": [
+        353,
+        410,
+        889,
+        639
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The railing post is visibly tilted or leaning.",
+      "box_rel_1000": [
+        353,
+        410,
+        889,
+        639
+      ],
+      "box": [
+        678,
+        408,
+        1707,
+        636
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [353, 410, 889, 639], \"defect_type_guess\": \"inclination\", \"reason\": \"The railing post is visibly tilted or leaning.\"}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_04": {
+      "usable": true,
+      "box_2d": [
+        393,
+        299,
+        927,
+        876
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The railing appears visibly tilted or leaning.",
+      "box_rel_1000": [
+        393,
+        299,
+        927,
+        876
+      ],
+      "box": [
+        755,
+        298,
+        1780,
+        872
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [393, 299, 927, 876], \"defect_type_guess\": \"inclination\", \"reason\": \"The railing appears visibly tilted or leaning.\"}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_05": {
+      "usable": true,
+      "box_2d": [
+        358,
+        213,
+        807,
+        997
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The railing shows clear tilting or leaning.",
+      "box_rel_1000": [
+        358,
+        213,
+        807,
+        997
+      ],
+      "box": [
+        687,
+        212,
+        1549,
+        993
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [358, 213, 807, 997], \"defect_type_guess\": \"inclination\", \"reason\": \"The railing shows clear tilting or leaning.\"}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_06": {
+      "usable": true,
+      "box_2d": [
+        285,
+        494,
+        718,
+        999
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The wooden structure appears tilted or leaning.",
+      "box_rel_1000": [
+        285,
+        494,
+        718,
+        999
+      ],
+      "box": [
+        547,
+        492,
+        1379,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [285, 494, 718, 999], \"defect_type_guess\": \"inclination\", \"reason\": \"The wooden structure appears tilted or leaning.\"}",
+      "source": "qwen"
+    },
+    "invlined_railing__shot_07": {
+      "usable": true,
+      "box_2d": [
+        325,
+        273,
+        771,
+        662
+      ],
+      "defect_type_guess": "inclination",
+      "reason": "The wooden railing appears visibly tilted or leaning.",
+      "box_rel_1000": [
+        325,
+        273,
+        771,
+        662
+      ],
+      "box": [
+        624,
+        272,
+        1480,
+        659
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [325, 273, 771, 662], \"defect_type_guess\": \"inclination\", \"reason\": \"The wooden railing appears visibly tilted or leaning.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "invlined_railing__shot_01": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights the tilted railing structure.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights the tilted railing structure.\"}"
+    },
+    "invlined_railing__shot_02": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region covers a structure that is not leaning or tilted; it appears upright and properly aligned.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region covers a structure that is not leaning or tilted; it appears upright and properly aligned.\"}"
+    },
+    "invlined_railing__shot_03": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a structural beam that is not visibly leaning or tilted.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a structural beam that is not visibly leaning or tilted.\"}"
+    },
+    "invlined_railing__shot_04": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region covers a railing that is not visibly leaning or tilted.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region covers a railing that is not visibly leaning or tilted.\"}"
+    },
+    "invlined_railing__shot_05": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights the tilted railing structure.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights the tilted railing structure.\"}"
+    },
+    "invlined_railing__shot_06": {
+      "matches": false,
+      "confidence": 0.3,
+      "reason": "The red region covers a structural element that is not visibly leaning or tilted.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.3, \"reason\": \"The red region covers a structural element that is not visibly leaning or tilted.\"}"
+    },
+    "invlined_railing__shot_07": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region highlights a railing, but it is not visibly leaning or tilted; it appears structurally upright.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region highlights a railing, but it is not visibly leaning or tilted; it appears structurally upright.\"}"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "width_mm",
+      220.35414929311986
+    ],
+    [
+      "severe",
+      "length_mm",
+      554.3055255273839
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "roof",
+    "severity": "moderate",
+    "description": "The roof has a noticeable irregularity with a measured depth of 531mm and an inclination of 69.4 degrees, indicating a significant structural issue.",
+    "measurement_plausible": false,
+    "notes": "The measured depth of 531mm is implausible given the visible scale of the ruler (approx. 200mm) and the shadow cast; the volume and area estimates are likely inflated due to 3D reconstruction artifacts."
+  }
+}

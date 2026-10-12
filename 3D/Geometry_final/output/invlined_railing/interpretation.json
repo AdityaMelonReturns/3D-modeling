@@ -1,0 +1,17 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "deg",
+      66.49293786499177
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "invlined_railing",
+    "severity": "moderate",
+    "description": "The railing is visibly tilted and misaligned, indicating a structural defect.",
+    "measurement_plausible": false,
+    "notes": "The measured inclination of 66.5 degrees is implausible for a railing; it appears to be more of a horizontal or near-horizontal tilt, suggesting potential measurement error or misalignment in the 3D reconstruction."
+  }
+}

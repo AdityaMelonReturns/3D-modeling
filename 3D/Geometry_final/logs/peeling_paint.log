@@ -1,0 +1,228 @@
+=== [A] Loading defect set: peeling_paint ===
+11 shots loaded
+
+=== [V1] Qwen quality gate + auto-box (device=cuda) ===
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   8%|▊         | 59/713 [00:00<00:01, 585.22it/s]Loading weights:  19%|█▉        | 137/713 [00:00<00:00, 697.76it/s]Loading weights:  31%|███       | 218/713 [00:00<00:00, 745.67it/s]Loading weights:  42%|████▏     | 301/713 [00:00<00:00, 770.00it/s]Loading weights:  55%|█████▍    | 389/713 [00:00<00:00, 799.83it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1218.95it/s]
+[vlm_qwen] Qwen/Qwen3-VL-4B-Instruct loaded
+peeling_paint__shot_01: Qwen box [436, 386, 1872, 749] (guess: peeling_paint) - The image shows significant peeling paint on the wooden railing, indicating surface damage.
+peeling_paint__shot_02: Qwen box [906, 0, 1060, 995] (guess: peeling_paint) - The vertical surface shows clear peeling paint revealing underlying material.
+peeling_paint__shot_03: Qwen box [710, 0, 1820, 995] (guess: peeling_paint) - The paint is visibly peeling and flaking off the wooden surface.
+peeling_paint__shot_04: Qwen box [499, 0, 1619, 995] (guess: peeling_paint) - The paint is visibly peeling and flaking off the surface.
+peeling_paint__shot_05: Qwen box [910, 283, 1012, 532] (guess: peeling_paint) - The paint is visibly peeling and flaking off the siding, indicating deterioration.
+peeling_paint__shot_06: Qwen box [835, 423, 983, 730] (guess: crack) - A visible crack in the siding is clearly shown in the image.
+peeling_paint__shot_07: Qwen box [851, 233, 998, 628] (guess: crack) - A clear crack is visible in the siding, indicating structural wear or damage.
+peeling_paint__shot_08: Qwen box [893, 10, 1081, 731] (guess: crack) - The image shows a clear vertical crack in the siding with peeling paint and exposed wood.
+peeling_paint__shot_09: Qwen box [927, 34, 1198, 994] (guess: peeling_paint) - The paint is visibly peeling and flaking away from the siding, revealing underlying material.
+peeling_paint__shot_10: Qwen box [952, 237, 1325, 992] (guess: crack) - The image clearly shows a long, deep crack running along the siding, with paint peeling away and wood exposed.
+peeling_paint__shot_11: Qwen box [1046, 174, 1215, 598] (guess: peeling_paint) - The paint is visibly peeling and flaking away from the surface, indicating deterioration.
+11/11 shots usable
+
+=== [B+C] Multi-view geometry (DA3) ===
+[93m[WARN ] Dependency `gsplat` is required for rendering 3DGS. Install via: pip install git+https://github.com/nerfstudio-project/gsplat.git@0b4dddf04cb687367602c01196913cde6a743d70[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[97m[INFO ] using MLP layer as FFN[0m
+[geometry_da3] depth-anything/DA3-BASE loaded
+[97m[INFO ] Processed Images Done taking 0.07068443298339844 seconds. Shape:  torch.Size([11, 3, 266, 504])[0m
+[97m[INFO ] Selecting reference view using strategy: saddle_balanced[0m
+[97m[INFO ] Model Forward Pass Done. Time: 0.15160298347473145 seconds[0m
+[97m[INFO ] Conversion to Prediction Done. Time: 0.0005676746368408203 seconds[0m
+[geometry_da3] inferred 11 views jointly
+  peeling_paint__shot_01: depth range 0.16-2.24 m, mean conf 1.23
+  peeling_paint__shot_02: depth range 0.17-0.78 m, mean conf 1.02
+  peeling_paint__shot_03: depth range 0.14-1.02 m, mean conf 1.16
+  peeling_paint__shot_04: depth range 0.17-1.05 m, mean conf 1.01
+  peeling_paint__shot_05: depth range 0.19-0.64 m, mean conf 1.00
+  peeling_paint__shot_06: depth range 0.12-0.47 m, mean conf 1.00
+  peeling_paint__shot_07: depth range 0.14-0.41 m, mean conf 1.00
+  peeling_paint__shot_08: depth range 0.14-0.40 m, mean conf 1.00
+  peeling_paint__shot_09: depth range 0.13-0.47 m, mean conf 1.00
+  peeling_paint__shot_10: depth range 0.15-0.56 m, mean conf 1.00
+  peeling_paint__shot_11: depth range 0.15-0.43 m, mean conf 1.00
+[geometry_da3] camera center pairwise distances (sanity check, pre-scale-correction):
+  peeling_paint__shot_01 <-> peeling_paint__shot_02: 0.414
+  peeling_paint__shot_01 <-> peeling_paint__shot_03: 0.313
+  peeling_paint__shot_01 <-> peeling_paint__shot_04: 0.461
+  peeling_paint__shot_01 <-> peeling_paint__shot_05: 0.107
+  peeling_paint__shot_01 <-> peeling_paint__shot_06: 0.302
+  peeling_paint__shot_01 <-> peeling_paint__shot_07: 0.416
+  peeling_paint__shot_01 <-> peeling_paint__shot_08: 0.446
+  peeling_paint__shot_01 <-> peeling_paint__shot_09: 0.539
+  peeling_paint__shot_01 <-> peeling_paint__shot_10: 0.522
+  peeling_paint__shot_01 <-> peeling_paint__shot_11: 0.400
+  peeling_paint__shot_02 <-> peeling_paint__shot_03: 0.187
+  peeling_paint__shot_02 <-> peeling_paint__shot_04: 0.117
+  peeling_paint__shot_02 <-> peeling_paint__shot_05: 0.472
+  peeling_paint__shot_02 <-> peeling_paint__shot_06: 0.601
+  peeling_paint__shot_02 <-> peeling_paint__shot_07: 0.716
+  peeling_paint__shot_02 <-> peeling_paint__shot_08: 0.753
+  peeling_paint__shot_02 <-> peeling_paint__shot_09: 0.776
+  peeling_paint__shot_02 <-> peeling_paint__shot_10: 0.730
+  peeling_paint__shot_02 <-> peeling_paint__shot_11: 0.647
+  peeling_paint__shot_03 <-> peeling_paint__shot_04: 0.175
+  peeling_paint__shot_03 <-> peeling_paint__shot_05: 0.385
+  peeling_paint__shot_03 <-> peeling_paint__shot_06: 0.520
+  peeling_paint__shot_03 <-> peeling_paint__shot_07: 0.625
+  peeling_paint__shot_03 <-> peeling_paint__shot_08: 0.675
+  peeling_paint__shot_03 <-> peeling_paint__shot_09: 0.734
+  peeling_paint__shot_03 <-> peeling_paint__shot_10: 0.688
+  peeling_paint__shot_03 <-> peeling_paint__shot_11: 0.589
+  peeling_paint__shot_04 <-> peeling_paint__shot_05: 0.533
+  peeling_paint__shot_04 <-> peeling_paint__shot_06: 0.669
+  peeling_paint__shot_04 <-> peeling_paint__shot_07: 0.779
+  peeling_paint__shot_04 <-> peeling_paint__shot_08: 0.824
+  peeling_paint__shot_04 <-> peeling_paint__shot_09: 0.862
+  peeling_paint__shot_04 <-> peeling_paint__shot_10: 0.814
+  peeling_paint__shot_04 <-> peeling_paint__shot_11: 0.726
+  peeling_paint__shot_05 <-> peeling_paint__shot_06: 0.201
+  peeling_paint__shot_05 <-> peeling_paint__shot_07: 0.319
+  peeling_paint__shot_05 <-> peeling_paint__shot_08: 0.343
+  peeling_paint__shot_05 <-> peeling_paint__shot_09: 0.434
+  peeling_paint__shot_05 <-> peeling_paint__shot_10: 0.422
+  peeling_paint__shot_05 <-> peeling_paint__shot_11: 0.299
+  peeling_paint__shot_06 <-> peeling_paint__shot_07: 0.127
+  peeling_paint__shot_06 <-> peeling_paint__shot_08: 0.156
+  peeling_paint__shot_06 <-> peeling_paint__shot_09: 0.254
+  peeling_paint__shot_06 <-> peeling_paint__shot_10: 0.239
+  peeling_paint__shot_06 <-> peeling_paint__shot_11: 0.114
+  peeling_paint__shot_07 <-> peeling_paint__shot_08: 0.080
+  peeling_paint__shot_07 <-> peeling_paint__shot_09: 0.216
+  peeling_paint__shot_07 <-> peeling_paint__shot_10: 0.210
+  peeling_paint__shot_07 <-> peeling_paint__shot_11: 0.133
+  peeling_paint__shot_08 <-> peeling_paint__shot_09: 0.168
+  peeling_paint__shot_08 <-> peeling_paint__shot_10: 0.191
+  peeling_paint__shot_08 <-> peeling_paint__shot_11: 0.134
+  peeling_paint__shot_09 <-> peeling_paint__shot_10: 0.079
+  peeling_paint__shot_09 <-> peeling_paint__shot_11: 0.151
+  peeling_paint__shot_10 <-> peeling_paint__shot_11: 0.126
+gravity-vector cross-shot agreement: 1.012
+
+=== [D] Scale calibration (ruler vs DA3's own depth) ===
+peeling_paint__shot_01: ruler aspect ratio 2.8 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)
+peeling_paint__shot_02: Depth Pro predicted 9.1cm for a known 15cm ruler (64.0% off) -> applying 1.640x correction
+peeling_paint__shot_03: Depth Pro predicted 10.0cm for a known 15cm ruler (50.0% off) -> applying 1.500x correction
+peeling_paint__shot_04: Depth Pro predicted 16.5cm for a known 15cm ruler (9.2% off) -> applying 0.908x correction
+peeling_paint__shot_05: no ruler detected
+peeling_paint__shot_06: Depth Pro predicted 30.1cm for a known 15cm ruler (50.2% off) -> applying 0.498x correction
+peeling_paint__shot_07: Depth Pro predicted 19.4cm for a known 15cm ruler (22.6% off) -> applying 0.774x correction
+peeling_paint__shot_08: Depth Pro predicted 33.2cm for a known 15cm ruler (54.8% off) -> applying 0.452x correction
+peeling_paint__shot_09: Depth Pro predicted 22.5cm for a known 15cm ruler (33.4% off) -> applying 0.666x correction
+peeling_paint__shot_10: Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction
+peeling_paint__shot_11: Depth Pro predicted 23.5cm for a known 15cm ruler (36.1% off) -> applying 0.639x correction
+
+=== [E] Segmentation (SAM2) ===
+peeling_paint__shot_01: SAM2 score=0.939, 282354px core / 361717px dilated
+peeling_paint__shot_02: SAM2 score=0.945, 122912px core / 154710px dilated
+peeling_paint__shot_03: SAM2 score=0.946, 198827px core / 380959px dilated
+peeling_paint__shot_04: SAM2 score=0.958, 362354px core / 429468px dilated
+peeling_paint__shot_05: SAM2 score=0.787, 19178px core / 22166px dilated
+peeling_paint__shot_06: SAM2 score=0.780, 11366px core / 16396px dilated
+peeling_paint__shot_07: SAM2 score=0.802, 13162px core / 18794px dilated
+peeling_paint__shot_08: SAM2 score=0.899, 72650px core / 101663px dilated
+peeling_paint__shot_09: SAM2 score=0.794, 86048px core / 150312px dilated
+peeling_paint__shot_10: SAM2 score=0.912, 33415px core / 83296px dilated
+peeling_paint__shot_11: SAM2 score=0.841, 23004px core / 40528px dilated
+
+=== [V2] Qwen mask verification ===
+peeling_paint__shot_01: [FLAGGED] confidence=0.2 - The red overlay covers a painted surface with chipped paint, not a structural defect like a hole or decay.
+peeling_paint__shot_02: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a visible defect like a hole or decay; it appears to mark a painted surface with chipping or wear.
+peeling_paint__shot_03: [FLAGGED] confidence=0.2 - The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.
+peeling_paint__shot_04: [FLAGGED] confidence=0.2 - The red overlay covers a painted surface with peeling paint, not a structural defect like a hole or decay.
+peeling_paint__shot_05: [FLAGGED] confidence=0.2 - The red region appears to mark a painted surface rather than a structural defect.
+peeling_paint__shot_06: [OK] confidence=0.95 - The red overlay precisely outlines the damaged area where wood is missing or decayed.
+peeling_paint__shot_07: [FLAGGED] confidence=0.2 - The red overlay does not tightly match a hole or decayed material; it appears to cover a small, irregular mark that may be paint or a scratch.
+peeling_paint__shot_08: [OK] confidence=0.95 - The red overlay accurately highlights the area of missing material and peeling paint, indicating decay or damage.
+peeling_paint__shot_09: [OK] confidence=0.95 - The red overlay accurately highlights the damaged, missing material area.
+peeling_paint__shot_10: [OK] confidence=0.95 - The red overlay accurately highlights a visible area of missing or decayed material on the siding.
+peeling_paint__shot_11: [OK] confidence=0.95 - The red overlay accurately highlights a missing section of material consistent with decay or damage.
+
+=== [F] Back-projection + fusion ===
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+[fusion] colored ICP failed ([1;31m[Open3D Error] (virtual Eigen::Matrix4d open3d::pipelines::registration::TransformationEstimationForColoredICP::ComputeTransformation(const open3d::geometry::PointCloud&, const open3d::geometry::PointCloud&, const CorrespondenceSet&) const) /root/Open3D/cpp/open3d/pipelines/registration/ColoredICP.cpp:102: No correspondences found between source and target pointcloud.
+[0;m), using raw pose-based alignment
+fused defect points: 38824, surrounding points: 47832
+
+=== [G] Reference plane fit ===
+plane normal=[-0.25474996  0.96208193 -0.09747216], inlier_ratio=0.23
+
+=== [H] Measurements ===
+{
+  "depth_mm": {
+    "max": 617.5859485640533,
+    "mean": 83.9252108381716,
+    "confidence": "medium"
+  },
+  "width_mm": 801.4783832455407,
+  "length_mm": 1910.8700777683732,
+  "area_mm2": 1038995.78618087,
+  "volume_mm3": 87197940.41520137,
+  "inclination_deg": {
+    "value": 83.10792672027131,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 38824,
+  "defect_id": "peeling_paint",
+  "shots_used": 11,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "peeling_paint__shot_01",
+    "peeling_paint__shot_02",
+    "peeling_paint__shot_03",
+    "peeling_paint__shot_04",
+    "peeling_paint__shot_05",
+    "peeling_paint__shot_07"
+  ]
+}
+point cloud saved: /workspace/geofinal_all/code/output/peeling_paint/defect_pointcloud.ply (86656 points)
+
+=== [J] Interpretation ===
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      617.5859485640533
+    ],
+    [
+      "severe",
+      "area_mm2",
+      1038995.78618087
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "peeling_paint",
+    "severity": "moderate",
+    "description": "The paint is peeling off the wooden surface in a large area, revealing the underlying material.",
+    "measurement_plausible": true,
+    "notes": ""
+  }
+}
+
+=== [I] Meshing + export (last, on purpose - see DESIGN.md) ===
+exported: {'mesh_ply': '/workspace/geofinal_all/code/output/peeling_paint/mesh.ply', 'mesh_glb': '/workspace/geofinal_all/code/output/peeling_paint/mesh.glb'}
+
+Done. Output in /workspace/geofinal_all/code/output/peeling_paint

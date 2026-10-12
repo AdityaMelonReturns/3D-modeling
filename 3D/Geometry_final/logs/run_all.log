@@ -1,0 +1,16 @@
+##### START ceiling (hole_or_rot) Sat Oct 10 10:47:26 UTC 2026
+##### END ceiling exit=0 Sat Oct 10 10:48:46 UTC 2026
+##### START roof (hole_or_rot) Sat Oct 10 10:48:46 UTC 2026
+##### END roof exit=1 Sat Oct 10 10:49:10 UTC 2026
+##### START gaps (crack_or_gap) Sat Oct 10 10:49:10 UTC 2026
+##### END gaps exit=0 Sat Oct 10 10:49:47 UTC 2026
+##### START invlined_railing (inclination) Sat Oct 10 10:49:47 UTC 2026
+##### END invlined_railing exit=0 Sat Oct 10 10:50:45 UTC 2026
+##### START peeling_paint (hole_or_rot) Sat Oct 10 10:50:45 UTC 2026
+##### END peeling_paint exit=0 Sat Oct 10 10:52:11 UTC 2026
+##### START rotten_wood (hole_or_rot) Sat Oct 10 10:52:11 UTC 2026
+##### END rotten_wood exit=0 Sat Oct 10 10:54:54 UTC 2026
+##### START wood1 (hole_or_rot) Sat Oct 10 10:54:54 UTC 2026
+##### END wood1 exit=0 Sat Oct 10 10:55:32 UTC 2026
+##### ALL DONE
+##### ROOF RERUN exit=0

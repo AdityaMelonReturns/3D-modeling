@@ -1,0 +1,264 @@
+{
+  "gravity_agreement": 0.9837872807383867,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.034055172327795216,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 4.404617265071735,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 96.59448276722048,
+      "detail": "Depth Pro predicted 440.5cm for a known 15cm ruler (96.6% off) -> applying 0.034x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.048598915534501685,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 3.0864886253173887,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 95.14010844654983,
+      "detail": "Depth Pro predicted 308.6cm for a known 15cm ruler (95.1% off) -> applying 0.049x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.06297089612293655,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 2.382052809081177,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 93.70291038770635,
+      "detail": "Depth Pro predicted 238.2cm for a known 15cm ruler (93.7% off) -> applying 0.063x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.09947152422168366,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.5079692522425598,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 90.05284757783163,
+      "detail": "Depth Pro predicted 150.8cm for a known 15cm ruler (90.1% off) -> applying 0.099x correction"
+    }
+  ],
+  "camera_centers": {
+    "gaps__shot_01": [
+      -0.459645692908758,
+      -0.44373349118585875,
+      -0.41220520750388356
+    ],
+    "gaps__shot_05": [
+      0.10168183627923844,
+      0.0458541468358539,
+      0.04727695658568598
+    ],
+    "gaps__shot_07": [
+      0.00018505170439407116,
+      -3.922171488368831e-05,
+      -0.00019825529117790844
+    ],
+    "gaps__shot_08": [
+      -0.4990653867328856,
+      0.2339346743804951,
+      -0.4244296496498041
+    ]
+  },
+  "mean_conf_per_shot": {
+    "gaps__shot_01": 1.0018641948699951,
+    "gaps__shot_05": 1.293442964553833,
+    "gaps__shot_07": 1.6793150901794434,
+    "gaps__shot_08": 1.0000007152557373
+  },
+  "v1_quality_gate": {
+    "gaps__shot_01": {
+      "usable": true,
+      "box_2d": [
+        283,
+        769,
+        302,
+        798
+      ],
+      "defect_type_guess": "hole",
+      "reason": "A small, dark hole is visible in the siding.",
+      "box_rel_1000": [
+        283,
+        769,
+        302,
+        798
+      ],
+      "box": [
+        543,
+        766,
+        580,
+        795
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [283, 769, 302, 798], \"defect_type_guess\": \"hole\", \"reason\": \"A small, dark hole is visible in the siding.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_02": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The image shows a ruler being held near a gutter, not a visible crack or gap in a surface.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_03": {
+      "usable": false,
+      "box_2d": [
+        0,
+        0,
+        552,
+        1000
+      ],
+      "defect_type_guess": "other",
+      "reason": "The image shows a ruler and roof structure, not a crack or gap.",
+      "box_rel_1000": [
+        0,
+        0,
+        552,
+        1000
+      ],
+      "box": [
+        0,
+        0,
+        1060,
+        995
+      ],
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 552, 1000], \"defect_type_guess\": \"other\", \"reason\": \"The image shows a ruler and roof structure, not a crack or gap.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_04": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The image does not show a clear defect such as a crack or gap.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_05": {
+      "usable": true,
+      "box_2d": [
+        129,
+        430,
+        161,
+        474
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A clear crack is visible in the wooden siding.",
+      "box_rel_1000": [
+        129,
+        430,
+        161,
+        474
+      ],
+      "box": [
+        248,
+        428,
+        309,
+        472
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [129, 430, 161, 474], \"defect_type_guess\": \"crack\", \"reason\": \"A clear crack is visible in the wooden siding.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_06": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The image shows a ruler and a hand, not a visible defect like a crack or gap.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_07": {
+      "usable": true,
+      "box_2d": [
+        386,
+        783,
+        416,
+        832
+      ],
+      "defect_type_guess": "crack",
+      "reason": "A visible crack is present in the wall surface.",
+      "box_rel_1000": [
+        386,
+        783,
+        416,
+        832
+      ],
+      "box": [
+        741,
+        780,
+        799,
+        829
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [386, 783, 416, 832], \"defect_type_guess\": \"crack\", \"reason\": \"A visible crack is present in the wall surface.\"}",
+      "source": "qwen"
+    },
+    "gaps__shot_08": {
+      "usable": true,
+      "box_2d": [
+        294,
+        308,
+        317,
+        347
+      ],
+      "defect_type_guess": "hole",
+      "reason": "A small, distinct hole is visible in the siding.",
+      "box_rel_1000": [
+        294,
+        308,
+        317,
+        347
+      ],
+      "box": [
+        564,
+        307,
+        609,
+        346
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [294, 308, 317, 347], \"defect_type_guess\": \"hole\", \"reason\": \"A small, distinct hole is visible in the siding.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "gaps__shot_01": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red dot marks a small, non-defective surface feature rather than a crack or gap.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red dot marks a small, non-defective surface feature rather than a crack or gap.\"}"
+    },
+    "gaps__shot_05": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely highlights a visible crack in the wooden surface.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely highlights a visible crack in the wooden surface.\"}"
+    },
+    "gaps__shot_07": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights a visible crack on the surface.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights a visible crack on the surface.\"}"
+    },
+    "gaps__shot_08": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay precisely marks a small, visible crack on the siding surface.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay precisely marks a small, visible crack on the siding surface.\"}"
+    }
+  }
+}

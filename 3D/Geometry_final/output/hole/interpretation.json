@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      825.9911307631397
+    ],
+    [
+      "severe",
+      "area_mm2",
+      205547.6434780384
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "hole",
+    "severity": "low",
+    "description": "A small, irregularly shaped hole in a textured wall with minor damage around the edges.",
+    "measurement_plausible": false,
+    "notes": "The measurements are implausible: the depth (max 825.99 mm) and volume (34,832,426 mm\u00b3) are far too large for a typical wall hole; the length (1151.79 mm) exceeds the visible wall area, suggesting the model misinterpreted the scene or the data is corrupted."
+  }
+}

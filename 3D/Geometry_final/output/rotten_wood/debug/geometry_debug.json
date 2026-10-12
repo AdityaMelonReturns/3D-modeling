@@ -1,0 +1,796 @@
+{
+  "gravity_agreement": 1.002566872346156,
+  "scale_infos": [
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.09910290815999437,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.5135781864023203,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 90.08970918400057,
+      "detail": "Depth Pro predicted 151.4cm for a known 15cm ruler (90.1% off) -> applying 0.099x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4096185989579477,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.36619430949081316,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 59.038140104205226,
+      "detail": "Depth Pro predicted 36.6cm for a known 15cm ruler (59.0% off) -> applying 0.410x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 3.0 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": NaN,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": NaN,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": NaN,
+      "detail": "Depth Pro predicted nancm for a known 15cm ruler (nan% off) -> applying nanx correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3779824004123388,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3968438737792179,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 62.20175995876611,
+      "detail": "Depth Pro predicted 39.7cm for a known 15cm ruler (62.2% off) -> applying 0.378x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.45269373968092147,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3313498439490827,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 54.73062603190786,
+      "detail": "Depth Pro predicted 33.1cm for a known 15cm ruler (54.7% off) -> applying 0.453x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.12892725212686726,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 1.1634468083783922,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 87.10727478731327,
+      "detail": "Depth Pro predicted 116.3cm for a known 15cm ruler (87.1% off) -> applying 0.129x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 3.0 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.33661161393325023,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.44561742314020353,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 66.33883860667498,
+      "detail": "Depth Pro predicted 44.6cm for a known 15cm ruler (66.3% off) -> applying 0.337x correction"
+    },
+    {
+      "scale_source": "model_estimate",
+      "correction_scalar": 1.0,
+      "reliable": false,
+      "detail": "ruler aspect ratio 2.8 < 3.0 - likely oblique/foreshortened, not trusted (see Geometry/REPORT.md Sec.3: wood1/rotten_wood hit exactly this)"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.45349598006519254,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.33076368169445886,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 54.65040199348075,
+      "detail": "Depth Pro predicted 33.1cm for a known 15cm ruler (54.7% off) -> applying 0.453x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.5527269001400759,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.27138176188274166,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 44.72730998599241,
+      "detail": "Depth Pro predicted 27.1cm for a known 15cm ruler (44.7% off) -> applying 0.553x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4642691009095563,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.323088484041115,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 53.57308990904437,
+      "detail": "Depth Pro predicted 32.3cm for a known 15cm ruler (53.6% off) -> applying 0.464x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.3925147896127693,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.38215120543096137,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 60.74852103872307,
+      "detail": "Depth Pro predicted 38.2cm for a known 15cm ruler (60.7% off) -> applying 0.393x correction"
+    },
+    {
+      "scale_source": "card_verified",
+      "correction_scalar": 0.4210794558740156,
+      "reliable": true,
+      "depth_predicted_ruler_length_m": 0.3562273055774041,
+      "known_ruler_length_m": 0.15,
+      "disagreement_pct": 57.89205441259844,
+      "detail": "Depth Pro predicted 35.6cm for a known 15cm ruler (57.9% off) -> applying 0.421x correction"
+    }
+  ],
+  "camera_centers": {
+    "rotten_wood__shot_02": [
+      0.010963067824667494,
+      -0.07165297013842586,
+      0.3613615484977446
+    ],
+    "rotten_wood__shot_03": [
+      0.037087588919678394,
+      -0.03792944159723646,
+      0.40912069675458956
+    ],
+    "rotten_wood__shot_04": [
+      -0.044829424038641985,
+      -0.05731429089448842,
+      0.3496440830826091
+    ],
+    "rotten_wood__shot_05": [
+      0.051835298678467596,
+      -0.029328498072448528,
+      0.3101364185085309
+    ],
+    "rotten_wood__shot_06": [
+      0.05249232112510205,
+      -0.06458199724392188,
+      0.28250979250782443
+    ],
+    "rotten_wood__shot_08": [
+      0.01708928152757694,
+      0.024753471511309195,
+      -0.0005408761477869173
+    ],
+    "rotten_wood__shot_09": [
+      -0.06816308527190562,
+      0.02886009055289429,
+      0.18943574396805296
+    ],
+    "rotten_wood__shot_10": [
+      -0.07800802948613439,
+      0.05051025452279091,
+      0.18529912128176929
+    ],
+    "rotten_wood__shot_11": [
+      -0.08117806977931341,
+      0.01972205116346662,
+      0.18956147238362764
+    ],
+    "rotten_wood__shot_12": [
+      -0.08704734429666156,
+      0.11825795290956143,
+      0.18623461635062954
+    ],
+    "rotten_wood__shot_13": [
+      -0.07662851008904797,
+      0.0727952056401628,
+      0.16613913273396375
+    ],
+    "rotten_wood__shot_15": [
+      0.00821289046594698,
+      0.006343534205412803,
+      -0.0024579243070510116
+    ],
+    "rotten_wood__shot_16": [
+      0.00035134654146742287,
+      -0.0004873890546129693,
+      -0.0008992477407306328
+    ],
+    "rotten_wood__shot_17": [
+      -0.003702698515849305,
+      -0.008913802573343049,
+      0.021726326038575
+    ],
+    "rotten_wood__shot_18": [
+      -0.06876695540098783,
+      -0.009953759078508359,
+      0.019340749204439685
+    ],
+    "rotten_wood__shot_20": [
+      -0.020832020927414208,
+      0.11200453126874965,
+      0.0428752828512412
+    ]
+  },
+  "mean_conf_per_shot": {
+    "rotten_wood__shot_02": 1.000000238418579,
+    "rotten_wood__shot_03": 1.0000015497207642,
+    "rotten_wood__shot_04": 1.000085473060608,
+    "rotten_wood__shot_05": 1.0000016689300537,
+    "rotten_wood__shot_06": 1.0000009536743164,
+    "rotten_wood__shot_08": 1.2529001235961914,
+    "rotten_wood__shot_09": 1.219083309173584,
+    "rotten_wood__shot_10": 1.1889712810516357,
+    "rotten_wood__shot_11": 1.1997092962265015,
+    "rotten_wood__shot_12": 1.2891291379928589,
+    "rotten_wood__shot_13": 1.1985764503479004,
+    "rotten_wood__shot_15": 1.2586560249328613,
+    "rotten_wood__shot_16": 1.2958662509918213,
+    "rotten_wood__shot_17": 1.288940668106079,
+    "rotten_wood__shot_18": 1.2140679359436035,
+    "rotten_wood__shot_20": 1.272629976272583
+  },
+  "v1_quality_gate": {
+    "rotten_wood__shot_01": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The photo is blurry and does not clearly show any house defect.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_02": {
+      "usable": true,
+      "box_2d": [
+        475,
+        0,
+        633,
+        864
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows clear signs of decay and rot with visible damage and discoloration.",
+      "box_rel_1000": [
+        475,
+        0,
+        633,
+        864
+      ],
+      "box": [
+        912,
+        0,
+        1215,
+        861
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [475, 0, 633, 864], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows clear signs of decay and rot with visible damage and discoloration.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_03": {
+      "usable": true,
+      "box_2d": [
+        440,
+        100,
+        630,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows clear signs of decay and rot along the bottom edge.",
+      "box_rel_1000": [
+        440,
+        100,
+        630,
+        999
+      ],
+      "box": [
+        845,
+        100,
+        1210,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [440, 100, 630, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows clear signs of decay and rot along the bottom edge.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_04": {
+      "usable": true,
+      "box_2d": [
+        447,
+        295,
+        556,
+        998
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden planks show clear signs of decay and rot, with dark, crumbling edges and discoloration.",
+      "box_rel_1000": [
+        447,
+        295,
+        556,
+        998
+      ],
+      "box": [
+        858,
+        294,
+        1068,
+        994
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [447, 295, 556, 998], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden planks show clear signs of decay and rot, with dark, crumbling edges and discoloration.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_05": {
+      "usable": true,
+      "box_2d": [
+        441,
+        0,
+        698,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows clear signs of decay and rot.",
+      "box_rel_1000": [
+        441,
+        0,
+        698,
+        999
+      ],
+      "box": [
+        847,
+        0,
+        1340,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [441, 0, 698, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows clear signs of decay and rot.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_06": {
+      "usable": true,
+      "box_2d": [
+        443,
+        0,
+        555,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows clear signs of rot with dark, crumbling edges.",
+      "box_rel_1000": [
+        443,
+        0,
+        555,
+        999
+      ],
+      "box": [
+        851,
+        0,
+        1066,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [443, 0, 555, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows clear signs of rot with dark, crumbling edges.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_07": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The image is too blurry to identify any clear defect.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_08": {
+      "usable": true,
+      "box_2d": [
+        408,
+        11,
+        998,
+        998
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden structure shows signs of decay and rot, with visible damage and discoloration.",
+      "box_rel_1000": [
+        408,
+        11,
+        998,
+        998
+      ],
+      "box": [
+        783,
+        11,
+        1916,
+        994
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [408, 11, 998, 998], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden structure shows signs of decay and rot, with visible damage and discoloration.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_09": {
+      "usable": true,
+      "box_2d": [
+        394,
+        0,
+        835,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden surface shows signs of decay and rot, indicated by the dark, crumbling edges and texture.",
+      "box_rel_1000": [
+        394,
+        0,
+        835,
+        999
+      ],
+      "box": [
+        756,
+        0,
+        1603,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [394, 0, 835, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden surface shows signs of decay and rot, indicated by the dark, crumbling edges and texture.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_10": {
+      "usable": true,
+      "box_2d": [
+        407,
+        0,
+        832,
+        768
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden structure shows clear signs of decay and rot.",
+      "box_rel_1000": [
+        407,
+        0,
+        832,
+        768
+      ],
+      "box": [
+        781,
+        0,
+        1597,
+        765
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [407, 0, 832, 768], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden structure shows clear signs of decay and rot.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_11": {
+      "usable": true,
+      "box_2d": [
+        353,
+        0,
+        1000,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden structure shows clear signs of rot and decay.",
+      "box_rel_1000": [
+        353,
+        0,
+        1000,
+        999
+      ],
+      "box": [
+        678,
+        0,
+        1919,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [353, 0, 1000, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden structure shows clear signs of rot and decay.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_12": {
+      "usable": true,
+      "box_2d": [
+        501,
+        373,
+        656,
+        440
+      ],
+      "defect_type_guess": "rot",
+      "reason": "Visible wood decay and discoloration indicate rot.",
+      "box_rel_1000": [
+        501,
+        373,
+        656,
+        440
+      ],
+      "box": [
+        962,
+        372,
+        1260,
+        438
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [501, 373, 656, 440], \"defect_type_guess\": \"rot\", \"reason\": \"Visible wood decay and discoloration indicate rot.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_13": {
+      "usable": true,
+      "box_2d": [
+        445,
+        0,
+        998,
+        998
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden structure shows clear signs of decay and rot.",
+      "box_rel_1000": [
+        445,
+        0,
+        998,
+        998
+      ],
+      "box": [
+        854,
+        0,
+        1916,
+        994
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [445, 0, 998, 998], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden structure shows clear signs of decay and rot.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_14": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The image is blurry and the defect is not clearly identifiable.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_15": {
+      "usable": true,
+      "box_2d": [
+        373,
+        0,
+        999,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden fence shows signs of rot and decay, with visible damage and discoloration.",
+      "box_rel_1000": [
+        373,
+        0,
+        999,
+        999
+      ],
+      "box": [
+        716,
+        0,
+        1918,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [373, 0, 999, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden fence shows signs of rot and decay, with visible damage and discoloration.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_16": {
+      "usable": true,
+      "box_2d": [
+        262,
+        0,
+        755,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wood shows signs of decay and rot, indicated by its weathered and broken appearance.",
+      "box_rel_1000": [
+        262,
+        0,
+        755,
+        999
+      ],
+      "box": [
+        503,
+        0,
+        1450,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [262, 0, 755, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wood shows signs of decay and rot, indicated by its weathered and broken appearance.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_17": {
+      "usable": true,
+      "box_2d": [
+        382,
+        0,
+        838,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden structure shows clear signs of rot and decay, with visible gaps and deteriorated wood.",
+      "box_rel_1000": [
+        382,
+        0,
+        838,
+        999
+      ],
+      "box": [
+        733,
+        0,
+        1609,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [382, 0, 838, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden structure shows clear signs of rot and decay, with visible gaps and deteriorated wood.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_18": {
+      "usable": true,
+      "box_2d": [
+        354,
+        0,
+        788,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden fence shows clear signs of rot with warped and discolored planks.",
+      "box_rel_1000": [
+        354,
+        0,
+        788,
+        999
+      ],
+      "box": [
+        680,
+        0,
+        1513,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [354, 0, 788, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden fence shows clear signs of rot with warped and discolored planks.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_19": {
+      "usable": false,
+      "box": null,
+      "box_rel_1000": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "defect_type_guess": "other",
+      "reason": "degenerate box from Qwen: [0, 0, 0, 0]",
+      "raw_response": "{\"usable\": false, \"box_2d\": [0, 0, 0, 0], \"defect_type_guess\": \"other\", \"reason\": \"The photo is not focused enough to clearly identify any defect like a hole, crack, or rot.\"}",
+      "source": "qwen"
+    },
+    "rotten_wood__shot_20": {
+      "usable": true,
+      "box_2d": [
+        347,
+        0,
+        807,
+        999
+      ],
+      "defect_type_guess": "rot",
+      "reason": "The wooden fence shows clear signs of rot and decay, with warped planks and visible damage.",
+      "box_rel_1000": [
+        347,
+        0,
+        807,
+        999
+      ],
+      "box": [
+        666,
+        0,
+        1549,
+        995
+      ],
+      "raw_response": "{\"usable\": true, \"box_2d\": [347, 0, 807, 999], \"defect_type_guess\": \"rot\", \"reason\": \"The wooden fence shows clear signs of rot and decay, with warped planks and visible damage.\"}",
+      "source": "qwen"
+    }
+  },
+  "v2_mask_verification": {
+    "rotten_wood__shot_02": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a visible defect like a hole or decayed material; it appears to cover a painted surface.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a visible defect like a hole or decayed material; it appears to cover a painted surface.\"}"
+    },
+    "rotten_wood__shot_03": {
+      "matches": true,
+      "confidence": 0.95,
+      "reason": "The red overlay accurately highlights a section of decayed wood with visible rot and missing material.",
+      "raw_response": "{\"matches\": true, \"confidence\": 0.95, \"reason\": \"The red overlay accurately highlights a section of decayed wood with visible rot and missing material.\"}"
+    },
+    "rotten_wood__shot_04": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a visible defect like a hole or decay; it appears to cover a non-defective area of the railing.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a visible defect like a hole or decay; it appears to cover a non-defective area of the railing.\"}"
+    },
+    "rotten_wood__shot_05": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a non-defective area of the structure.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a non-defective area of the structure.\"}"
+    },
+    "rotten_wood__shot_06": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay does not accurately delineate a defect; it appears to mark a painted surface rather than a structural issue.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay does not accurately delineate a defect; it appears to mark a painted surface rather than a structural issue.\"}"
+    },
+    "rotten_wood__shot_08": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region covers a painted surface without indicating a visible defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region covers a painted surface without indicating a visible defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_09": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay does not tightly match a visible defect like a hole or decay; it covers painted wood without clear evidence of damage.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay does not tightly match a visible defect like a hole or decay; it covers painted wood without clear evidence of damage.\"}"
+    },
+    "rotten_wood__shot_10": {
+      "matches": false,
+      "confidence": 0.3,
+      "reason": "The red overlay includes non-defective areas and does not tightly match the actual defect.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.3, \"reason\": \"The red overlay includes non-defective areas and does not tightly match the actual defect.\"}"
+    },
+    "rotten_wood__shot_11": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_12": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red region marks a painted area, not a structural defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red region marks a painted area, not a structural defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_13": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_15": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a large area of painted wood without indicating a specific defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_16": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay covers a large area of painted wood without indicating any actual defect like a hole or decay.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay covers a large area of painted wood without indicating any actual defect like a hole or decay.\"}"
+    },
+    "rotten_wood__shot_17": {
+      "matches": false,
+      "confidence": 0.1,
+      "reason": "The red overlay covers a painted surface without indicating any actual defect.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.1, \"reason\": \"The red overlay covers a painted surface without indicating any actual defect.\"}"
+    },
+    "rotten_wood__shot_18": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a painted surface, not a structural defect like rot or missing material.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a painted surface, not a structural defect like rot or missing material.\"}"
+    },
+    "rotten_wood__shot_20": {
+      "matches": false,
+      "confidence": 0.2,
+      "reason": "The red overlay covers a painted surface without clearly indicating a structural defect.",
+      "raw_response": "{\"matches\": false, \"confidence\": 0.2, \"reason\": \"The red overlay covers a painted surface without clearly indicating a structural defect.\"}"
+    }
+  }
+}

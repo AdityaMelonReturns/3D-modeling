@@ -1,0 +1,39 @@
+{
+  "depth_mm": {
+    "max": 851.7138790281986,
+    "mean": 131.76166383787424,
+    "confidence": "medium"
+  },
+  "width_mm": 936.7007134806921,
+  "length_mm": 1704.1459829059118,
+  "area_mm2": 1171210.8351361137,
+  "volume_mm3": 154320688.34248057,
+  "inclination_deg": {
+    "value": 87.93525412335968,
+    "source_agreement": false,
+    "confidence": "medium",
+    "note": null
+  },
+  "point_count": 72822,
+  "defect_id": "rotten_wood",
+  "shots_used": 16,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "rotten_wood__shot_02",
+    "rotten_wood__shot_04",
+    "rotten_wood__shot_05",
+    "rotten_wood__shot_06",
+    "rotten_wood__shot_08",
+    "rotten_wood__shot_09",
+    "rotten_wood__shot_10",
+    "rotten_wood__shot_11",
+    "rotten_wood__shot_12",
+    "rotten_wood__shot_13",
+    "rotten_wood__shot_15",
+    "rotten_wood__shot_16",
+    "rotten_wood__shot_17",
+    "rotten_wood__shot_18",
+    "rotten_wood__shot_20"
+  ]
+}

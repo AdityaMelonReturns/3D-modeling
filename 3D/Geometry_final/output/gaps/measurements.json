@@ -1,0 +1,25 @@
+{
+  "depth_mm": {
+    "max": null,
+    "mean": null,
+    "confidence": "low"
+  },
+  "width_mm": null,
+  "length_mm": null,
+  "area_mm2": null,
+  "volume_mm3": null,
+  "inclination_deg": {
+    "value": null,
+    "source_agreement": null,
+    "confidence": "low"
+  },
+  "point_count": 5,
+  "note": "only 5 defect points after fusion - below reliable measurement threshold, not fabricating a number (spec Sec.4)",
+  "defect_id": "gaps",
+  "shots_used": 4,
+  "scale_source": "card_verified",
+  "geometry_engine": "depth-anything/DA3-BASE",
+  "vlm_flagged_masks": [
+    "gaps__shot_01"
+  ]
+}

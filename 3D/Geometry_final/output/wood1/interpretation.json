@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      543.1855423378627
+    ],
+    [
+      "severe",
+      "area_mm2",
+      224417.71027187692
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "wood1",
+    "severity": "moderate",
+    "description": "A long, cracked red wooden surface with peeling paint and visible wood grain damage.",
+    "measurement_plausible": true,
+    "notes": ""
+  }
+}

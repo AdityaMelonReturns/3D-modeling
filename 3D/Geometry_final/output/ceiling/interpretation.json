@@ -1,0 +1,22 @@
+{
+  "rule_based_severity": "severe",
+  "rule_based_flags": [
+    [
+      "severe",
+      "depth_mm",
+      305.3045529466099
+    ],
+    [
+      "severe",
+      "area_mm2",
+      213460.89867678285
+    ]
+  ],
+  "qwen_vision": {
+    "defect_type": "ceiling",
+    "severity": "severe",
+    "description": "A large, jagged hole in the ceiling with exposed interior structure and damaged drywall.",
+    "measurement_plausible": false,
+    "notes": "The measured area and volume are implausibly large for a ceiling defect of this nature; the width and length measurements appear inconsistent with the visual scale of the hole, suggesting potential errors in depth or geometry estimation."
+  }
+}
