@@ -1,0 +1,197 @@
+{
+ "defect": "wood1",
+ "shot": "05",
+ "photo": "wood1__shot_05.jpg",
+ "box_xyxy": [
+  0,
+  50,
+  900,
+  700
+ ],
+ "box_source": "hand-drawn (prompts/wood1.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.17307482659816742,
+  "neg_points": [
+   [
+    700,
+    550
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": true,
+  "at_box_edge": true,
+  "meaning": "defect continues outside the photo - sizes are lower bounds"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "high",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 481.31207275390625,
+   "width_px": 60.60301208496094,
+   "aspect": 7.942048690239065,
+   "fill": 0.8484532477203537,
+   "solidity": 0.8673641047208496,
+   "implied_distance_cm": 26.372356007416013,
+   "end_width_ratio": 1.054684703151319,
+   "quad": [
+    [
+     1008.0938182104203,
+     894.2874953309909
+    ],
+    [
+     1268.0612587646747,
+     489.21586707707024
+    ],
+    [
+     1222.3491509291916,
+     460.17090623894205
+    ],
+    [
+     964.7518528828691,
+     866.7484964706263
+    ]
+   ],
+   "threshold": [
+    60,
+    90
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 27.78,
+    "body_cm_implied": 17.32,
+    "periodicity": 0.47,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 28.312474867876837,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 9.334117879695647
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    188,
+    201
+   ],
+   "length_px": 550,
+   "why": [
+    "aspect 25.3 not ruler-like",
+    "fill 0.48 too ragged",
+    "solidity 0.57 too ragged",
+    "ends differ 2.3x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1842,
+    914
+   ],
+   "length_px": 204,
+   "why": [
+    "aspect 1.6 not ruler-like",
+    "fill 0.34 too ragged",
+    "solidity 0.47 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1664,
+    825
+   ],
+   "length_px": 209,
+   "why": [
+    "fill 0.45 too ragged",
+    "solidity 0.55 too ragged",
+    "ends differ 3.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1795,
+    582
+   ],
+   "length_px": 269,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.46 too ragged",
+    "solidity 0.59 too ragged",
+    "ends differ 30.1x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    195,
+    206
+   ],
+   "length_px": 566,
+   "why": [
+    "aspect 17.7 not ruler-like",
+    "fill 0.46 too ragged",
+    "solidity 0.55 too ragged",
+    "ends differ 2.0x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 61.16,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 33.3,
+   "lower_bound": true
+  },
+  "length": {
+   "value": 42.6,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 12.7,
+   "pieces_cm": [
+    35.03,
+    7.57
+   ],
+   "method": "along skeleton (longest path per piece)",
+   "lower_bound": true
+  },
+  "width": {
+   "value": 0.72,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "max_p95_cm": 1.91,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 39.48,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "across_cm": 4.01,
+   "method": "min-area rectangle (overall L x W)",
+   "lower_bound": true
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "severe",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

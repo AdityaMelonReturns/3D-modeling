@@ -1,0 +1,161 @@
+{
+ "defect": "ceiling",
+ "shot": "04",
+ "photo": "ceiling__shot_04.jpg",
+ "box_xyxy": [
+  300,
+  100,
+  1200,
+  800
+ ],
+ "box_source": "hand-drawn (prompts/ceiling.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.6109001040458679,
+  "neg_points": [
+   [
+    950,
+    350
+   ],
+   [
+    919.9662358458496,
+    240.52741181331209
+   ],
+   [
+    929.1595095279293,
+    369.233249411875
+   ],
+   [
+    938.352783210009,
+    497.9390870104381
+   ],
+   [
+    947.5460568920887,
+    626.644924609001
+   ],
+   [
+    956.7393305741684,
+    755.350762207564
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": false,
+  "meaning": null
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "high",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 737.335693359375,
+   "width_px": 81.22163391113281,
+   "aspect": 9.078070187139026,
+   "fill": 0.8530813002631672,
+   "solidity": 0.918354874080998,
+   "implied_distance_cm": 17.215134771926255,
+   "end_width_ratio": 1.130094848145987,
+   "quad": [
+    [
+     871.883718002487,
+     133.079734377644
+    ],
+    [
+     928.6526593715942,
+     868.2390957479338
+    ],
+    [
+     998.7496367632541,
+     863.2321690267229
+    ],
+    [
+     951.0999510234076,
+     127.42143228495905
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 40.51,
+    "body_cm_implied": 18.2,
+    "periodicity": 0.32,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 43.372687844669116,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 5.939929880745032
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    937,
+    492
+   ],
+   "length_px": 721,
+   "why": [
+    "fill 0.67 too ragged",
+    "solidity 0.72 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 25.83,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 22.6
+  },
+  "length": {
+   "value": 18.85,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 13.4,
+   "pieces_cm": [
+    18.85
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 1.12,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "max_p95_cm": 2.82,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 17.04,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "across_cm": 3.44,
+   "method": "min-area rectangle (overall L x W)"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "moderate",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

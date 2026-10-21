@@ -1,0 +1,225 @@
+{
+ "defect": "rotten_wood",
+ "shot": "08",
+ "photo": "rotten_wood__shot_08.jpg",
+ "box_xyxy": [
+  700,
+  0,
+  1100,
+  350
+ ],
+ "box_source": "hand-drawn (prompts/rotten_wood.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.6596977114677429,
+  "neg_points": [
+   [
+    1050,
+    300
+   ],
+   [
+    1020.486035856183,
+    222.81738629555733
+   ],
+   [
+    1026.8915759638805,
+    281.17897335601765
+   ],
+   [
+    1033.2971160715779,
+    339.540560416478
+   ],
+   [
+    1039.7026561792754,
+    397.90214747693835
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": true,
+  "at_box_edge": true,
+  "meaning": "defect continues outside the photo - sizes are lower bounds"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "low",
+  "notes": [
+   "card held in the air, not on the defect's surface - size is approximate",
+   "card only 335 px long - coarse scale"
+  ],
+  "card_on_surface": false,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 335.49749755859375,
+   "width_px": 41.61594772338867,
+   "aspect": 8.061753147821262,
+   "fill": 0.9036282870781547,
+   "solidity": 0.9235414684137325,
+   "implied_distance_cm": 37.83436069032519,
+   "end_width_ratio": 1.003156675884985,
+   "quad": [
+    [
+     995.3979175396212,
+     174.94413101125224
+    ],
+    [
+     1033.0151073877055,
+     508.3276101680617
+    ],
+    [
+     1071.2642492046596,
+     504.12953358491984
+    ],
+    [
+     1033.7677995001702,
+     170.7328024609971
+    ]
+   ],
+   "threshold": [
+    60,
+    90
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 19.72,
+    "body_cm_implied": 17.02,
+    "periodicity": 0.75,
+    "verdict": "agrees with card outline"
+   }
+  },
+  "px_per_cm": 19.7351469152114,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 3.612213629573069
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    725,
+    172
+   ],
+   "length_px": 218,
+   "why": [
+    "fill 0.61 too ragged",
+    "ends differ 3.6x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    423,
+    931
+   ],
+   "length_px": 215,
+   "why": [
+    "aspect 3.5 not ruler-like",
+    "fill 0.34 too ragged",
+    "solidity 0.39 too ragged",
+    "ends differ 10.2x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    363,
+    255
+   ],
+   "length_px": 178,
+   "why": [
+    "aspect 1.3 not ruler-like",
+    "fill 0.33 too ragged",
+    "solidity 0.41 too ragged",
+    "only 178 px long - too small to scale from",
+    "ends differ 1.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    107,
+    289
+   ],
+   "length_px": 268,
+   "why": [
+    "aspect 1.2 not ruler-like",
+    "fill 0.29 too ragged",
+    "solidity 0.38 too ragged",
+    "ends differ 127.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    852,
+    230
+   ],
+   "length_px": 229,
+   "why": [
+    "aspect 2.1 not ruler-like",
+    "fill 0.61 too ragged"
+   ]
+  },
+  {
+   "center": [
+    727,
+    190
+   ],
+   "length_px": 268,
+   "why": [
+    "ends differ 2.8x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 103.72,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "low",
+   "uncertainty_pct": 15.0,
+   "lower_bound": true
+  },
+  "length": {
+   "value": 37.09,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "uncertainty_pct": 5.8,
+   "pieces_cm": [
+    25.62,
+    11.48
+   ],
+   "method": "along skeleton (longest path per piece)",
+   "lower_bound": true
+  },
+  "width": {
+   "value": 1.42,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "max_p95_cm": 5.15,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 18.81,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "across_cm": 15.31,
+   "method": "min-area rectangle (overall L x W)",
+   "lower_bound": true
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "severe",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

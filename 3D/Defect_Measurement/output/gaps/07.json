@@ -1,0 +1,19 @@
+{
+ "defect": "gaps",
+ "shot": "07",
+ "photo": "gaps__shot_07.jpg",
+ "box_xyxy": [
+  0,
+  850,
+  1900,
+  996
+ ],
+ "box_source": "hand-drawn (prompts/gaps.json)",
+ "edge_type": "thin",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "error": "ridge filter found no line in the box"
+}

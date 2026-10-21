@@ -1,0 +1,122 @@
+{
+ "defect": "gaps",
+ "shot": "08",
+ "photo": "gaps__shot_08.jpg",
+ "box_xyxy": [
+  650,
+  60,
+  1400,
+  300
+ ],
+ "box_source": "hand-drawn (prompts/gaps.json)",
+ "edge_type": "thin",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": false,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1152,
+    808
+   ],
+   "length_px": 686,
+   "why": [
+    "aspect 1.8 not ruler-like",
+    "fill 0.40 too ragged",
+    "solidity 0.66 too ragged",
+    "ends differ 2.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1794,
+    233
+   ],
+   "length_px": 252,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.25 too ragged",
+    "solidity 0.29 too ragged",
+    "ends differ 5.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1139,
+    807
+   ],
+   "length_px": 718,
+   "why": [
+    "aspect 1.9 not ruler-like",
+    "fill 0.48 too ragged",
+    "ends differ 4.5x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1504,
+    369
+   ],
+   "length_px": 153,
+   "why": [
+    "aspect 1.1 not ruler-like",
+    "fill 0.23 too ragged",
+    "solidity 0.29 too ragged",
+    "only 153 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    1783,
+    236
+   ],
+   "length_px": 277,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.27 too ragged",
+    "solidity 0.34 too ragged",
+    "ends differ 4.3x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "extent_cm": [
+     544.0917358398438,
+     23.10442352294922
+    ],
+    "length_cm": 584.1
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

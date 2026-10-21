@@ -1,0 +1,162 @@
+{
+ "defect": "ceiling",
+ "shot": "05",
+ "photo": "ceiling__shot_05.jpg",
+ "box_xyxy": [
+  540,
+  350,
+  1090,
+  800
+ ],
+ "box_source": "hand-drawn (prompts/ceiling.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.6293582916259766,
+  "neg_points": [
+   [
+    990,
+    550
+   ],
+   [
+    968.9631626862031,
+    428.0292260127892
+   ],
+   [
+    977.9451122230777,
+    507.840260625277
+   ],
+   [
+    986.9270617599524,
+    587.6512952377649
+   ],
+   [
+    995.9090112968271,
+    667.4623298502527
+   ],
+   [
+    1004.8909608337017,
+    747.2733644627406
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "high",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 458.9420471191406,
+   "width_px": 50.14326477050781,
+   "aspect": 9.152615993784899,
+   "fill": 0.8827458450324569,
+   "solidity": 0.9064521886573558,
+   "implied_distance_cm": 27.65781303546189,
+   "end_width_ratio": 1.0359494953452455,
+   "quad": [
+    [
+     937.0216823307807,
+     362.34804222704247
+    ],
+    [
+     989.5733381910642,
+     818.2730969973858
+    ],
+    [
+     1035.514576567525,
+     813.1028609922716
+    ],
+    [
+     984.6144850424108,
+     356.99193884672854
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 27.51,
+    "body_cm_implied": 16.68,
+    "periodicity": 0.66,
+    "verdict": "agrees with card outline"
+   }
+  },
+  "px_per_cm": 26.996591007008274,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 3.4084576046297776
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    983,
+    565
+   ],
+   "length_px": 412,
+   "why": [
+    "fill 0.69 too ragged",
+    "solidity 0.73 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 52.07,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 14.3
+  },
+  "length": {
+   "value": 32.24,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 5.7,
+   "pieces_cm": [
+    20.69,
+    11.56
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 0.81,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "max_p95_cm": 3.72,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 27.55,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "high",
+   "across_cm": 7.49,
+   "method": "min-area rectangle (overall L x W)"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "moderate",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

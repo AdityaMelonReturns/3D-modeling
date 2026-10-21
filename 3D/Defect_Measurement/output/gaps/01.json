@@ -1,0 +1,133 @@
+{
+ "defect": "gaps",
+ "shot": "01",
+ "photo": "gaps__shot_01.jpg",
+ "box_xyxy": [
+  50,
+  150,
+  900,
+  700
+ ],
+ "box_source": "hand-drawn (prompts/gaps.json)",
+ "edge_type": "thin",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": false,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1773,
+    730
+   ],
+   "length_px": 326,
+   "why": [
+    "aspect 4.7 not ruler-like",
+    "fill 0.47 too ragged",
+    "solidity 0.68 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1661,
+    471
+   ],
+   "length_px": 210,
+   "why": [
+    "aspect 2.8 not ruler-like",
+    "fill 0.46 too ragged",
+    "solidity 0.64 too ragged",
+    "ends differ 49.9x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1332,
+    112
+   ],
+   "length_px": 223,
+   "why": [
+    "fill 0.56 too ragged",
+    "ends differ 25.6x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    553,
+    174
+   ],
+   "length_px": 1106,
+   "why": [
+    "aspect 3.2 not ruler-like",
+    "fill 0.52 too ragged",
+    "solidity 0.74 too ragged",
+    "implies camera 11 cm away - implausible ruler size",
+    "ends differ 10.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1721,
+    462
+   ],
+   "length_px": 925,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.45 too ragged",
+    "solidity 0.60 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1324,
+    117
+   ],
+   "length_px": 238,
+   "why": [
+    "aspect 4.8 not ruler-like",
+    "fill 0.56 too ragged",
+    "solidity 0.65 too ragged",
+    "ends differ 11.9x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "extent_cm": [
+     711.9732055664062,
+     222.08914184570312
+    ],
+    "length_cm": 1263.8
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

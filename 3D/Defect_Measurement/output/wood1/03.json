@@ -1,0 +1,147 @@
+{
+ "defect": "wood1",
+ "shot": "03",
+ "photo": "wood1__shot_03.jpg",
+ "box_xyxy": [
+  800,
+  50,
+  1800,
+  700
+ ],
+ "box_source": "hand-drawn (prompts/wood1.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.3645707070827484,
+  "neg_points": [
+   [
+    1450,
+    350
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": false,
+  "meaning": null
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1322,
+    75
+   ],
+   "length_px": 183,
+   "why": [
+    "aspect 3.2 not ruler-like",
+    "fill 0.26 too ragged",
+    "solidity 0.42 too ragged",
+    "only 183 px long - too small to scale from",
+    "ends differ 648.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1813,
+    968
+   ],
+   "length_px": 212,
+   "why": [
+    "aspect 3.9 not ruler-like",
+    "fill 0.67 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1846,
+    819
+   ],
+   "length_px": 195,
+   "why": [
+    "aspect 2.9 not ruler-like",
+    "fill 0.26 too ragged",
+    "solidity 0.46 too ragged",
+    "only 195 px long - too small to scale from",
+    "ends differ 2.1x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1112,
+    226
+   ],
+   "length_px": 162,
+   "why": [
+    "aspect 1.9 not ruler-like",
+    "fill 0.31 too ragged",
+    "solidity 0.45 too ragged",
+    "only 162 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    1285,
+    83
+   ],
+   "length_px": 372,
+   "why": [
+    "aspect 3.9 not ruler-like",
+    "fill 0.22 too ragged",
+    "solidity 0.33 too ragged",
+    "ends differ 2.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1255,
+    17
+   ],
+   "length_px": 174,
+   "why": [
+    "aspect 3.7 not ruler-like",
+    "fill 0.37 too ragged",
+    "solidity 0.62 too ragged",
+    "only 174 px long - too small to scale from"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 24496.0,
+    "extent_cm": [
+     707.579345703125,
+     63.09825134277344
+    ],
+    "length_cm": 793.5
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

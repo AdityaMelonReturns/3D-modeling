@@ -1,0 +1,164 @@
+{
+ "defect": "gaps",
+ "shot": "06",
+ "photo": "gaps__shot_06.jpg",
+ "box_xyxy": [
+  300,
+  420,
+  1200,
+  850
+ ],
+ "box_source": "hand-drawn (prompts/gaps.json)",
+ "edge_type": "thin",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "low",
+  "notes": [
+   "card held in the air, not on the defect's surface - size is approximate"
+  ],
+  "card_on_surface": false,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 919.8789672851562,
+   "width_px": 127.52154541015625,
+   "aspect": 7.2135180320038215,
+   "fill": 0.8025872007660628,
+   "solidity": 0.9174108991692855,
+   "implied_distance_cm": 13.798916797494822,
+   "end_width_ratio": 1.3668121762616476,
+   "quad": [
+    [
+     313.2770192066458,
+     606.41648723289
+    ],
+    [
+     1194.666364236007,
+     870.4857947575642
+    ],
+    [
+     1223.189417316491,
+     782.3236187037176
+    ],
+    [
+     352.26267546120846,
+     485.9153515167692
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 52.17,
+    "body_cm_implied": 17.63,
+    "periodicity": 0.23,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 54.110527487362134,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 1.2934738388365008
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    746,
+    675
+   ],
+   "length_px": 864,
+   "why": [
+    "fill 0.63 too ragged",
+    "ends differ 2.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    580,
+    175
+   ],
+   "length_px": 1174,
+   "why": [
+    "aspect 3.3 not ruler-like",
+    "fill 0.45 too ragged",
+    "solidity 0.66 too ragged",
+    "implies camera 11 cm away - implausible ruler size",
+    "ends differ 14.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1431,
+    155
+   ],
+   "length_px": 317,
+   "why": [
+    "fill 0.40 too ragged",
+    "solidity 0.63 too ragged"
+   ]
+  },
+  {
+   "center": [
+    575,
+    174
+   ],
+   "length_px": 1192,
+   "why": [
+    "aspect 3.2 not ruler-like",
+    "fill 0.50 too ragged",
+    "implies camera 11 cm away - implausible ruler size",
+    "ends differ 4.5x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "length": {
+   "value": 7.54,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "uncertainty_pct": 11.3,
+   "pieces_cm": [
+    7.54
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 0.16,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "max_p95_cm": 0.21,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 7.17,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "across_cm": 0.41,
+   "method": "min-area rectangle (overall L x W)"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "low",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

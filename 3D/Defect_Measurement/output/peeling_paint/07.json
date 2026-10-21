@@ -1,0 +1,147 @@
+{
+ "defect": "peeling_paint",
+ "shot": "07",
+ "photo": "peeling_paint__shot_07.jpg",
+ "box_xyxy": [
+  820,
+  180,
+  1180,
+  700
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.23082876205444336,
+  "neg_points": [
+   [
+    1167.6471221267666,
+    185.8075821945278
+   ],
+   [
+    1177.8961936523767,
+    317.0745465917836
+   ],
+   [
+    1188.1452651779869,
+    448.34151098903936
+   ],
+   [
+    1198.3943367035972,
+    579.6084753862951
+   ],
+   [
+    1208.6434082292074,
+    710.875439783551
+   ]
+  ],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 43508,
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": false,
+  "meaning": null
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "high",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 752.3798217773438,
+   "width_px": 87.59228515625,
+   "aspect": 8.58956722541516,
+   "fill": 0.8873919959240283,
+   "solidity": 0.9280494481516453,
+   "implied_distance_cm": 16.87091142788482,
+   "end_width_ratio": 1.005726816731329,
+   "quad": [
+    [
+     1116.1648622699286,
+     76.62676738829123
+    ],
+    [
+     1181.1301398459325,
+     826.2240731483555
+    ],
+    [
+     1261.1925740983027,
+     819.9729526251162
+    ],
+    [
+     1195.7714044446493,
+     70.41124203961277
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 45.61,
+    "body_cm_implied": 16.5,
+    "periodicity": 0.22,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 44.257636575137866,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 4.496310899381384
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1200,
+    580
+   ],
+   "length_px": 485,
+   "why": [
+    "ends differ 2.3x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1168,
+    180
+   ],
+   "length_px": 211,
+   "why": [
+    "aspect 2.4 not ruler-like",
+    "fill 0.60 too ragged",
+    "solidity 0.72 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 1.15,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 18.2,
+   "range_tight_loose": [
+    1.2,
+    11.6
+   ]
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "low",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

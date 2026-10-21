@@ -1,0 +1,92 @@
+{
+ "defect": "wood1",
+ "shot": "02",
+ "photo": "wood1__shot_02.jpg",
+ "box_xyxy": [
+  850,
+  300,
+  1250,
+  600
+ ],
+ "box_source": "hand-drawn (prompts/wood1.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.645257294178009,
+  "neg_points": [
+   [
+    1150,
+    480
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": false,
+  "meaning": null
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1355,
+    830
+   ],
+   "length_px": 204,
+   "why": [
+    "aspect 12.8 not ruler-like",
+    "fill 0.54 too ragged",
+    "solidity 0.61 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1351,
+    825
+   ],
+   "length_px": 238,
+   "why": [
+    "fill 0.47 too ragged",
+    "solidity 0.60 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 11691.0,
+    "extent_cm": [
+     282.7637023925781,
+     136.02850341796875
+    ],
+    "length_cm": 425.0
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

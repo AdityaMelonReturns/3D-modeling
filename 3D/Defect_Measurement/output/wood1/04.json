@@ -1,0 +1,144 @@
+{
+ "defect": "wood1",
+ "shot": "04",
+ "photo": "wood1__shot_04.jpg",
+ "box_xyxy": [
+  250,
+  650,
+  750,
+  950
+ ],
+ "box_source": "hand-drawn (prompts/wood1.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.6973778605461121,
+  "neg_points": [
+   [
+    500,
+    830
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    484,
+    796
+   ],
+   "length_px": 350,
+   "why": [
+    "aspect 2.8 not ruler-like",
+    "fill 0.09 too ragged",
+    "solidity 0.18 too ragged",
+    "ends differ 5.1x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    497,
+    799
+   ],
+   "length_px": 391,
+   "why": [
+    "aspect 2.8 not ruler-like",
+    "fill 0.20 too ragged",
+    "solidity 0.35 too ragged",
+    "ends differ 2.1x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1177,
+    611
+   ],
+   "length_px": 405,
+   "why": [
+    "fill 0.58 too ragged",
+    "solidity 0.61 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1739,
+    229
+   ],
+   "length_px": 385,
+   "why": [
+    "fill 0.30 too ragged",
+    "solidity 0.50 too ragged",
+    "ends differ 39.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1324,
+    182
+   ],
+   "length_px": 378,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.24 too ragged",
+    "solidity 0.32 too ragged",
+    "ends differ 5.3x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1756,
+    103
+   ],
+   "length_px": 391,
+   "why": [
+    "aspect 2.4 not ruler-like",
+    "fill 0.29 too ragged",
+    "solidity 0.42 too ragged",
+    "ends differ 18.1x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 30329.0,
+    "extent_cm": [
+     433.7236633300781,
+     154.09205627441406
+    ],
+    "length_cm": 544.6
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}
