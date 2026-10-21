@@ -1,0 +1,187 @@
+{
+ "defect": "rotten_wood",
+ "shot": "15",
+ "photo": "rotten_wood__shot_15.jpg",
+ "box_xyxy": [
+  880,
+  0,
+  1100,
+  300
+ ],
+ "box_source": "hand-drawn (prompts/rotten_wood.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.31913864612579346,
+  "neg_points": [
+   [
+    1104.3383646235357,
+    305.7775646718841
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": true,
+  "at_box_edge": true,
+  "meaning": "defect continues outside the photo - sizes are lower bounds"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "low",
+  "notes": [
+   "card held in the air, not on the defect's surface - size is approximate",
+   "card only 323 px long - coarse scale"
+  ],
+  "card_on_surface": false,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 323.1976318359375,
+   "width_px": 41.22401809692383,
+   "aspect": 7.840032261679382,
+   "fill": 0.9044166665285545,
+   "solidity": 0.9200229051345676,
+   "implied_distance_cm": 39.27421516435108,
+   "end_width_ratio": 1.0837462733288499,
+   "quad": [
+    [
+     1083.4238108791194,
+     258.27696303544803
+    ],
+    [
+     1097.5030654395953,
+     581.173688802445
+    ],
+    [
+     1137.9378014783542,
+     579.1653409885416
+    ],
+    [
+     1120.733960896576,
+     256.4238098912766
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 19.1,
+    "body_cm_implied": 16.92,
+    "periodicity": 0.61,
+    "verdict": "agrees with card outline"
+   }
+  },
+  "px_per_cm": 19.01162540211397,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 18.340999433877702
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    47,
+    268
+   ],
+   "length_px": 155,
+   "why": [
+    "aspect 1.6 not ruler-like",
+    "fill 0.30 too ragged",
+    "solidity 0.41 too ragged",
+    "only 155 px long - too small to scale from",
+    "ends differ 2.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    797,
+    207
+   ],
+   "length_px": 170,
+   "why": [
+    "aspect 2.5 not ruler-like",
+    "fill 0.58 too ragged",
+    "only 170 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    266,
+    182
+   ],
+   "length_px": 170,
+   "why": [
+    "aspect 1.1 not ruler-like",
+    "fill 0.29 too ragged",
+    "solidity 0.40 too ragged",
+    "only 170 px long - too small to scale from",
+    "ends differ 2.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    672,
+    161
+   ],
+   "length_px": 265,
+   "why": [
+    "fill 0.67 too ragged",
+    "ends differ 3.5x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 110.65,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "low",
+   "uncertainty_pct": 57.7,
+   "lower_bound": true
+  },
+  "length": {
+   "value": 18.55,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "uncertainty_pct": 15.6,
+   "pieces_cm": [
+    18.55
+   ],
+   "method": "along skeleton (longest path per piece)",
+   "lower_bound": true
+  },
+  "width": {
+   "value": 2.94,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "max_p95_cm": 7.8,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 14.49,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "low",
+   "across_cm": 9.05,
+   "method": "min-area rectangle (overall L x W)",
+   "lower_bound": true
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "severe",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

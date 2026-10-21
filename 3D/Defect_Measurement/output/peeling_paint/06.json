@@ -1,0 +1,140 @@
+{
+ "defect": "peeling_paint",
+ "shot": "06",
+ "photo": "peeling_paint__shot_06.jpg",
+ "box_xyxy": [
+  550,
+  100,
+  1350,
+  780
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.02232448384165764,
+  "neg_points": [
+   [
+    1100,
+    450
+   ],
+   [
+    962.3810456211169,
+    371.60912867306666
+   ],
+   [
+    1049.3952423735357,
+    446.9877069489562
+   ],
+   [
+    1136.4094391259543,
+    522.3662852248458
+   ],
+   [
+    1223.423635878373,
+    597.7448635007352
+   ],
+   [
+    1310.437832630792,
+    673.1234417766248
+   ]
+  ],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 90317,
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "high",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 657.8480224609375,
+   "width_px": 73.70260620117188,
+   "aspect": 8.925709094537796,
+   "fill": 0.7977809479358091,
+   "solidity": 0.8227267893225566,
+   "implied_distance_cm": 19.29523674153334,
+   "end_width_ratio": 1.0428271594384553,
+   "quad": [
+    [
+     867.6414898900206,
+     330.26619942791456
+    ],
+    [
+     1363.1054737354648,
+     763.0326074882653
+    ],
+    [
+     1405.5110372717493,
+     714.0812192644349
+    ],
+    [
+     911.8631632569511,
+     279.21836229588854
+    ]
+   ],
+   "threshold": [
+    35,
+    70
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 31.57,
+    "body_cm_implied": 20.84,
+    "periodicity": 0.24,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 38.6969424977022,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 3.0489977146736624
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1199,
+    576
+   ],
+   "length_px": 482,
+   "why": [
+    "solidity 0.75 too ragged",
+    "ends differ 3.6x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 95.39,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "high",
+   "uncertainty_pct": 13.2,
+   "range_tight_loose": [
+    95.4,
+    159.4
+   ]
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "severe",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

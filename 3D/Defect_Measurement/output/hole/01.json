@@ -1,0 +1,123 @@
+{
+ "defect": "hole",
+ "shot": "01",
+ "photo": "hole__shot_01.jpg",
+ "box_xyxy": [
+  900,
+  420,
+  1080,
+  650
+ ],
+ "box_source": "hand-drawn (prompts/hole.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.733306348323822,
+  "neg_points": [],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": null,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    240,
+    332
+   ],
+   "length_px": 316,
+   "why": [
+    "fill 0.58 too ragged",
+    "solidity 0.74 too ragged"
+   ]
+  },
+  {
+   "center": [
+    498,
+    743
+   ],
+   "length_px": 437,
+   "why": [
+    "fill 0.30 too ragged",
+    "solidity 0.51 too ragged"
+   ]
+  },
+  {
+   "center": [
+    483,
+    532
+   ],
+   "length_px": 355,
+   "why": [
+    "aspect 1.7 not ruler-like",
+    "fill 0.46 too ragged",
+    "solidity 0.57 too ragged",
+    "ends differ 3.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    257,
+    334
+   ],
+   "length_px": 426,
+   "why": [
+    "aspect 12.4 not ruler-like",
+    "fill 0.63 too ragged",
+    "ends differ 1.6x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    574,
+    134
+   ],
+   "length_px": 342,
+   "why": [
+    "aspect 3.0 not ruler-like",
+    "fill 0.13 too ragged",
+    "solidity 0.23 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 24048.0,
+    "extent_cm": [
+     206.37628173828125,
+     170.5104217529297
+    ],
+    "length_cm": 279.2
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

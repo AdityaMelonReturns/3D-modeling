@@ -1,0 +1,125 @@
+{
+ "defect": "peeling_paint",
+ "shot": "02",
+ "photo": "peeling_paint__shot_02.jpg",
+ "box_xyxy": [
+  850,
+  0,
+  1400,
+  900
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.6084622144699097,
+  "neg_points": [],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 394537,
+ "clipped": {
+  "at_photo_edge": true,
+  "at_box_edge": true,
+  "meaning": "defect continues outside the photo - sizes are lower bounds"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    988,
+    421
+   ],
+   "length_px": 345,
+   "why": [
+    "aspect 4.6 not ruler-like",
+    "fill 0.36 too ragged",
+    "solidity 0.44 too ragged",
+    "ends differ 1.6x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    979,
+    102
+   ],
+   "length_px": 205,
+   "why": [
+    "aspect 3.8 not ruler-like",
+    "fill 0.33 too ragged",
+    "solidity 0.38 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1249,
+    951
+   ],
+   "length_px": 164,
+   "why": [
+    "aspect 2.4 not ruler-like",
+    "fill 0.44 too ragged",
+    "only 164 px long - too small to scale from",
+    "ends differ 9.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    924,
+    743
+   ],
+   "length_px": 185,
+   "why": [
+    "aspect 3.6 not ruler-like",
+    "fill 0.18 too ragged",
+    "solidity 0.25 too ragged",
+    "only 185 px long - too small to scale from",
+    "ends differ 49.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    979,
+    297
+   ],
+   "length_px": 594,
+   "why": [
+    "fill 0.30 too ragged",
+    "solidity 0.40 too ragged",
+    "ends differ 74.3x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 312592.0
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

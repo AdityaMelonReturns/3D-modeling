@@ -1,0 +1,158 @@
+{
+ "defect": "invlined_railing",
+ "shot": "04",
+ "photo": "invlined_railing__shot_04.jpg",
+ "box_xyxy": [
+  700,
+  250,
+  1900,
+  650
+ ],
+ "box_source": "hand-drawn (prompts/invlined_railing.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.7085725665092468,
+  "neg_points": [
+   [
+    1640,
+    400
+   ],
+   [
+    1800,
+    480
+   ]
+  ],
+  "pos_points": [
+   [
+    1280,
+    500
+   ],
+   [
+    900,
+    420
+   ]
+  ]
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": null,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1409,
+    702
+   ],
+   "length_px": 194,
+   "why": [
+    "aspect 2.1 not ruler-like",
+    "fill 0.47 too ragged",
+    "solidity 0.63 too ragged",
+    "only 194 px long - too small to scale from",
+    "ends differ 6.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    176,
+    672
+   ],
+   "length_px": 569,
+   "why": [
+    "aspect 1.6 not ruler-like",
+    "fill 0.50 too ragged",
+    "ends differ 3.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    243,
+    281
+   ],
+   "length_px": 340,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.40 too ragged",
+    "solidity 0.51 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1007,
+    975
+   ],
+   "length_px": 208,
+   "why": [
+    "aspect 3.1 not ruler-like",
+    "fill 0.30 too ragged",
+    "solidity 0.45 too ragged",
+    "ends differ 2.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    463,
+    884
+   ],
+   "length_px": 251,
+   "why": [
+    "aspect 4.8 not ruler-like",
+    "fill 0.66 too ragged",
+    "ends differ 3.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1396,
+    712
+   ],
+   "length_px": 250,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.55 too ragged",
+    "solidity 0.73 too ragged",
+    "ends differ 1.7x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "angle": {
+   "posts_lean_from_vertical_deg": 4.7,
+   "posts_total_length_px": 2905.8,
+   "members_tilt_from_horizontal_deg": 21.1,
+   "members_total_length_px": 1167.4,
+   "camera_pitch_deg": -17.8,
+   "camera_roll_deg": 97.1,
+   "source": "phone accelerometer, rotated into this photo's camera frame",
+   "segments_used": 19,
+   "caveat": "angle measured in the image; equals the true 3D lean only for members roughly facing the camera"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "low",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

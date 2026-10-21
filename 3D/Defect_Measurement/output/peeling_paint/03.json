@@ -1,0 +1,31 @@
+{
+ "defect": "peeling_paint",
+ "shot": "03",
+ "photo": "peeling_paint__shot_03.jpg",
+ "box_xyxy": [
+  550,
+  150,
+  1450,
+  750
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.8579133152961731,
+  "neg_points": [
+   [
+    1000,
+    400
+   ]
+  ],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 60370,
+ "error": "empty mask"
+}

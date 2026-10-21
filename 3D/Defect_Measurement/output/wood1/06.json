@@ -1,0 +1,171 @@
+{
+ "defect": "wood1",
+ "shot": "06",
+ "photo": "wood1__shot_06.jpg",
+ "box_xyxy": [
+  760,
+  300,
+  1100,
+  820
+ ],
+ "box_source": "hand-drawn (prompts/wood1.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.8622586131095886,
+  "neg_points": [
+   [
+    710.9962850483452,
+    346.6298516797684
+   ],
+   [
+    782.5705244816311,
+    287.15266533365315
+   ]
+  ],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": false,
+  "meaning": null
+ },
+ "scale": {
+  "source": "card",
+  "confidence": "medium",
+  "notes": [],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "card": {
+   "length_px": 531.77880859375,
+   "width_px": 70.55215454101562,
+   "aspect": 7.5373858112950956,
+   "fill": 0.835609106079184,
+   "solidity": 0.8880532540188372,
+   "implied_distance_cm": 23.86957345460967,
+   "end_width_ratio": 1.10176849387571,
+   "quad": [
+    [
+     594.7263643192144,
+     477.12833622735786
+    ],
+    [
+     1007.46377525925,
+     141.76149221774548
+    ],
+    [
+     967.2565463625758,
+     93.37652304229181
+    ],
+    [
+     558.2330092086171,
+     433.2126048877831
+    ]
+   ],
+   "threshold": [
+    60,
+    90
+   ],
+   "tick_check": {
+    "px_per_cm_from_ticks": 30.51,
+    "body_cm_implied": 17.43,
+    "periodicity": 0.14,
+    "verdict": "ticks too faint to cross-check"
+   }
+  },
+  "px_per_cm": 31.28110638786765,
+  "rectification": "homography (card trapezoid)",
+  "homography_vs_affine_pct": 10.054689648475579
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1645,
+    216
+   ],
+   "length_px": 382,
+   "why": [
+    "aspect 18.5 not ruler-like",
+    "fill 0.63 too ragged",
+    "solidity 0.71 too ragged",
+    "ends differ 2.0x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    774,
+    272
+   ],
+   "length_px": 544,
+   "why": [
+    "fill 0.58 too ragged",
+    "solidity 0.68 too ragged"
+   ]
+  },
+  {
+   "center": [
+    363,
+    125
+   ],
+   "length_px": 294,
+   "why": [
+    "aspect 2.9 not ruler-like",
+    "fill 0.40 too ragged",
+    "solidity 0.61 too ragged",
+    "ends differ 3.5x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "area": {
+   "value": 25.21,
+   "unit": "cm2",
+   "scale_source": "card",
+   "confidence": "medium",
+   "uncertainty_pct": 35.3
+  },
+  "length": {
+   "value": 19.05,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "medium",
+   "uncertainty_pct": 16.5,
+   "pieces_cm": [
+    19.05
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 1.22,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "medium",
+   "max_p95_cm": 2.11,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 18.05,
+   "unit": "cm",
+   "scale_source": "card",
+   "confidence": "medium",
+   "across_cm": 2.45,
+   "method": "min-area rectangle (overall L x W)"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "severe",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

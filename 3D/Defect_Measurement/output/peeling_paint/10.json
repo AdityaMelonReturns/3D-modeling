@@ -1,0 +1,51 @@
+{
+ "defect": "peeling_paint",
+ "shot": "10",
+ "photo": "peeling_paint__shot_10.jpg",
+ "box_xyxy": [
+  900,
+  200,
+  1450,
+  996
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.8522428870201111,
+  "neg_points": [
+   [
+    1300,
+    650
+   ],
+   [
+    1266.3074720107168,
+    563.7601563471394
+   ],
+   [
+    1306.9234957832027,
+    655.5876844766734
+   ],
+   [
+    1347.539519555689,
+    747.4152126062074
+   ],
+   [
+    1388.155543328175,
+    839.2427407357416
+   ],
+   [
+    1428.7715671006613,
+    931.0702688652757
+   ]
+  ],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 85408,
+ "error": "empty mask"
+}

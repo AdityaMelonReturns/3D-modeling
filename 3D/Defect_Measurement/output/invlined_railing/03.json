@@ -1,0 +1,138 @@
+{
+ "defect": "invlined_railing",
+ "shot": "03",
+ "photo": "invlined_railing__shot_03.jpg",
+ "box_xyxy": [
+  650,
+  380,
+  1920,
+  600
+ ],
+ "box_source": "hand-drawn (prompts/invlined_railing.json)",
+ "edge_type": "crisp",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.8625918030738831,
+  "neg_points": [],
+  "pos_points": []
+ },
+ "clipped": {
+  "at_photo_edge": false,
+  "at_box_edge": true,
+  "meaning": "outline touches the box - widen the box if the defect continues"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": null,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1387,
+    665
+   ],
+   "length_px": 429,
+   "why": [
+    "aspect 2.1 not ruler-like",
+    "fill 0.46 too ragged",
+    "solidity 0.70 too ragged",
+    "ends differ 2.3x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1852,
+    897
+   ],
+   "length_px": 198,
+   "why": [
+    "aspect 1.5 not ruler-like",
+    "only 198 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    92,
+    705
+   ],
+   "length_px": 203,
+   "why": [
+    "aspect 2.2 not ruler-like",
+    "fill 0.38 too ragged",
+    "solidity 0.48 too ragged",
+    "ends differ 13.7x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    174,
+    612
+   ],
+   "length_px": 202,
+   "why": [
+    "aspect 3.4 not ruler-like",
+    "fill 0.27 too ragged",
+    "solidity 0.41 too ragged",
+    "ends differ 30.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1432,
+    639
+   ],
+   "length_px": 596,
+   "why": [
+    "aspect 1.9 not ruler-like",
+    "fill 0.62 too ragged",
+    "ends differ 1.8x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    63,
+    498
+   ],
+   "length_px": 160,
+   "why": [
+    "aspect 2.7 not ruler-like",
+    "fill 0.32 too ragged",
+    "solidity 0.46 too ragged",
+    "only 160 px long - too small to scale from",
+    "ends differ 19.9x in width - outline cut short (glare/occlusion)"
+   ]
+  }
+ ],
+ "measurements": {
+  "angle": {
+   "posts_lean_from_vertical_deg": 6.8,
+   "posts_total_length_px": 674.7,
+   "camera_pitch_deg": -23.6,
+   "camera_roll_deg": 91.4,
+   "source": "phone accelerometer, rotated into this photo's camera frame",
+   "segments_used": 4,
+   "caveat": "angle measured in the image; equals the true 3D lean only for members roughly facing the camera"
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": "moderate",
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}

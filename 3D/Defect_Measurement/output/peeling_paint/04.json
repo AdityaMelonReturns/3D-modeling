@@ -1,0 +1,141 @@
+{
+ "defect": "peeling_paint",
+ "shot": "04",
+ "photo": "peeling_paint__shot_04.jpg",
+ "box_xyxy": [
+  500,
+  0,
+  1500,
+  750
+ ],
+ "box_source": "hand-drawn (prompts/peeling_paint.json)",
+ "edge_type": "diffuse",
+ "image_size": [
+  1920,
+  996
+ ],
+ "focal_px": 746.6666666666666,
+ "sam2": {
+  "score": 0.29443731904029846,
+  "neg_points": [
+   [
+    1150,
+    480
+   ]
+  ],
+  "pos_points": [],
+  "note": "SAM2 mask kept for comparison only; diffuse area uses colour difference"
+ },
+ "sam2_area_px": 125842,
+ "clipped": {
+  "at_photo_edge": true,
+  "at_box_edge": true,
+  "meaning": "defect continues outside the photo - sizes are lower bounds"
+ },
+ "scale": {
+  "source": "none",
+  "confidence": "none",
+  "notes": [
+   "no plausible scale card in this photo"
+  ],
+  "card_on_surface": true,
+  "card_dims_cm": [
+   17.0,
+   2.1
+  ],
+  "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
+  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+ },
+ "rejected_card_candidates": [
+  {
+   "center": [
+    1408,
+    819
+   ],
+   "length_px": 188,
+   "why": [
+    "aspect 2.3 not ruler-like",
+    "fill 0.51 too ragged",
+    "solidity 0.74 too ragged",
+    "only 188 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    741,
+    633
+   ],
+   "length_px": 167,
+   "why": [
+    "aspect 3.0 not ruler-like",
+    "fill 0.29 too ragged",
+    "solidity 0.44 too ragged",
+    "only 167 px long - too small to scale from",
+    "ends differ 21.4x in width - outline cut short (glare/occlusion)"
+   ]
+  },
+  {
+   "center": [
+    1562,
+    583
+   ],
+   "length_px": 153,
+   "why": [
+    "aspect 1.7 not ruler-like",
+    "only 153 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    960,
+    309
+   ],
+   "length_px": 175,
+   "why": [
+    "aspect 3.1 not ruler-like",
+    "fill 0.33 too ragged",
+    "solidity 0.47 too ragged",
+    "only 175 px long - too small to scale from"
+   ]
+  },
+  {
+   "center": [
+    1050,
+    473
+   ],
+   "length_px": 715,
+   "why": [
+    "aspect 3.6 not ruler-like",
+    "fill 0.31 too ragged",
+    "solidity 0.39 too ragged"
+   ]
+  },
+  {
+   "center": [
+    1424,
+    819
+   ],
+   "length_px": 221,
+   "why": [
+    "aspect 2.5 not ruler-like",
+    "fill 0.47 too ragged",
+    "solidity 0.66 too ragged"
+   ]
+  }
+ ],
+ "measurements": {
+  "not_measured": {
+   "reason": "no usable scale in this photo - pixel sizes only",
+   "pixels": {
+    "area_cm2": 208772.0
+   }
+  }
+ },
+ "depth": {
+  "band": null,
+  "source": null,
+  "note": "not probed - depth is never read from the image"
+ },
+ "severity_band": null,
+ "severity_note": "thresholds carried over from earlier code - need recalibration"
+}
