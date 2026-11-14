@@ -1,0 +1,102 @@
+{
+ "01": {
+  "object": "deck_board",
+  "box": [
+   1350,
+   300,
+   1900,
+   990
+  ],
+  "same_surface": false
+ },
+ "02": {
+  "object": "deck_board",
+  "box": [
+   1380,
+   0,
+   1920,
+   996
+  ],
+  "same_surface": false
+ },
+ "03": {
+  "object": "deck_board",
+  "box": [
+   1100,
+   450,
+   1920,
+   990
+  ],
+  "same_surface": false
+ },
+ "04": {
+  "object": "deck_board",
+  "box": [
+   1100,
+   500,
+   1900,
+   780
+  ],
+  "same_surface": false
+ },
+ "06": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ },
+ "07": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ },
+ "08": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ },
+ "09": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ },
+ "10": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ },
+ "11": {
+  "object": "deck_board",
+  "box": [
+   0,
+   0,
+   1450,
+   996
+  ],
+  "same_surface": true
+ }
+}
