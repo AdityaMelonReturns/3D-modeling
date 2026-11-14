@@ -1,0 +1,22 @@
+{
+ "01": {
+  "object": "shingle_3tab",
+  "box": [
+   250,
+   0,
+   900,
+   960
+  ],
+  "same_surface": true
+ },
+ "03": {
+  "object": "shingle_3tab",
+  "box": [
+   150,
+   250,
+   1000,
+   990
+  ],
+  "same_surface": true
+ }
+}
