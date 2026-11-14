@@ -1,0 +1,230 @@
+[
+ {
+  "photo": "ceiling_04",
+  "ruler_px_per_cm": 43.37,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "ceiling_05",
+  "ruler_px_per_cm": 27.0,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "ceiling_06",
+  "ruler_px_per_cm": 30.11,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "ceiling_07",
+  "ruler_px_per_cm": 21.66,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "ceiling_08",
+  "ruler_px_per_cm": 30.27,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "ceiling_09",
+  "ruler_px_per_cm": 16.24,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "gaps_02",
+  "ruler_px_per_cm": 37.54,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "gaps_04",
+  "ruler_px_per_cm": 41.33,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "gaps_05",
+  "ruler_px_per_cm": 50.95,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "gaps_06",
+  "ruler_px_per_cm": 54.11,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "peeling_paint_06",
+  "ruler_px_per_cm": 38.7,
+  "object": "deck_board",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 6.06,
+  "diff_pct": -84.3,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 6,
+  "confidence": "medium",
+  "notes": [],
+  "implied_object_cm": 2.26
+ },
+ {
+  "photo": "peeling_paint_07",
+  "ruler_px_per_cm": 44.26,
+  "object": "deck_board",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 11.97,
+  "diff_pct": -72.9,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 7,
+  "confidence": "low",
+  "notes": [
+   "weak pattern fit (few repeats / weak periodicity / outside the pattern)"
+  ],
+  "implied_object_cm": 3.91
+ },
+ {
+  "photo": "peeling_paint_08",
+  "ruler_px_per_cm": 43.97,
+  "object": "deck_board",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 14.67,
+  "diff_pct": -66.6,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 6,
+  "confidence": "medium",
+  "notes": [],
+  "implied_object_cm": 4.82
+ },
+ {
+  "photo": "peeling_paint_09",
+  "ruler_px_per_cm": 37.19,
+  "object": "deck_board",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 10.34,
+  "diff_pct": -72.2,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 7,
+  "confidence": "medium",
+  "notes": [],
+  "implied_object_cm": 4.02
+ },
+ {
+  "photo": "peeling_paint_11",
+  "ruler_px_per_cm": 32.27,
+  "object": "deck_board",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 12.0,
+  "diff_pct": -62.8,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 6,
+  "confidence": "medium",
+  "notes": [],
+  "implied_object_cm": 5.37
+ },
+ {
+  "photo": "roof_03",
+  "ruler_px_per_cm": 18.34,
+  "object": "shingle_3tab",
+  "kind": "repeating",
+  "found": true,
+  "ref_px_per_cm": 15.58,
+  "diff_pct": -15.1,
+  "within_target": false,
+  "target_pct": 10,
+  "n_repeats": 3,
+  "confidence": "low",
+  "notes": [
+   "weak pattern fit (few repeats / weak periodicity / outside the pattern)"
+  ],
+  "implied_object_cm": 10.79
+ },
+ {
+  "photo": "rotten_wood_04",
+  "ruler_px_per_cm": 51.15,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_06",
+  "ruler_px_per_cm": 24.53,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_08",
+  "ruler_px_per_cm": 19.74,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_09",
+  "ruler_px_per_cm": 30.6,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_10",
+  "ruler_px_per_cm": 25.69,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_11",
+  "ruler_px_per_cm": 29.43,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "rotten_wood_15",
+  "ruler_px_per_cm": 19.01,
+  "found": false,
+  "reason": "no standard-size object visible (none prompted)"
+ },
+ {
+  "photo": "wood1_05",
+  "ruler_px_per_cm": 28.31,
+  "object": "lumber_2x6_face",
+  "kind": "single",
+  "found": true,
+  "ref_px_per_cm": 22.99,
+  "diff_pct": -18.8,
+  "within_target": false,
+  "target_pct": 15,
+  "n_repeats": 1,
+  "confidence": "low",
+  "notes": [
+   "pattern direction unclear (coherence 0.23)"
+  ],
+  "implied_object_cm": 11.34
+ },
+ {
+  "photo": "wood1_06",
+  "ruler_px_per_cm": 31.28,
+  "object": "lumber_2x6_face",
+  "kind": "single",
+  "found": true,
+  "ref_px_per_cm": 34.24,
+  "diff_pct": 9.4,
+  "within_target": true,
+  "target_pct": 15,
+  "n_repeats": 1,
+  "confidence": "medium",
+  "notes": [],
+  "implied_object_cm": 15.29
+ }
+]

@@ -158,7 +158,39 @@
    "depth": {
     "band": null,
     "source": null,
-    "note": "not probed - depth is never read from the image"
+    "note": "not probed - depth is never read from the image",
+    "dark_core": {
+     "core_fraction": 0.42,
+     "core_px": 13194,
+     "inside_vs_rim_brightness": 0.615,
+     "core_vs_rim_brightness": 0.521,
+     "threshold_L": 101.4,
+     "rim_median_L": 169.0,
+     "rim_spread": 0.123,
+     "rim_uneven": false,
+     "core_area_cm2": 22.06,
+     "scale_source": "card",
+     "confidence": "high",
+     "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+    },
+    "features": {
+     "inside_vs_rim_brightness": 0.6154,
+     "core_vs_rim_brightness": 0.5207,
+     "core_fraction": 0.4204,
+     "colour_diff_median": 66.1665,
+     "colour_diff_p90": 99.5239,
+     "texture_var_inside_vs_rim": 1.4616,
+     "edge_density_inside": 0.0624,
+     "edge_density_rim": 0.0131,
+     "solidity": 0.8755,
+     "elongation": 3.5884,
+     "opening_narrowness": 0.2609,
+     "area_px": 31385.0
+    },
+    "classifier": {
+     "band": null,
+     "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+    }
    },
    "severity_band": "moderate",
    "severity_note": "thresholds carried over from earlier code - need recalibration"
@@ -605,15 +637,36 @@
   },
   "all_shots": {
    "01": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "extent_cm": [
-       228.59727478027344,
-       25.9323787689209
-      ],
-      "length_cm": 239.5
-     }
+    "length": {
+     "value": 26.67,
+     "unit": "cm",
+     "scale_source": "reference:shingle_3tab",
+     "confidence": "low",
+     "inferred": true,
+     "uncertainty_pct": 11.4,
+     "pieces_cm": [
+      13.34,
+      13.33
+     ],
+     "method": "along skeleton (longest path per piece)"
+    },
+    "width": {
+     "value": 0.45,
+     "unit": "cm",
+     "scale_source": "reference:shingle_3tab",
+     "confidence": "low",
+     "inferred": true,
+     "max_p95_cm": 0.66,
+     "method": "2 x distance-to-edge on skeleton"
+    },
+    "extent": {
+     "value": 25.46,
+     "unit": "cm",
+     "scale_source": "reference:shingle_3tab",
+     "confidence": "low",
+     "inferred": true,
+     "across_cm": 2.89,
+     "method": "min-area rectangle (overall L x W)"
     }
    },
    "03": {
@@ -708,7 +761,36 @@
    "depth": {
     "band": null,
     "source": null,
-    "note": "not probed - depth is never read from the image"
+    "note": "not probed - depth is never read from the image",
+    "dark_core": {
+     "core_fraction": 0.375,
+     "core_px": 8469,
+     "inside_vs_rim_brightness": 0.983,
+     "core_vs_rim_brightness": 0.22,
+     "threshold_L": 106.2,
+     "rim_median_L": 177.0,
+     "rim_spread": 0.042,
+     "rim_uneven": false,
+     "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+    },
+    "features": {
+     "inside_vs_rim_brightness": 0.9831,
+     "core_vs_rim_brightness": 0.2203,
+     "core_fraction": 0.3749,
+     "colour_diff_median": 22.0227,
+     "colour_diff_p90": 148.2194,
+     "texture_var_inside_vs_rim": 0.8563,
+     "edge_density_inside": 0.0654,
+     "edge_density_rim": 0.1037,
+     "solidity": 0.9583,
+     "elongation": 1.0513,
+     "opening_narrowness": 0.8122,
+     "area_px": 22588.0
+    },
+    "classifier": {
+     "band": null,
+     "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+    }
    },
    "severity_band": null,
    "severity_note": "thresholds carried over from earlier code - need recalibration"
@@ -1456,20 +1538,34 @@
   "all_shots": {
    "01": null,
    "02": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "area_cm2": 312592.0
-     }
+    "area": {
+     "value": 3944.63,
+     "unit": "cm2",
+     "scale_source": "reference:deck_board",
+     "confidence": "low",
+     "inferred": true,
+     "uncertainty_pct": 23.0,
+     "range_tight_loose": [
+      3944.6,
+      4724.9
+     ],
+     "lower_bound": true
     }
    },
    "03": null,
    "04": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "area_cm2": 208772.0
-     }
+    "area": {
+     "value": 4409.71,
+     "unit": "cm2",
+     "scale_source": "reference:deck_board",
+     "confidence": "low",
+     "inferred": true,
+     "uncertainty_pct": 22.0,
+     "range_tight_loose": [
+      4409.7,
+      6602.5
+     ],
+     "lower_bound": true
     }
    },
    "06": {
@@ -1694,7 +1790,36 @@
    "depth": {
     "band": null,
     "source": null,
-    "note": "not probed - depth is never read from the image"
+    "note": "not probed - depth is never read from the image",
+    "dark_core": {
+     "core_fraction": 0.0,
+     "core_px": 0,
+     "inside_vs_rim_brightness": 1.663,
+     "core_vs_rim_brightness": null,
+     "threshold_L": 60.6,
+     "rim_median_L": 101.0,
+     "rim_spread": 0.308,
+     "rim_uneven": true,
+     "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+    },
+    "features": {
+     "inside_vs_rim_brightness": 1.6634,
+     "core_vs_rim_brightness": null,
+     "core_fraction": 0.0,
+     "colour_diff_median": 68.4105,
+     "colour_diff_p90": 104.9381,
+     "texture_var_inside_vs_rim": 0.1634,
+     "edge_density_inside": 0.115,
+     "edge_density_rim": 0.2413,
+     "solidity": 0.963,
+     "elongation": 1.7747,
+     "opening_narrowness": 0.5261,
+     "area_px": 134561.0
+    },
+    "classifier": {
+     "band": null,
+     "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+    }
    },
    "severity_band": "severe",
    "severity_note": "thresholds carried over from earlier code - need recalibration"
@@ -2147,7 +2272,39 @@
    "depth": {
     "band": null,
     "source": null,
-    "note": "not probed - depth is never read from the image"
+    "note": "not probed - depth is never read from the image",
+    "dark_core": {
+     "core_fraction": 0.179,
+     "core_px": 3927,
+     "inside_vs_rim_brightness": 0.723,
+     "core_vs_rim_brightness": 0.358,
+     "threshold_L": 95.4,
+     "rim_median_L": 159.0,
+     "rim_spread": 0.233,
+     "rim_uneven": false,
+     "core_area_cm2": 4.52,
+     "scale_source": "card",
+     "confidence": "medium",
+     "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+    },
+    "features": {
+     "inside_vs_rim_brightness": 0.7233,
+     "core_vs_rim_brightness": 0.3585,
+     "core_fraction": 0.1795,
+     "colour_diff_median": 58.1722,
+     "colour_diff_p90": 110.9685,
+     "texture_var_inside_vs_rim": 1.9271,
+     "edge_density_inside": 0.3273,
+     "edge_density_rim": 0.3458,
+     "solidity": 0.8248,
+     "elongation": 6.7556,
+     "opening_narrowness": 0.1382,
+     "area_px": 21880.0
+    },
+    "classifier": {
+     "band": null,
+     "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+    }
    },
    "severity_band": "severe",
    "severity_note": "thresholds carried over from earlier code - need recalibration"
@@ -2173,42 +2330,123 @@
     }
    },
    "02": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "area_cm2": 11691.0,
-      "extent_cm": [
-       282.7637023925781,
-       136.02850341796875
-      ],
-      "length_cm": 425.0
-     }
+    "area": {
+     "value": 30.68,
+     "unit": "cm2",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 20.4
+    },
+    "length": {
+     "value": 21.77,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 10.2,
+     "pieces_cm": [
+      21.77
+     ],
+     "method": "along skeleton (longest path per piece)"
+    },
+    "width": {
+     "value": 1.64,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "max_p95_cm": 1.84,
+     "method": "2 x distance-to-edge on skeleton"
+    },
+    "extent": {
+     "value": 14.48,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "across_cm": 6.97,
+     "method": "min-area rectangle (overall L x W)"
     }
    },
    "03": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "area_cm2": 24496.0,
-      "extent_cm": [
-       707.579345703125,
-       63.09825134277344
-      ],
-      "length_cm": 793.5
-     }
+    "area": {
+     "value": 51.08,
+     "unit": "cm2",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 20.4
+    },
+    "length": {
+     "value": 36.23,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 10.2,
+     "pieces_cm": [
+      36.23
+     ],
+     "method": "along skeleton (longest path per piece)"
+    },
+    "width": {
+     "value": 0.78,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "max_p95_cm": 2.13,
+     "method": "2 x distance-to-edge on skeleton"
+    },
+    "extent": {
+     "value": 32.31,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "across_cm": 2.88,
+     "method": "min-area rectangle (overall L x W)"
     }
    },
    "04": {
-    "not_measured": {
-     "reason": "no usable scale in this photo - pixel sizes only",
-     "pixels": {
-      "area_cm2": 30329.0,
-      "extent_cm": [
-       433.7236633300781,
-       154.09205627441406
-      ],
-      "length_cm": 544.6
-     }
+    "area": {
+     "value": 126.52,
+     "unit": "cm2",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 20.4
+    },
+    "length": {
+     "value": 35.18,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "uncertainty_pct": 10.2,
+     "pieces_cm": [
+      35.18
+     ],
+     "method": "along skeleton (longest path per piece)"
+    },
+    "width": {
+     "value": 3.0,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "max_p95_cm": 4.78,
+     "method": "2 x distance-to-edge on skeleton"
+    },
+    "extent": {
+     "value": 28.01,
+     "unit": "cm",
+     "scale_source": "reference:lumber_2x6_face",
+     "confidence": "medium",
+     "inferred": true,
+     "across_cm": 9.95,
+     "method": "min-area rectangle (overall L x W)"
     }
    },
    "05": {

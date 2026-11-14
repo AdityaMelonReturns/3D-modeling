@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import (CARD_DIMS_SOURCE, CARD_LENGTH_CM, CARD_WIDTH_CM, DEFECTS, OUTPUT_DIR,
                     PROMPTS_DIR, SEVERITY_THRESHOLDS, WORKSPACE)
 from measure import card as cardmod
-from measure import edges, gravity, metrics, segment
+from measure import depth_band, edges, gravity, metrics, reference, segment
 
 CARD_DIMS_UNCERT_PCT = 3.0     # +-0.5 cm on 17 cm until the ruler is tape-measured
 
@@ -115,7 +115,7 @@ def rect_view(mask, H, extra=None):
     return v
 
 
-def measure_shot(defect, shot, prompt, cfg, outdir):
+def measure_shot(defect, shot, prompt, cfg, outdir, ref_prompt=None):
     stem, img, md, focal, accel = load_shot(defect, shot)
     box = prompt["box"]
     card, cands = cardmod.detect_card(img, focal)
@@ -198,10 +198,21 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
             except ValueError:
                 nums_alt = {}
 
+    # ---- fallback: scale from a standard-size building part ----------------
+    # order is ruler -> reference object -> none; a ruler that was found always wins
+    ref = None
+    if not nums and want and ref_prompt is not None:
+        ref = reference.reference_scale(img, ref_prompt, centroid, exclude=card_m)
+        if ref["found"]:
+            nums = metrics.measure_mask(mask, ref["px_per_cm"], want=want)
+            if loose is not None:
+                nums["area_cm2_loose"] = float(loose.sum() / ref["px_per_cm"] ** 2)
+            level, notes = ref["confidence"], list(ref["notes"]) + [ref["scale_direction"]]
+
     px = metrics.measure_pixels(mask, want=want) if want else {}
 
     rec["scale"] = {
-        "source": "card" if nums else "none",
+        "source": ("card" if rect is not None else f"reference:{ref['object']}") if nums else "none",
         "confidence": level,
         "notes": notes,
         "card_on_surface": cfg["card_on_surface"],
@@ -216,6 +227,12 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
     if rect:
         rec["scale"].update(px_per_cm=rect["px_per_cm"], rectification=rect["method"],
                             homography_vs_affine_pct=rect["scale_disagreement_pct"])
+    if ref is not None:
+        rec["scale"]["reference"] = {k: v for k, v in ref.items() if k != "profile_line"}
+        if ref["found"]:
+            rec["scale"].update(px_per_cm=ref["px_per_cm"], inferred=True,
+                                rectification="none - scale only, one direction (see reference.scale_direction)",
+                                reference_size_source=ref["reference_size_source"], n_repeats=ref["n_repeats"])
     rec["rejected_card_candidates"] = [
         {"center": [round(v) for v in c["center"]], "length_px": round(c["length_px"]), "why": c["reject_reasons"]}
         for c in cands if not c["plausible"] and c["length_px"] > 150][:6]
@@ -224,6 +241,8 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
     def tag(v, unit, extra=None):
         d = {"value": round(v, 2) if isinstance(v, float) else v, "unit": unit,
              "scale_source": rec["scale"]["source"], "confidence": level}
+        if rec["scale"].get("inferred"):
+            d["inferred"] = True
         if extra:
             d.update(extra)
         return d
@@ -236,7 +255,8 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
             return None
         return round(abs(b - a) / max(a, 1e-9) * 100, 1)
 
-    unc = lambda k, s=None: {"uncertainty_pct": round(float(np.hypot(CARD_DIMS_UNCERT_PCT, spread(k, s) or 0) * (2 if k.startswith("area") else 1)), 1)}
+    base_unc = ref["uncertainty_pct"] if rec["scale"].get("inferred") else CARD_DIMS_UNCERT_PCT
+    unc = lambda k, s=None: {"uncertainty_pct": round(float(np.hypot(base_unc, spread(k, s) or 0) * (2 if k.startswith("area") else 1)), 1)}
     M = {}
     if nums:
         if "area_cm2" in nums:
@@ -275,6 +295,29 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
     rec["depth"] = {"band": cfg["probe"], "source": "worker probe" if cfg["probe"] else None,
                     "note": None if cfg["probe"] else "not probed - depth is never read from the image"}
 
+    # darkness classifier: the dark core of deep damage inside the outline.
+    # An area, not a depth - darkness alone is not a depth signal.
+    dc = None
+    if defect in depth_band.DEPTH_DEFECTS and cfg["edge"] == "crisp":
+        dc = depth_band.dark_core(img, mask, exclude=card_m)
+    if dc is not None:
+        core_info = {k: (round(v, 3) if isinstance(v, float) else v) for k, v in dc.items()
+                     if k not in ("core", "rim")}
+        if nums and dc["core"].any():
+            if rect is not None:
+                cr, _ = metrics.warp_mask(dc["core"], rect["H"])
+                core_info["core_area_cm2"] = round(float(cr.sum() / rect["px_per_cm"] ** 2), 2)
+            elif ref is not None and ref.get("found"):
+                core_info["core_area_cm2"] = round(float(dc["core"].sum() / ref["px_per_cm"] ** 2), 2)
+            core_info.update(scale_source=rec["scale"]["source"], confidence=level)
+        core_info["meaning"] = ("pixels much darker than the clean rim - the likely core of deep damage; "
+                                "an area, NOT a depth (rot is dark even when flat)")
+        rec["depth"]["dark_core"] = core_info
+        rec["depth"]["features"] = {k: (round(v, 4) if isinstance(v, float) else v)
+                                    for k, v in depth_band.features(img, mask, dc).items()}
+        rec["depth"]["classifier"] = {"band": None, "status": f"not trained - needs {depth_band.MIN_LABELS} "
+                                      "probe-labelled defects (see train_depth_band.py)"}
+
     sev_in = {}
     if "area" in M: sev_in["area_cm2"] = M["area"]["value"]
     if "length" in M: sev_in["length_cm"] = M["length"]["value"]
@@ -296,10 +339,17 @@ def measure_shot(defect, shot, prompt, cfg, outdir):
         lines.append(f"posts lean {M['angle']['posts_lean_from_vertical_deg']} deg from vertical")
     if at_photo:
         lines.append("runs off the photo -> LOWER BOUND")
+    dci = rec["depth"].get("dark_core")
+    if dci:
+        a = f"{dci['core_area_cm2']} cm2, " if "core_area_cm2" in dci else ""
+        lines.append(f"dark core {a}{100 * dci['core_fraction']:.0f}% of outline (not a depth)")
     if "not_measured" in M:
         lines.append("NOT MEASURED: no usable scale card")
     ov = draw_overlay(img, box, mask, card, cands, skel=skel, loose=loose, segments=segs, text=lines,
                       points=(prompt["pos_points"], neg))
+    if ref is not None and ref.get("found"):
+        ov = reference.draw(ov, ref)
+    ov = depth_band.draw(ov, dc)
     if rect:
         rv = rect_view(mask, rect["H"])
         if rv is not None:
@@ -336,6 +386,8 @@ def main():
     for d in args.defects:
         cfg = DEFECTS[d]
         prompts = segment.load_prompts(os.path.join(PROMPTS_DIR, f"{d}.json"))
+        rp = os.path.join(os.path.dirname(PROMPTS_DIR), "prompts_reference", f"{d}.json")
+        ref_prompts = json.load(open(rp)) if os.path.exists(rp) else {}
         shots = [cfg["primary"]] if args.primary_only else sorted(prompts)
         outdir = os.path.join(OUTPUT_DIR, d)
         os.makedirs(outdir, exist_ok=True)
@@ -344,7 +396,7 @@ def main():
             if s not in prompts:
                 print(f"[{d} {s}] no box in prompts - skipped", flush=True)
                 continue
-            rec, _ = measure_shot(d, s, prompts[s], cfg, outdir)
+            rec, _ = measure_shot(d, s, prompts[s], cfg, outdir, ref_prompt=ref_prompts.get(s))
             recs[s] = rec
             with open(os.path.join(outdir, f"{s}.json"), "w") as f:
                 json.dump(rec, f, indent=1, default=float)
@@ -389,6 +441,8 @@ def _key_numbers(M):
             parts.append(f"rails {a['members_tilt_from_horizontal_deg']:.1f} deg from level (in image)")
     if "not_measured" in M:
         parts.append("NOT MEASURED - " + M["not_measured"]["reason"])
+    if any(isinstance(v, dict) and v.get("inferred") for v in M.values()):
+        parts.append("**inferred from reference object**")
     return "; ".join(parts)
 
 

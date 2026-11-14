@@ -31,10 +31,10 @@
   "meaning": null
  },
  "scale": {
-  "source": "none",
-  "confidence": "none",
+  "source": "reference:lumber_2x6_face",
+  "confidence": "medium",
   "notes": [
-   "no plausible scale card in this photo"
+   "across the object only; assumed the same along it"
   ],
   "card_on_surface": true,
   "card_dims_cm": [
@@ -42,7 +42,31 @@
    2.1
   ],
   "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
-  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "reference": {
+   "object": "lumber_2x6_face",
+   "found": true,
+   "reference_size_cm": 13.97,
+   "reference_size_source": "PS 20 via SFPA Standard Sizing: nominal 6 in -> 5-1/2 in dressed dry - https://www.southernpine.com/resources/specifying-southern-pine-lumber/standard-sizing/",
+   "same_surface": true,
+   "pattern_direction_deg": -71.1,
+   "direction_coherence": 0.42,
+   "profile_band_shifted": false,
+   "n_repeats": 1,
+   "width_px": 272.7,
+   "edges_angle_deg": 0.1,
+   "method": "manual edge clicks, snapped to the strongest nearby edge",
+   "px_per_cm": 19.52240419059021,
+   "scale_direction": "across the object only; assumed the same along it",
+   "uncertainty_pct": 10.2,
+   "confidence": "medium",
+   "notes": []
+  },
+  "px_per_cm": 19.52240419059021,
+  "inferred": true,
+  "rectification": "none - scale only, one direction (see reference.scale_direction)",
+  "reference_size_source": "PS 20 via SFPA Standard Sizing: nominal 6 in -> 5-1/2 in dressed dry - https://www.southernpine.com/resources/specifying-southern-pine-lumber/standard-sizing/",
+  "n_repeats": 1
  },
  "rejected_card_candidates": [
   {
@@ -70,23 +94,82 @@
   }
  ],
  "measurements": {
-  "not_measured": {
-   "reason": "no usable scale in this photo - pixel sizes only",
-   "pixels": {
-    "area_cm2": 11691.0,
-    "extent_cm": [
-     282.7637023925781,
-     136.02850341796875
-    ],
-    "length_cm": 425.0
-   }
+  "area": {
+   "value": 30.68,
+   "unit": "cm2",
+   "scale_source": "reference:lumber_2x6_face",
+   "confidence": "medium",
+   "inferred": true,
+   "uncertainty_pct": 20.4
+  },
+  "length": {
+   "value": 21.77,
+   "unit": "cm",
+   "scale_source": "reference:lumber_2x6_face",
+   "confidence": "medium",
+   "inferred": true,
+   "uncertainty_pct": 10.2,
+   "pieces_cm": [
+    21.77
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 1.64,
+   "unit": "cm",
+   "scale_source": "reference:lumber_2x6_face",
+   "confidence": "medium",
+   "inferred": true,
+   "max_p95_cm": 1.84,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 14.48,
+   "unit": "cm",
+   "scale_source": "reference:lumber_2x6_face",
+   "confidence": "medium",
+   "inferred": true,
+   "across_cm": 6.97,
+   "method": "min-area rectangle (overall L x W)"
   }
  },
  "depth": {
   "band": null,
   "source": null,
-  "note": "not probed - depth is never read from the image"
+  "note": "not probed - depth is never read from the image",
+  "dark_core": {
+   "core_fraction": 0.108,
+   "core_px": 1259,
+   "inside_vs_rim_brightness": 1.667,
+   "core_vs_rim_brightness": 0.425,
+   "threshold_L": 91.8,
+   "rim_median_L": 153.0,
+   "rim_spread": 0.581,
+   "rim_uneven": true,
+   "core_area_cm2": 3.3,
+   "scale_source": "reference:lumber_2x6_face",
+   "confidence": "medium",
+   "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+  },
+  "features": {
+   "inside_vs_rim_brightness": 1.6667,
+   "core_vs_rim_brightness": 0.4248,
+   "core_fraction": 0.1077,
+   "colour_diff_median": 103.194,
+   "colour_diff_p90": 103.2182,
+   "texture_var_inside_vs_rim": 0.1463,
+   "edge_density_inside": 0.1033,
+   "edge_density_rim": 0.2375,
+   "solidity": 0.442,
+   "elongation": 2.0787,
+   "opening_narrowness": 0.1556,
+   "area_px": 11691.0
+  },
+  "classifier": {
+   "band": null,
+   "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+  }
  },
- "severity_band": null,
+ "severity_band": "severe",
  "severity_note": "thresholds carried over from earlier code - need recalibration"
 }

@@ -28,10 +28,12 @@
   "meaning": "defect continues outside the photo - sizes are lower bounds"
  },
  "scale": {
-  "source": "none",
-  "confidence": "none",
+  "source": "reference:deck_board",
+  "confidence": "low",
   "notes": [
-   "no plausible scale card in this photo"
+   "reference is on a different surface from the defect - scale does not transfer",
+   "weak pattern fit (few repeats / weak periodicity / outside the pattern)",
+   "across the repeats only; assumed the same along them"
   ],
   "card_on_surface": true,
   "card_dims_cm": [
@@ -39,7 +41,36 @@
    2.1
   ],
   "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
-  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "reference": {
+   "object": "deck_board",
+   "found": true,
+   "reference_size_cm": 14.446250000000001,
+   "reference_size_source": "American Softwood Lumber Standard PS 20 via SFPA Standard Sizing (nominal 6 in -> 5-1/2 in dressed; 5/4x6 decking -> 1 x 5-1/2 in) - https://www.southernpine.com/resources/specifying-southern-pine-lumber/standard-sizing/",
+   "same_surface": false,
+   "pattern_direction_deg": -80.2,
+   "direction_coherence": 0.93,
+   "profile_band_shifted": false,
+   "n_repeats": 3,
+   "periodicity": 0.18,
+   "spacing_px": 128.6,
+   "spacing_px_mean": 152.0,
+   "fit_resid_px": 11.0,
+   "query_inside_pattern": false,
+   "px_per_cm": 8.901964177554724,
+   "scale_direction": "across the repeats only; assumed the same along them",
+   "uncertainty_pct": 11.5,
+   "confidence": "low",
+   "notes": [
+    "reference is on a different surface from the defect - scale does not transfer",
+    "weak pattern fit (few repeats / weak periodicity / outside the pattern)"
+   ]
+  },
+  "px_per_cm": 8.901964177554724,
+  "inferred": true,
+  "rectification": "none - scale only, one direction (see reference.scale_direction)",
+  "reference_size_source": "American Softwood Lumber Standard PS 20 via SFPA Standard Sizing (nominal 6 in -> 5-1/2 in dressed; 5/4x6 decking -> 1 x 5-1/2 in) - https://www.southernpine.com/resources/specifying-southern-pine-lumber/standard-sizing/",
+  "n_repeats": 3
  },
  "rejected_card_candidates": [
   {
@@ -108,11 +139,18 @@
   }
  ],
  "measurements": {
-  "not_measured": {
-   "reason": "no usable scale in this photo - pixel sizes only",
-   "pixels": {
-    "area_cm2": 312592.0
-   }
+  "area": {
+   "value": 3944.63,
+   "unit": "cm2",
+   "scale_source": "reference:deck_board",
+   "confidence": "low",
+   "inferred": true,
+   "uncertainty_pct": 23.0,
+   "range_tight_loose": [
+    3944.6,
+    4724.9
+   ],
+   "lower_bound": true
   }
  },
  "depth": {
@@ -120,6 +158,6 @@
   "source": null,
   "note": "not probed - depth is never read from the image"
  },
- "severity_band": null,
+ "severity_band": "severe",
  "severity_note": "thresholds carried over from earlier code - need recalibration"
 }

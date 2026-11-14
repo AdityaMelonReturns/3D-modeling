@@ -190,7 +190,39 @@
  "depth": {
   "band": null,
   "source": null,
-  "note": "not probed - depth is never read from the image"
+  "note": "not probed - depth is never read from the image",
+  "dark_core": {
+   "core_fraction": 0.93,
+   "core_px": 38894,
+   "inside_vs_rim_brightness": 0.181,
+   "core_vs_rim_brightness": 0.181,
+   "threshold_L": 63.0,
+   "rim_median_L": 105.0,
+   "rim_spread": 0.777,
+   "rim_uneven": true,
+   "core_area_cm2": 56.97,
+   "scale_source": "card",
+   "confidence": "high",
+   "meaning": "pixels much darker than the clean rim - the likely core of deep damage; an area, NOT a depth (rot is dark even when flat)"
+  },
+  "features": {
+   "inside_vs_rim_brightness": 0.181,
+   "core_vs_rim_brightness": 0.181,
+   "core_fraction": 0.9304,
+   "colour_diff_median": 86.0058,
+   "colour_diff_p90": 91.1098,
+   "texture_var_inside_vs_rim": 0.0098,
+   "edge_density_inside": 0.03,
+   "edge_density_rim": 0.2106,
+   "solidity": 0.8011,
+   "elongation": 10.3946,
+   "opening_narrowness": 0.0747,
+   "area_px": 41805.0
+  },
+  "classifier": {
+   "band": null,
+   "status": "not trained - needs 200 probe-labelled defects (see train_depth_band.py)"
+  }
  },
  "severity_band": "severe",
  "severity_note": "thresholds carried over from earlier code - need recalibration"

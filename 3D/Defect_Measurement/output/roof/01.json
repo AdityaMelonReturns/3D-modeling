@@ -21,10 +21,11 @@
   "meaning": null
  },
  "scale": {
-  "source": "none",
-  "confidence": "none",
+  "source": "reference:shingle_3tab",
+  "confidence": "low",
   "notes": [
-   "no plausible scale card in this photo"
+   "weak pattern fit (few repeats / weak periodicity / outside the pattern)",
+   "across the repeats only; assumed the same along them"
   ],
   "card_on_surface": true,
   "card_dims_cm": [
@@ -32,7 +33,35 @@
    2.1
   ],
   "card_dims_source": "read from printed cm ticks in 9 clear photos (17.0 cm, IQR 16.9-17.3); confirm with tape",
-  "flatness": "assumed flat by surface type (no LiDAR in capture)"
+  "flatness": "assumed flat by surface type (no LiDAR in capture)",
+  "reference": {
+   "object": "shingle_3tab",
+   "found": true,
+   "reference_size_cm": 12.7,
+   "reference_size_source": "GAF Royal Sovereign specifications: 12 x 36 in, 5 in (127 mm) exposure - https://www.gaf.com/en-us/products/royal-sovereign/specifications",
+   "same_surface": true,
+   "pattern_direction_deg": 77.1,
+   "direction_coherence": 0.36,
+   "profile_band_shifted": false,
+   "n_repeats": 5,
+   "periodicity": 0.28,
+   "spacing_px": 114.04,
+   "spacing_px_mean": 115.0,
+   "fit_resid_px": 11.7,
+   "query_inside_pattern": true,
+   "px_per_cm": 8.979550056242967,
+   "scale_direction": "across the repeats only; assumed the same along them",
+   "uncertainty_pct": 11.4,
+   "confidence": "low",
+   "notes": [
+    "weak pattern fit (few repeats / weak periodicity / outside the pattern)"
+   ]
+  },
+  "px_per_cm": 8.979550056242967,
+  "inferred": true,
+  "rectification": "none - scale only, one direction (see reference.scale_direction)",
+  "reference_size_source": "GAF Royal Sovereign specifications: 12 x 36 in, 5 in (127 mm) exposure - https://www.gaf.com/en-us/products/royal-sovereign/specifications",
+  "n_repeats": 5
  },
  "rejected_card_candidates": [
   {
@@ -80,15 +109,36 @@
   }
  ],
  "measurements": {
-  "not_measured": {
-   "reason": "no usable scale in this photo - pixel sizes only",
-   "pixels": {
-    "extent_cm": [
-     228.59727478027344,
-     25.9323787689209
-    ],
-    "length_cm": 239.5
-   }
+  "length": {
+   "value": 26.67,
+   "unit": "cm",
+   "scale_source": "reference:shingle_3tab",
+   "confidence": "low",
+   "inferred": true,
+   "uncertainty_pct": 11.4,
+   "pieces_cm": [
+    13.34,
+    13.33
+   ],
+   "method": "along skeleton (longest path per piece)"
+  },
+  "width": {
+   "value": 0.45,
+   "unit": "cm",
+   "scale_source": "reference:shingle_3tab",
+   "confidence": "low",
+   "inferred": true,
+   "max_p95_cm": 0.66,
+   "method": "2 x distance-to-edge on skeleton"
+  },
+  "extent": {
+   "value": 25.46,
+   "unit": "cm",
+   "scale_source": "reference:shingle_3tab",
+   "confidence": "low",
+   "inferred": true,
+   "across_cm": 2.89,
+   "method": "min-area rectangle (overall L x W)"
   }
  },
  "depth": {
@@ -96,6 +146,6 @@
   "source": null,
   "note": "not probed - depth is never read from the image"
  },
- "severity_band": null,
+ "severity_band": "moderate",
  "severity_note": "thresholds carried over from earlier code - need recalibration"
 }

@@ -34,7 +34,7 @@ of the same defect are measured the same way and shown only as a consistency che
 
 | Photo | Numbers |
 |---|---|
-| 01 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
+| 01 | length 26.7 cm +-11.4%; width 4.5-6.6 mm; extent 25.5 x 2.9 cm; **inferred from reference object** |
 | 03 (primary) | length 9.9 cm +-36.3%; width 1.1-2.4 mm; extent 11.8 x 1.0 cm |
 
 ### hole
@@ -78,9 +78,9 @@ of the same defect are measured the same way and shown only as a consistency che
 | Photo | Numbers |
 |---|---|
 | 01 | - |
-| 02 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
+| 02 | area 3944.6 cm2 (tight-loose 3944.6-4724.9) +-23.0%; **inferred from reference object** |
 | 03 | - |
-| 04 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
+| 04 | area 4409.7 cm2 (tight-loose 4409.7-6602.5) +-22.0%; **inferred from reference object** |
 | 06 | area 95.4 cm2 (tight-loose 95.4-159.4) +-13.2% |
 | 07 (primary) | area 1.1 cm2 (tight-loose 1.2-11.6) +-18.2% |
 | 08 | area 99.3 cm2 (tight-loose 99.3-173.0) +-100.4% |
@@ -105,8 +105,8 @@ of the same defect are measured the same way and shown only as a consistency che
 | Photo | Numbers |
 |---|---|
 | 01 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
-| 02 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
-| 03 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
-| 04 | NOT MEASURED - no usable scale in this photo - pixel sizes only |
+| 02 | area 30.7 cm2 +-20.4%; length 21.8 cm +-10.2%; width 16.4-18.4 mm; extent 14.5 x 7.0 cm; **inferred from reference object** |
+| 03 | area 51.1 cm2 +-20.4%; length 36.2 cm +-10.2%; width 7.8-21.3 mm; extent 32.3 x 2.9 cm; **inferred from reference object** |
+| 04 | area 126.5 cm2 +-20.4%; length 35.2 cm +-10.2%; width 30.0-47.8 mm; extent 28.0 x 9.9 cm; **inferred from reference object** |
 | 05 | area 61.2 cm2 +-33.3%; length 42.6 cm (lower bound) +-12.7%; width 7.2-19.1 mm; extent 39.5 x 4.0 cm |
 | 06 (primary) | area 25.2 cm2 +-35.3%; length 19.1 cm +-16.5%; width 12.2-21.1 mm; extent 18.1 x 2.5 cm |
